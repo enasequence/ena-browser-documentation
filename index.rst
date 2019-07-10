@@ -14,6 +14,12 @@ your needs.
    about/data_coordination
 
 .. toctree::
+   :caption: The ENA Browser
+   :maxdepth: 1
+
+   browser/taxon_portal
+
+.. toctree::
    :caption: Rulespace
    :maxdepth: 1
 
