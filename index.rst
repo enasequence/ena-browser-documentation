@@ -11,6 +11,7 @@ your needs.
    :maxdepth: 1
 
    about/about_ena
+   about/data_coordination
 
 .. toctree::
    :caption: Rulespace
