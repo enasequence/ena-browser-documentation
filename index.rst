@@ -1,7 +1,7 @@
 ENA: Guidelines and Tutorials
 *****************************
 
-Welcome to the guidelines for submission to the European Nucleotide Archive.
+Welcome to the documentation for the European Nucleotide Archive's data discovery & retreival services.
 Please use the links below and to the left to find instructions specific to
 your needs.
 
