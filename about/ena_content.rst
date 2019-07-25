@@ -1,3 +1,6 @@
+ENA Content
+===========
+
 The European Nucleotide Archive (ENA) captures and presents information relating to experimental workflows that are
 based around nucleotide sequencing. A typical workflow includes the isolation and preparation of material for
 sequencing, a run of a sequencing machine in which sequencing data are produced and a subsequent bioinformatic analysis
