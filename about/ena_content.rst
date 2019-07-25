@@ -19,7 +19,7 @@ and standards. ENA data classes and formats are described `here <https://www.ebi
 
 Although the ENA has almost 30 years of history, the data and services are constantly changing to reflect growing
 volumes of data, ever improving sequencing technology and the broadening of applications to which sequencing is now
-put. Latest developments and changes to services are announced `here <https://wwwdev.ebi.ac.uk/ena/browser/news>`_ and users are encourage to join the ENA mailing
+put. Latest developments and changes to services are announced `here <https://www.ebi.ac.uk/ena/browser/news>`_ and users are encourage to join the ENA mailing
 list  `ena-announce <http://listserver.ebi.ac.uk/mailman/listinfo/ena-announce>`_.
 
 As part of the global effort to improve access to and usability of nucleotide sequencing data, we collaborate
