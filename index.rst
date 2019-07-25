@@ -11,7 +11,9 @@ your needs.
    :maxdepth: 1
 
    about/about_ena
+   about/ena_content
    about/data_coordination
+   about/funding
 
 .. toctree::
    :caption: The ENA Browser
