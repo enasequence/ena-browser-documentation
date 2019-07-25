@@ -3,3 +3,6 @@ Static documentation, both descriptive text and context sensitive help text, for
 
 # readthedocs project
 https://ena-browser-docs.readthedocs.io
+
+# dashboard
+https://readthedocs.org/dashboard/
