@@ -8,6 +8,6 @@ The European Nucleotide Archive (ENA) is an open, supported platform for the man
 
 **A data foundation**: as nucleotide sequencing becomes increasingly central to applied areas such as healthcare and environmental sciences, ENA has become a foundation upon which scientific understanding of biological systems may be assembled. Our users comprise data submitters, data coordinators for sequence-based studies, direct data consumers and secondary service providers (e.g., UniProt, RNAcentral, EBI Metagenomics, Ensembl, Ensembl Genomes, ArrayExpress) that build on ENA services and content.
 
-**Data coordination**: our data coordination partnerships span the life sciences, covering such areas as livestock genomics, marine biotechnology, biodiversity, pathogen surveillance and stem cell biology. Within these partnerships, we support data operations variously through the provision of technology, standards, data analysis, training, support and web/API data portals. `Read more <data_coordination.html>`_
+**Data coordination**: our data coordination partnerships span the life sciences, covering such areas as livestock genomics, marine biotechnology, biodiversity, pathogen surveillance and stem cell biology. Within these partnerships, we support data operations variously through the provision of technology, standards, data analysis, training, support and web/API data portals. `[Read more] <data_coordination.html>`_
 
 **Ambition**: we are committed to the utility of the ENA platform and to achieving the broadest reach and utility of sequencing technology and data.
