@@ -21,5 +21,5 @@ search to the latest ENA release only.
 ## Set parameters for your search
 
 Searches can be performed using blastn, tblastx or tblastn. Please refer to the 
-[`help & documentation](https://www.ebi.ac.uk/seqdb/confluence/pages/viewpage.action?pageId=94147939) 
+[help & documentation](https://www.ebi.ac.uk/seqdb/confluence/pages/viewpage.action?pageId=94147939) 
 for usage details and parameter options.
