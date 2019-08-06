@@ -1,16 +1,13 @@
-============
-Taxon Portal
-============
+# Taxon Portal
 
 The taxon portal refers to two things:
 
 1. Performing taxonomic searches
 2. Accessing all information about a given taxon including all public data associated with the organism.
 
-Taxonomic Searches
-==================
+## Taxonomic Searches
 
-To perform a search for taxa, please go to the `Advanced Search UI <https://www.ebi.ac.uk/ena/browser/advanced-search>`_
+To perform a search for taxa, please go to the [Advanced Search UI](https://www.ebi.ac.uk/ena/browser/advanced-search)
 and select txon in the datatype dropdown. Click Next.
 
 Click on the filter group Taxonomy and related.

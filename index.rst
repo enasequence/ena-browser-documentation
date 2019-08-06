@@ -1,9 +1,14 @@
-ENA: Data Discovery & Retrieval
-*******************************
+=====================================
+The European Nucleotide Archive (ENA)
+=====================================
 
-Welcome to the documentation for the European Nucleotide Archive's data discovery & retrieval services.
-Please use the links below and to the left to find instructions specific to
-your needs.
+Welcome to the documentation for the European Nucleotide Archive (ENA).
+Please use the links below and to the left to navigate through information on the 
+ENA browser, our collaboration projects and data policies.
+
+For submission guidelines and retrieval tutorials, please see the
+ `ENA Training Documentation 
+ <https://ena-docs.readthedocs.io/en/latest/index.html>`_.
 
 
 .. toctree::
@@ -18,12 +23,9 @@ your needs.
    :maxdepth: 1
 
    browser/taxon_portal
-
-.. toctree::
-   :caption: Rulespace
-   :maxdepth: 1
-
-   rulespace/rulespace
+   browser/search
+   browser/rulespace
+   
    
 .. Extra
 .. *****
