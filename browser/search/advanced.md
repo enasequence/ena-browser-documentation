@@ -25,8 +25,7 @@ the data type options for more information on what each data type holds.
 ## Search Query
 
 To build a query you need to create a list of rules that the resulting 
-data sets should be restricted to. These rules can be grouped and nested 
-within AND or OR logical statements.
+data sets should be restricted to.
 
 This is done by clicking any relevant metadata types you would like to 
 restrict (listed as buttons on the left) then selecting the relevant filters 
@@ -39,6 +38,7 @@ within that tax tree and when searching by geographical range you can
 interactively drag the box or circle over the desired region to autofill 
 the location range.
 
+These rules can be grouped and nested within AND or OR logical statements. 
 For example, a query for all metagenomic analyses where the sample was 
 collected after 01 Jan 2019 and the environmental material is either dental or 
 saliva would look as follows:
