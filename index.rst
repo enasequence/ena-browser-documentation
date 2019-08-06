@@ -10,13 +10,14 @@ For submission guidelines and retrieval tutorials, please see the
  `ENA Training Documentation 
  <https://ena-docs.readthedocs.io/en/latest/index.html>`_.
 
-
 .. toctree::
    :caption: About ENA
    :maxdepth: 1
 
    about/about_ena
+   about/ena_content
    about/data_coordination
+   about/funding
 
 .. toctree::
    :caption: The ENA Browser
@@ -25,7 +26,6 @@ For submission guidelines and retrieval tutorials, please see the
    browser/taxon_portal
    browser/search
    browser/rulespace
-   
    
 .. Extra
 .. *****
