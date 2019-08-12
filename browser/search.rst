@@ -6,7 +6,6 @@ The European Nucleotide Archive can be searched through interactively
 using a simple text search or explored in more detail using one of the 
 ENA search services.
 
-
 .. toctree::
    :maxdepth: 1
 
