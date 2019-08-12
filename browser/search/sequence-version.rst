@@ -1,6 +1,9 @@
-# Sequence Version Archive
+========================
+Sequence Version Archive
+========================
 
-## Introduction
+Introduction
+============
 
 The Sequence version archive holds all publicly available versions 
 of INSDC submitted sequences including the original dates of their 
