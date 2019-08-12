@@ -1,17 +1,17 @@
 =========
-RuleSpace
+Rulespace
 =========
 
 Introduction
 ============
 
-The RuleSpace service supports the creation & management of user-controlled rules &
+The Rulespace service supports the creation & management of user-controlled rules &
 metadata relating to these rules that are used to define shareable searches on services such as the ENA Discovery API.
 Rules can specify metadata filters, expressed in a structured query language, and lists of accessions
 for inclusion/exclusion. The results matching the search parameters can be further customised by which fields are
 returned and the number of rows etc.
 
-RuleSpace components
+Rulespace components
 ====================
 
 1. **A RESTful read/write API**
@@ -20,7 +20,7 @@ RuleSpace components
 2. **A Graphical User Interface**
     This component in the ENA Browser allows users to create, view and edit rules with assistance. This fully integrates with the Advanced Search interface for easily capturing Rules from searches.
 
-The RuleSpace system can be accessed and managed using 2 authentication options.
+The Rulespace system can be accessed and managed using 2 authentication options.
 
 Authentication using AAP Account
 ================================
@@ -32,7 +32,7 @@ How Do I Register with AAP?
 
 Create an AAP account by registering at `AAP <https://aai.ebi.ac.uk/registerUser>`_ and fill out the user form.
 
-.. image:: ../images/aap-form.png
+.. image:: images/aap-form.png
 
 Authentication using Elixir Account
 ===================================
@@ -50,16 +50,16 @@ Steps to register with Elixir
 
 2.  Select your preferred identity providers.
 
-.. image:: ../images/elixir-form.png
+.. image:: images/elixir-form.png
 
 3.  Sign-in to your selected identity provider e.g. using your Google account
 
 4.  Enter your username.
 
-.. image:: ../images/google-user.png
+.. image:: images/google-user.png
 
 4.  Enter your password and grant permissions.
 
-.. image:: ../images/google-password.png
+.. image:: images/google-password.png
 
 5.  You are now registered with Elixir.
