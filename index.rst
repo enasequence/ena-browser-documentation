@@ -25,6 +25,7 @@ For submission guidelines and retrieval tutorials, please see the
 
    browser/taxon_portal
    browser/search
+   browser/rulespace
    
 .. Extra
 .. *****

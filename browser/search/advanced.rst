@@ -40,7 +40,7 @@ and specifying the desired restrictions for those:
 
 When specifying taxonomy in your search, you can include all subordinate taxa 
 within that tax tree and when searching by geographical range you can 
-interactively drag the box or circle over the desired region to autofill 
+interactively drag the box or circle over the desired region to automatically fill out  
 the location range.
 
 These rules can be grouped and nested within AND or OR logical statements. 
