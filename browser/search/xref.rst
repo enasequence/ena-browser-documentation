@@ -18,9 +18,9 @@ These cross-references can also be explored programmatically using the
 `x-ref API <https://www.ebi.ac.uk/ena/xref/rest/>`_.
 
 *If you would be interested in registering your resource as part of our cross-reference 
-service, you can request to be added as a new Xref source 
+service, you can request to be added as a new Xref source* 
 `here <https://docs.google.com/forms/d/1UHGQRHXoIbEL1nNaTt1dYzVGwY1v6BIlcPWQ03S5j9U>`_ 
-and a member of the team will get into contact with you to discuss your eligibility.*
+*and a member of the team will get into contact with you to discuss your eligibility.*
 
 Xref Sources
 ============
