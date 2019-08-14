@@ -5,16 +5,20 @@ Advanced Search
 Introduction
 ============
 
-The ENA advanced search can be used to customise a search query and 
-retreive a set of ENA records that fit the described search criteria.
+Customise your own search query and retrieve a set of ENA records tailored to your 
+search criteria.
 
-All searches are done against a subset of the archive specified by 
-their **datatype**. You can then build your custom search query, include 
-or exclude any specific datasets that are wanted/unwanted within the results 
-as well as specify the metadata fields you want the query to return.
+All searches are performed against a subset of the archive specified by 
+the *Data Type* you choose to search against. You can then build your custom search 
+query to specify what data you are looking for and select what fields you want to 
+retrieve from your search. There are additional options to include/exclude 
+datasets as desired as well as filter the number of results you wish to return to 
+allow for full customisability.
 
-If you wish to repeat the same search at a later date, you can save this 
-as a Rule using `RuleSpace <https://www.ebi.ac.uk/ena/browser/rulespace>`_.
+If you intend to repeat the same search at a later date, you can save this 
+as a Rule using `Rulespace <https://www.ebi.ac.uk/ena/browser/rulespace>`_. Or if you 
+want to access the same data programmatically, you can copy the produced curl request and run 
+this yourself using the `ENA Portal API <https://www.ebi.ac.uk/ena/portal/api/>`_.
 
 Data Types
 ==========
