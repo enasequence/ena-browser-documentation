@@ -101,21 +101,18 @@ Download results
 Download results as an XML
 --------------------------
 
-Download all the resulting ENA metadata objects in XML format.
+This feature allows you to download all the ENA metadata objects that resulted 
+from your search in XML format.
 
 This will download **all** the metadata for each object in the standard ENA XML 
-format (used for data submission and for data to be rendered in the browser). 
-If you wish to only download the fields returned that were specified in your 
-search, use one of the **Download report** options (JSON or TSV).
+format (the same XML format that is used for data submission and for data to be 
+rendered in the browser). If you wish to only download the fields returned that 
+were specified in your search, use one of the **Download report** options 
+(JSON or TSV).
 
-Download JSON report
---------------------
+Download results report
+-----------------------
 
-Download all the specified fields returned from your search in the format 
-of a JSON file.
-
-Download TSV report
--------------------
-
-Download all the specified fields returned from your search in the format 
-of a TSV file.
+This feature allows you to download all the results from your search in the 
+format of a JSON or TSV file. Any data filters set by you will apply here. If you 
+specified to return the full set, you can download all the results here.
