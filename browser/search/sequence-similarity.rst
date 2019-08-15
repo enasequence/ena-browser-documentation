@@ -17,9 +17,7 @@ for usage details and parameter options.
 Search against a specific sequence set
 ======================================
 
-Select a specific sequence set to refine your search to a specific sequence data type.
-
-If you wish to limit your search by taxonomic group or sequence data class this will restrict the 
+Select a specific sequence set to refine your search to a specific sequence data type. If you wish to limit your search by taxonomic group or sequence data class this will restrict the 
 search to the latest ENA release only.
 
 Set parameters for your search
