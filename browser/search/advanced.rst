@@ -9,16 +9,15 @@ Customise your own search query and retrieve a set of ENA records tailored to yo
 search criteria.
 
 All searches are performed against a subset of the archive specified by 
-the *Data Type* you choose to search against. You can then build your custom search 
+the *Data Type* you choose to search against. You can then build your search 
 query to specify what data you are looking for and select what fields you want to 
-retrieve from your search. There are additional options to include/exclude 
-datasets as desired as well as filter the number of results you wish to return to 
-allow for full customisability.
+retrieve from your search. There are additional options to include/exclude specific  
+datasets as well as filter the number of results you wish to return.
 
 If you intend to repeat the same search at a later date, you can save this 
-as a Rule using `Rulespace <https://www.ebi.ac.uk/ena/browser/rulespace>`_. Or if you 
+as a Rule using `Rulespace <https://www.ebi.ac.uk/ena/browser/rulespace>`_. If you 
 want to access the same data programmatically, you can copy the produced curl request and run 
-this yourself using the `ENA Portal API <https://www.ebi.ac.uk/ena/portal/api/>`_.
+this yourself against the `ENA Portal API <https://www.ebi.ac.uk/ena/portal/api/>`_.
 
 Data Types
 ==========
@@ -99,8 +98,8 @@ the curl request.
 Download results
 ================
 
-XML
----
+Download results as an XML
+--------------------------
 
 Download all the resulting ENA metadata objects in XML format.
 
@@ -109,14 +108,14 @@ format (used for data submission and for data to be rendered in the browser).
 If you wish to only download the fields returned that were specified in your 
 search, use one of the **Download report** options (JSON or TSV).
 
-JSON
-----
+Download JSON report
+--------------------
 
 Download all the specified fields returned from your search in the format 
 of a JSON file.
 
-TSV
----
+Download TSV report
+-------------------
 
 Download all the specified fields returned from your search in the format 
 of a TSV file.
