@@ -39,7 +39,7 @@ This is done by clicking any relevant metadata types you would like to
 restrict (listed as buttons on the left) then selecting the relevant filters 
 and specifying the desired restrictions for those:
 
-.. image:: ../images/example-tax-filter.png
+.. image:: images/example-tax-filter.png
 
 When specifying taxonomy in your search, you can include all subordinate taxa 
 within that tax tree and when searching by geographical range you can 
@@ -51,7 +51,7 @@ For example, a query for all metagenomic analyses where the sample was
 collected after 01 Jan 2019 and the environmental material is either dental or 
 saliva would look as follows:
 
-.. image:: ../images/example-query.png
+.. image:: images/example-query.png
 
 Inclusion/Exclusion of datasets
 ===============================
