@@ -106,7 +106,7 @@ from your search in XML format.
 
 This will download **all** the metadata for each object in the standard ENA XML 
 format (the same XML format that is used for data submission and for data to be 
-rendered in the browser). If you wish to only download the fields returned that 
+displayed in the browser). If you wish to only download the fields returned that 
 were specified in your search, use one of the **Download report** options 
 (JSON or TSV).
 
