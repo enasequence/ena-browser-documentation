@@ -23,6 +23,6 @@ search to the latest ENA release only.
 Set parameters for your search
 ==============================
 
-Searches can be performed using blastn, tblastx or tblastn. Please refer to the 
+Searches can be performed using blastn, tblastx or tblastn. Please refer to the NCBI BLAST+ 
 `help & documentation <https://www.ebi.ac.uk/seqdb/confluence/pages/viewpage.action?pageId=94147939>`_ 
 for usage details and parameter options.
