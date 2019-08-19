@@ -9,7 +9,7 @@ Customise your own search query and retrieve a set of ENA records tailored to yo
 search criteria.
 
 All searches are performed against a subset of the archive specified by 
-the *Data Type* you choose to search against. You can then build your search 
+the *Data type* you choose to search against. You can then build your search 
 query to specify what data you are looking for and select what fields you want to 
 retrieve from your search. There are additional options to include/exclude specific  
 datasets as well as filter the number of results you wish to return.
