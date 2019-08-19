@@ -47,9 +47,9 @@ interactively drag the box or circle over the desired region to automatically fi
 the location range.
 
 These rules can be grouped and nested within AND or OR logical statements. 
-For example, a query for all metagenomic analyses where the sample was 
-collected after 01 Jan 2019 and the environmental material is either dental or 
-saliva would look as follows:
+For example, a query for *all metagenomic analyses where the sample was 
+collected after 01 Jan 2019 AND the environmental material is either dental OR 
+saliva* would look as follows:
 
 .. image:: images/example-query.png
 
