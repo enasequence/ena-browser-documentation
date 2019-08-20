@@ -8,6 +8,7 @@ Moving away from the release
 ..DCP-2173 Partitioning from report improvements. Ability to obtain specific versions.
 ..DCO-2172 Add zip download option for the new sequence, coding and non-coding data types
 ..DCP-2172 Create new merged data types sequence coding and non-coding
+..DCP-1955 Data file download from GUI (better advanced search download)
 ..Decision on future of FTP update cumulative files. Will need a ticket to make the changes to the FTP file structure and disable flows.
 
 Introduction
@@ -15,13 +16,13 @@ Introduction
 
 The ENA is retiring its periodic assembled/annotated sequence release in March 2020, the last release will be number 143.
 
-The European Nucleotide Archive (ENA) captures, preserves and presents the world's nucleotide sequence data. Since 1982 the European Nucleotide Archive has made 140 individual releases, providing a quarterly snapshot of ENA assembled/annotated sequence data. During this time, changes to the ways in which users access ENA data, have led us to develop a portfolio of data access tools, such as our daily FTP products and the ENA Browser API, which are currently offered in parallel to the traditional release.  In recent years we have faced growing pressure on the release process in response to increases in data volume and have also seen a shift towards our newer services from the majority of users. Our release process has remained largely unchanged for the last two decades, and following an internal review we have concluded that it is no longer viable for us to continue the current release process as part of our presentation portfolio.
+The European Nucleotide Archive (ENA) captures, preserves and presents the world's nucleotide sequence data. Since 1982 the European Nucleotide Archive has made 140 individual releases, providing a quarterly snapshot of ENA assembled/annotated sequence data. During this time, changes to the ways in which users access ENA data, have led us to develop a portfolio of data access tools, such as our daily FTP products and the ENA Browser API, which are currently offered in parallel to the traditional release. In recent years we have faced growing pressure on the release process in response to increases in data volume and have also seen a shift towards our newer services from the majority of users. Our release process has remained largely unchanged for the last two decades, and following an internal review we have concluded that it is no longer viable for us to continue the current release process as part of our presentation portfolio.
 
 New data is already included in the ENA on a continuous basis and distributed daily from our browser, FTP and RESTful API services. The key change is that we will no longer make an additional separate quarterly release of the assembled/annotated subset of sequences. We will focus our resources on further developing and supporting our continuous distribution presentation products.
 
 As part of the release retirement we will no longer be creating cumulative FTP files in the FTP update folders (e.g. http://ftp.ebi.ac.uk/pub/databases/ena/sequence/update/). These cumulative files tracked daily changes in between release cycles and thus cannot continue to be produced sustainably. Release 143 will be the last available in the release folder (available here once released http://ftp.ebi.ac.uk/pub/databases/ena/sequence/release/), the update folder will be removed after this last release. Set based sequences have already been removed from the release and will continue to be added to the FTP in their corresponding folders (e.g. http://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/).
 
-After the final release in March 2020 we will be merging the '_release' and '_update' data types for sequence, coding and non-coding. So the data types'sequence_release' and 'sequence_update' will be replaced with the data type 'sequence'. This affects users of our API and browser advanced search services, you will need to use the updated data type end points. The new data types will be available in parallel ahead of the switchover so we advise switching ahead of March 2020.
+After the final release in March 2020 we will be merging the '_release' and '_update' data types for sequence, coding and non-coding. So the data types'sequence_release' and 'sequence_update' will be replaced with the data type 'sequence'. This affects users of our API and browser advanced search services, you will need to use the updated data type end points. The new data types will be available in parallel ahead of the switchover, so we advise switching ahead of March 2020.
 
 The following guide has been created to assist users in moving away from the release. This guide outlines accessing assembled/annotated sequences, guidance on how to identify data based on a last updated timestamp and advice for establishing your own mirroring procedures using our portfolio of other access services. 
 
@@ -48,16 +49,22 @@ curl -X GET "https://www.ebi.ac.uk/ena/browser/api/fasta/BN000065?download=true&
 ..Update the data type to sequence in below examples once DCP-2172 is complete
 The ENA Browser API also allows the user to conduct a search for multiple Assembled/annotated sequences records and download them. In this example searching the sequence data type for human data distributed or updated since 19th August 2019:
 In EMBL format
+
 .. code:: wget
 wget 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence_update&query=tax_eq(9606)%20AND%20last_updated%3C%3D2019-08-18&limit=5' -O embl.txt
+
 or
+
 .. code:: curl
 curl 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence_update&query=tax_eq(9606)%20AND%20last_updated%3C%3D2019-08-18&limit=5' -o embl.txt
 
 In FASTA format
+
 .. code:: wget
 wget 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=tax_eq(9606)%20AND%20last_updated%3C%3D2019-08-18&limit=5' -O fasta.txt
+
 or
+
 .. code:: curl
 curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=tax_eq(9606)%20AND%20last_updated%3C%3D2019-08-18&limit=5' -o fasta.txt
 
@@ -77,30 +84,32 @@ The release folders, for example the sequence release folder (http://ftp.ebi.ac.
 
 ENA Browser
 -----------
-For non-programmatic users, and for programatic users wanting assistance with constructing more complex API queries. The 
-assembled/annotated sequences are Also available from the `ENA browser <https://www.ebi.ac.uk/ena/browser/home>`_.
+For the majority of use cases we would recommend utilising the `ENA Browser API <https://www.ebi.ac.uk/ena/browser/api/>`_ for obtaining assembled/annotated sequences, however these are also available to search and download from the `ENA browser <https://www.ebi.ac.uk/ena/browser/home>`_. The advanced search service documented here is also useful for assistance with constructing complex API queries, particularly if using the graphical interface to construct the query and then using the "Copy Curl Request" button.
 
-This provides direct access by accession, with subsequent option for download in EMBL (text) or Fasta format, for example https://www.ebi.ac.uk/ena/browser/view/BN000065
+The `ENA browser <https://www.ebi.ac.uk/ena/browser/home>`_ provides direct access to sequences by accession, with subsequent option for download in EMBL (text) or FASTA format, for example see https://www.ebi.ac.uk/ena/browser/view/BN000065
 
-Can also utilise the ENA Browser search interfaces, the `ENA advanced search <https://www.ebi.ac.uk/ena/browser/advanced-search>`_ most likely to be appropriate in this case.
+The `ENA browser <https://www.ebi.ac.uk/ena/browser/home>`_ also provides an `ENA advanced search <https://www.ebi.ac.uk/ena/browser/advanced-search>`_ for searching for appropriate assembled/annotated sequences for download.
 
-Detailed guidance on the usage of advanced search is available in `our advanced search documentation <https://ena-browser-docs.readthedocs.io/en/latest/browser/search/advanced.html>`_, but briefly this service would allow you to
-1. Select an assembled/annotated sequence endpoint such as 'sequence', 'coding' or 'non-coding'.
-2. Be as specific as possible with constructing a query from the available filters such as taxon, last updated and geographic information.
-3. 
+Detailed guidance on the usage of advanced search is available in `our advanced search documentation <https://ena-browser-docs.readthedocs.io/en/latest/browser/search/advanced.html>`_, but briefly to obtain assembled/annotated sequences using this service:
+1. Start an advanced search at https://www.ebi.ac.uk/ena/browser/advanced-search
+1. Select an assembled/annotated sequence data type such as 'sequence', 'coding' or 'non-coding'.
+2. Recommend that you be as specific as possible with constructing a query to limit the resulting dataset to your needs from the available filters. Key filters include:
+  - limiting by date. Database record -> last updated
+  - taxon. Taxonomy and related -> NCBI taxonomy.
+3. (Optional) You can also use inclusion and exclusion lists of accessions, alter the returned result fields and limit the number of records returned.
+4. Once you have run your query you can select to download the data in either EMBL or FASTA format.
+5. (Optional) If desired you can copy your query for use with the ENA APIs using the "Copy Curl Request" button.
+6. (Optional) You can save this query for future use, by saving it to your Rulespace account using the 'Save To Rulespace' button, please refer to this `guide for more information <>`_.
 
-
-.. is the download all button live?
-
-
+..update with new download instructions when available, being developed under DCP-1955.
 
 How to identify data based on a last updated timestamp
 ======================================================
 A typical use of the release was to obtain data changes since a given timestamp.
 
 ..Example of supplying timestamp.
-.. code:: curl
 
+.. code:: curl
 curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=last_updated%3C%3D2019-08-18&limit=5' -o fasta.txt
 
 You can also provide a date limiter to give a specific range rather than all data to this date
