@@ -8,7 +8,6 @@ Moving away from the release
 ..DCP-2173 Partitioning from report improvements. Ability to obtain specific versions.
 ..DCO-2172 Add zip download option for the new sequence, coding and non-coding data types
 ..DCP-2172 Create new merged data types sequence coding and non-coding
-..DCP-1955 Data file download from GUI (better advanced search download)
 ..Decision on future of FTP update cumulative files. Will need a ticket to make the changes to the FTP file structure and disable flows.
 
 Introduction
@@ -51,17 +50,17 @@ The ENA Browser API also allows the user to conduct a search for multiple Assemb
 In EMBL format
 
 .. code:: wget
-wget 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence_update&query=tax_eq(9606)%20AND%20last_updated%3C%3D2019-08-18&limit=5' -O embl.txt
+wget 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence_update&query=tax_eq(9606)%20AND%20last_updated%3E%3D2019-08-18&limit=5' -O embl.txt
 
 or
 
 .. code:: curl
-curl 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence_update&query=tax_eq(9606)%20AND%20last_updated%3C%3D2019-08-18&limit=5' -o embl.txt
+curl 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence_update&query=tax_eq(9606)%20AND%20last_updated%3E%3D2019-08-18&limit=5' -o embl.txt
 
 In FASTA format
 
 .. code:: wget
-wget 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=tax_eq(9606)%20AND%20last_updated%3C%3D2019-08-18&limit=5' -O fasta.txt
+wget 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=tax_eq(9606)%20AND%20last_updated%3E%3D2019-08-18&limit=5' -O fasta.txt
 
 or
 
@@ -101,23 +100,32 @@ Detailed guidance on the usage of advanced search is available in `our advanced 
 5. (Optional) If desired you can copy your query for use with the ENA APIs using the "Copy Curl Request" button.
 6. (Optional) You can save this query for future use, by saving it to your Rulespace account using the 'Save To Rulespace' button, please refer to this `guide for more information <>`_.
 
-..update with new download instructions when available, being developed under DCP-1955.
-
 How to identify data based on a last updated timestamp
 ======================================================
-A typical use of the release was to obtain data changes since a given timestamp.
+One common usage of the ENA release was to obtain all assembled/annotated sequence data changes since the last release, eother an entire release or by using the incremental update folders. This can be fully replicated in the `ENA Browser API <https://www.ebi.ac.uk/ena/browser/api/>`_ and `ENA Browser advanced search <https://www.ebi.ac.uk/ena/browser/advanced-search>`_  by using the "last_updated" query filter with a date value.
 
-..Example of supplying timestamp.
+For the `ENA Browser API <https://www.ebi.ac.uk/ena/browser/api/>`_ search endpoint, you can include the 'last_updated' filter and provide a timestamp. This is essentially performing a less than equal search, so will provide all records that are new or have been updated from the provided date to the present day). It is recomended that you further customise the query with further filters (for example taxon or geographic) to avoid unesserily downloading data you do not require.
+
+Example in FASTA format
 
 .. code:: curl
-curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=last_updated%3C%3D2019-08-18&limit=5' -o fasta.txt
+curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=last_updated%3E%3D2019-08-18&limit=5' -o fasta.txt
 
-You can also provide a date limiter to give a specific range rather than all data to this date
+or in EMBL format
 
-..Example
+.. code:: curl
+curl 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence_update&query=last_updated%3E%3D2019-08-18&limit=5' -o embl.txt
 
-.. Give link for more information on any API when DCP-2176 is complete
+You can also provide multiple timestamp filters to give a specific from and to date range, rather than all data to this date, for example data for the first 5 days of August 2019:
 
+.. code:: curl
+curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05&limit=5' -o fasta.txt
+
+We have added limits to the above examples to only return 5 records, remove this under normal use. You can search using the sequence, coding or non-coding data type endpoints. In general when using the API search it is important to be as specific as possible with your query to save on downloading sequences that you do not require.
+
+.. Give link for more information on API when DCP-2176 is complete
+
+For the `ENA Browser advanced search <https://www.ebi.ac.uk/ena/browser/advanced-search>`_ the 'last_updated' filter can be included in your query. It is located in the Database record filter section.
 
 Establishing your own mirroring procedures
 ==========================================
