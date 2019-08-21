@@ -127,8 +127,40 @@ We have added limits to the above examples to only return 5 records, remove this
 
 For the `ENA Browser advanced search <https://www.ebi.ac.uk/ena/browser/advanced-search>`_ the 'last_updated' filter can be included in your query. It is located in the Database record filter section.
 
-Establishing your own mirroring procedures
-==========================================
+..consider complete section on reproducibility of queries
+
+Establishing your own release mirroring procedures - Conducting your own release
+================================================================================
+This section covers the establishment of a mirroring of ENA assembled/annotated sequence without the ENA release. Successful mirroring includes the following concepts:
+- Data provenance. Track the accessions obtained in your mirroring, so that the data can be obtained again in future.
+- Periodic release. Obtain ENA assembled/annotated sequence data from a defined last updated timestamp.
+- Data specificity. By preference use a filtered query to only obtain the data you need, unless you really do need to mirror everything.
+- Recaptuting same data in future. Instructions for you or your users to use a summary file that you create to obtain the same dataset in future.
+
+This equates to utilsing two seperate ENA API services:
+- The Data Discovery API to obtain a summary for data provenance
+- Teh Browser API to obtain the data most efficntly.
+
+Data provenance
+---------------
+
+Periodic release and data specificity
+---------------
+
+Instrucutions for verifying changes since you conducted your release
+--------------------------------------------------------------------
+
+This is important step as you need to be aware of any sequences that have been killed, as these will not appear in the new data aquistion. 
+
+..provide details on the report
+
+Instructions for obtaining same specific versions of sequences obtained in your release
+---------------------------------------------------------------------------------------
+
+..provide details on the how to do this.
+
+Note that killed sequences will no longer be available.
+
 .. Use API or advanced search to create a query with a to and from date.
 
 ..Optional, Start portal API to get accessions. If you customise the field output make sure you include sequence version.
