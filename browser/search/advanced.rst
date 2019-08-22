@@ -68,7 +68,7 @@ of the main datatype you are searching against. If you wish to customise the
 metadata which your search will return, you can manually select your search 
 return fields from a list of all indexed fields for the specified datatype.
 
-Select and Order Fields
+Select and order fields
 -----------------------
 
 To select fields you would like returned from your search, drag across any 
