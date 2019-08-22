@@ -68,6 +68,9 @@ of the main datatype you are searching against. If you wish to customise the
 metadata which your search will return, you can manually select your search 
 return fields from a list of all indexed fields for the specified datatype.
 
+Select and Order Fields
+-----------------------
+
 To select fields you would like returned from your search, drag across any 
 desired fields from the **Available Fields** list to the **Selected Fields** 
 list. Alternatively, use the arrow buttons in the middle to move fields across 
@@ -77,8 +80,11 @@ The order of the **Selected Fields** list will define the order that you
 receive those metadata from your search. To specify the return order of these 
 fields, you can drag and drop these into the desired order.
 
-In some cases, a 'field set' will be available. This is a pre-defined set of 
-fields that can be returned together. For example, for the analysis datatype, 
+Field sets
+----------
+
+Field sets are a pre-defined set of fields that can be returned together and 
+are available for some data types. For example, for the analysis datatype, 
 you can toggle the 'Submitted Files' field set which can be used to return 
 all relavent fields relating to the original set of submitted files (e.g. 
 this set includes the aspera, ftp and galaxy links for the submitted files, 
