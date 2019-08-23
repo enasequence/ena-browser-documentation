@@ -6,7 +6,7 @@ Introduction
 ============
 
 Rulespace can be used to save, share and re-run custom search queries generated from the 
-`ENA Advanced Search<https://www.ebi.ac.uk/ena/browser/advanced-search>`_. 
+`ENA Advanced Search <https://www.ebi.ac.uk/ena/browser/advanced-search>`_. 
 
 Log in to access and manage your set of saved rules.
 
@@ -17,7 +17,7 @@ The Authentication, Authorisation and Profile service (AAP) provides a central l
 for multiple different services at EMBL-EBI (and can be used by other services and 
 organisations as required).
 
-You can register for an AAP account `here<https://aai.ebi.ac.uk/registerUser>`_.
+You can register for an AAP account `here <https://aai.ebi.ac.uk/registerUser>`_.
 
 Log in using an Elixir Account
 ==============================
@@ -28,13 +28,13 @@ LinkedIn, Google account or ORCID).
 
 To log in with ELIXIR, you first need to register for an ELIXIR ID.
 
-You can register with ELIXIR `here<https://elixir-europe.org/register>`_ .
+You can register with ELIXIR `here <https://elixir-europe.org/register>`_ .
 
 Create a Rule
 =============
 
 To create a rule, you need to create a custom search query using the 
-`ENA Advanced Search<https://www.ebi.ac.uk/ena/browser/advanced-search>`_ service. 
+`ENA Advanced Search <https://www.ebi.ac.uk/ena/browser/advanced-search>`_ service. 
 Follow the step by step guide on creating a custom search query and defining the fields 
 you want returned from your search.
 
@@ -58,12 +58,12 @@ itself. This can be used to programmatically access information about the search
 the rule as well as information on when it was most recently updated.
 
 3. **The Rule ID** - you can copy and share your rule ID which can be used to repeat the search 
-you have saved in the `ENA Advanced Search<https://www.ebi.ac.uk/ena/browser/advanced-search>`_ 
+you have saved in the `ENA Advanced Search <https://www.ebi.ac.uk/ena/browser/advanced-search>`_ 
 service.
 
 4. **The Rule Name** - all rules have to be saved under a *unique name* so you can also copy and 
 share your Rule name which can then be used to repeat your saved search in the 
-`ENA Advanced Search<https://www.ebi.ac.uk/ena/browser/advanced-search>`_ service.
+`ENA Advanced Search <https://www.ebi.ac.uk/ena/browser/advanced-search>`_ service.
 
 *Please note: Whenever the results of a Rulespace search are accessed, the search is performed 
 again, live each time, so if data within the archive has changed since the last search, the results 
@@ -77,4 +77,4 @@ The features of the Rulespace service can also be accessed directly via the API 
 https://www.ebi.ac.uk/ena/rulespace/api/
 
 For more information on the Rulespace API service, you can 
-access the API documentation `here<https://www.ebi.ac.uk/ena/rulespace/api/doc>`_.
+access the API documentation `here <https://www.ebi.ac.uk/ena/rulespace/api/doc>`_.
