@@ -5,61 +5,76 @@ Rulespace
 Introduction
 ============
 
-The Rulespace service supports the creation & management of user-controlled rules &
-metadata relating to these rules that are used to define shareable searches on services such as the ENA Discovery API.
-Rules can specify metadata filters, expressed in a structured query language, and lists of accessions
-for inclusion/exclusion. The results matching the search parameters can be further customised by which fields are
-returned and the number of rows etc.
+Rulespace can be used to save, share and re-run custom search queries generated from the 
+`ENA Advanced Search<https://www.ebi.ac.uk/ena/browser/advanced-search>`_. 
 
-Rulespace components
-====================
+Log in to access and manage your set of saved rules.
 
-1. **A RESTful read/write API**
-    Allows the creation and editing of Rules programmatically, and the retrieval of existing Rules by Id or unique name
+Log in using an AAP Account
+===========================
 
-2. **A Graphical User Interface**
-    This component in the ENA Browser allows users to create, view and edit rules with assistance. This fully integrates with the Advanced Search interface for easily capturing Rules from searches.
+The Authentication, Authorisation and Profile service (AAP) provides a central log-in 
+for multiple different services at EMBL-EBI (and can be used by other services and 
+organisations as required).
 
-The Rulespace system can be accessed and managed using 2 authentication options.
+You can register for an AAP account `here<https://aai.ebi.ac.uk/registerUser>`_.
 
-Authentication using AAP Account
-================================
+Log in using an Elixir Account
+==============================
 
-The Authentication, Authorisation and Profile service (AAP) provides a central identity and role management function for different services at EMBL-EBI and can be used by other services and organisations as required. The service allows the management of permissions and attributes through domains (or groups) to be coordinated in a single point across a range of services.
+Logging in with your ELIXIR account enables you to log in to Rulespace use your 
+home or organisation credentials (including the options to log in with your 
+LinkedIn, Google account or ORCID).
 
-How Do I Register with AAP?
----------------------------
+To log in with ELIXIR, you first need to register for an ELIXIR ID.
 
-Create an AAP account by registering at `AAP <https://aai.ebi.ac.uk/registerUser>`_ and fill out the user form.
+You can register with ELIXIR `here<https://elixir-europe.org/register>`_ .
 
-.. image:: images/aap-form.png
+Create a Rule
+=============
 
-Authentication using Elixir Account
-===================================
+To create a rule, you need to create a custom search query using the 
+`ENA Advanced Search<https://www.ebi.ac.uk/ena/browser/advanced-search>`_ service. 
+Follow the step by step guide on creating a custom search query and defining the fields 
+you want returned from your search.
 
-The ELIXIR Authentication and Authorisation Infrastructure (AAI) enables researchers to use their home organisation credentials or community or commercial identities (e.g. ORCID, LinkedIn) to sign in and access data and services they need.
-    
-How Do I Create an Elixir Account?
-----------------------------------
+When you are happy with your search click *Search* then, on the results page you 
+have the option to save the search to Rulespace:
 
-Create an ELIXIR ID that you can use to access services across ELIXIR. You can register with an account you already use, like your institution account, ORCID or Google account.
+.. image:: images/rulespace-save.png
 
-Steps to register with Elixir
+Share a Rule
+============
 
-1.  Visit `ELIXIR <https://elixir-europe.org/register>`_ register page.
+You can share your rules with others by providing them with one of four following options:
 
-2.  Select your preferred identity providers.
+1. **The Search URL** - you can copy and share a direct URL to the results from your rule 
+search. This URL links directly to the resulting metadata in the specified format (TSV or JSON) 
+(not to the results page) so can be used to programmatically access the results of the search if 
+you wish. 
 
-.. image:: images/elixir-form.png
+2. **The Rule URL** - you can copy and share a direct URL to the JSON object of the rule 
+itself. This can be used to programmatically access information about the search parameters of 
+the rule as well as information on when it was most recently updated.
 
-3.  Sign-in to your selected identity provider e.g. using your Google account
+3. **The Rule ID** - you can copy and share your rule ID which can be used to repeat the search 
+you have saved in the `ENA Advanced Search<https://www.ebi.ac.uk/ena/browser/advanced-search>`_ 
+service.
 
-4.  Enter your username.
+4. **The Rule Name** - all rules have to be saved under a *unique name* so you can also copy and 
+share your Rule name which can then be used to repeat your saved search in the 
+`ENA Advanced Search<https://www.ebi.ac.uk/ena/browser/advanced-search>`_ service.
 
-.. image:: images/google-user.png
+*Please note: Whenever the results of a Rulespace search are accessed, the search is performed 
+again, live each time, so if data within the archive has changed since the last search, the results 
+can vary since the search was last run.*
 
-4.  Enter your password and grant permissions.
+Accessing Rulespace Programmatically
+====================================
 
-.. image:: images/google-password.png
+The features of the Rulespace service can also be accessed directly via the API at:
 
-5.  You are now registered with Elixir.
+https://www.ebi.ac.uk/ena/rulespace/api/
+
+For more information on the Rulespace API service, you can 
+access the API documentation `here<https://www.ebi.ac.uk/ena/rulespace/api/doc>`_.
