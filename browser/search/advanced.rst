@@ -93,6 +93,18 @@ the size of the files (in bytes) and the files' md5 checksums).
 Data Filters
 ============
 
+Offset
+------
+
+You can specify an offset for the number of records you would like to skip
+from your search. It helps to fetch the result set beyond the maximum number
+of records.
+
+If you not wish to skip the records, leave this field blank or enter '0'.
+
+Limit
+-----
+
 You can specify a data limit for the maximum number of records you would like 
 to retrieve from your search (up to a maximum of 100 000).
 
