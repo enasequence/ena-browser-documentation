@@ -28,7 +28,7 @@ LinkedIn, Google account or ORCID).
 
 To log in with ELIXIR, you first need to register for an ELIXIR ID.
 
-You can register with ELIXIR `here <https://elixir-europe.org/register>`_ .
+You can register with ELIXIR `here <https://elixir-europe.org/register>`_.
 
 Create a Rule
 =============
