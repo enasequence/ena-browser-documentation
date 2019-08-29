@@ -144,12 +144,13 @@ Pre-Conditions
 --------------
 
 To see file download columns in your results, you have to search against either 
-the analysis or read_run data types and the relevant fields that end with '_ftp' 
-must be selected.
+the analysis or read_run data types and select the relevant fields that end with '_ftp'. 
 
 For example: 
-Data Type = analysis and fields = submitted_ftp
-Data Type = read_run and fields = fastq_ftp / sra_ftp / submitted_ftp
+
+**Data Type** = analysis and **fields** = submitted_ftp
+
+**Data Type** = read_run and **fields** = fastq_ftp / sra_ftp / submitted_ftp
 
 Download files
 --------------
