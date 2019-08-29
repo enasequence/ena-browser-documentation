@@ -101,8 +101,8 @@ The browser table display will only show up to 100 000 results but for large
 datasets, you can see all results if you download the report or copy and run 
 the curl request.
 
-Download results
-================
+Download results - metadata
+===========================
 
 Download results as an XML
 --------------------------
@@ -122,3 +122,41 @@ Download results report
 This feature allows you to download all the results from your search in the 
 format of a JSON or TSV file. Any data filters set by you will apply here. If you 
 specified to return the full set, you can download all the results here.
+
+Download results - files
+========================
+
+Pre-Conditions
+--------------
+
+To see file download columns in your results, you have to search against either 
+the analysis or read_run data types and the relevant fields that end with '_ftp' 
+must be selected.
+
+For example: 
+Data Type = analysis and fields = submitted_ftp
+Data Type = read_run and fields = fastq_ftp / sra_ftp / submitted_ftp
+
+Download files
+--------------
+
+You can download the data files resulting from your search in a number of ways:
+
+1. You can download the file directly from its link in the table.
+
+2. You can download a selection of files by selecting their check boxes then 
+   using the 'Download selected files' button (choosing to download these files 
+   in a single zip format with the 'Download files as ZIP' toggle switch.
+   
+3. You can download all files resulting from your search by clicking the icon 
+   in the table collumn header:
+   
+   .. image:: images/download-all.png
+   
+*Please note: When downloading all files resulting from your search, if there 
+are large file sizes then there is a risk of incomplete download.*
+
+If you wish to exclude any files from your search before you download the set 
+of resulting files, you can go back and define these in the "Exclude Accessions" 
+stage then repeat the search. 
+
