@@ -97,10 +97,12 @@ Offset
 ------
 
 You can specify an offset for the number of records you would like to skip
-from your search. It helps to fetch the result set beyond the maximum number
-of records.
+from the beginning of your search. This can be used to fetch the results 
+available beyond the maximum number of records that can be fetched in one go
+(100 000).
 
-If you not wish to skip the records, leave this field blank or enter '0'.
+If you do not wish to skip any records, you can leave this field blank or 
+enter an offset of '0'.
 
 Limit
 -----
@@ -110,7 +112,7 @@ to retrieve from your search (up to a maximum of 100 000).
 
 If you wish to fetch the full result set, leave this field blank or enter '0'. 
 The browser table display will only show up to 100 000 results but for large 
-datasets, you can see all results if you download the report or copy and run 
+datasets, you can see all the results if you download the report or copy and run 
 the curl request.
 
 Download results - metadata
