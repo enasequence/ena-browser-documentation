@@ -175,7 +175,7 @@ For example:
 Download data files
 -------------------
 
-You can download the data files resulting from your search in a number of ways:
+You can download the data files resulting from your search in one of three ways:
 
 1. You can download a single file directly from its link in the table.
 
@@ -192,7 +192,12 @@ You can download the data files resulting from your search in a number of ways:
 *Please note: When downloading all files resulting from your search, if there 
 are large file sizes then there is a risk of incomplete download.*
 
-If you wish to exclude any files from your search before you download the set 
-of resulting files, you can go back and define these in the "Exclude Accessions" 
-stage then repeat the search. 
+Tips:
+~~~~~
 
+- If you wish to exclude any files from your search before you download the set 
+  of resulting files, you can go back and define these in the "Exclude Accessions" 
+  stage then repeat the search. 
+
+- For large downloads you may wish to change the default download location of your browser. 
+  The methods for how to do this are browser specific.
