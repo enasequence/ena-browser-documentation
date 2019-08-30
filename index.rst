@@ -24,6 +24,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    browser/taxon_portal
    browser/search
    browser/rulespace
+   browser/support
    
 .. Extra
 .. *****
