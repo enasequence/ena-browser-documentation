@@ -21,7 +21,7 @@ An ENA record can be one of the following types:
 - **Assembly:** These records represent an entire genome or transcriptome assembly which could 
   be made up of contigs, scaffolds or full chromosomes.
 - **Sequence:** These records represent assembled or annotated sequences generated from 
-  sequencing data. These can anything from coding to non-coding regions or barcoding sequences.
+  sequencing data. These can anything from coding and non-coding regions to full chromosomes.
 - **Taxon:** These records represent taxa from the NCBI taxonomy database and hold information 
   on the organism that the record was derived from or deduced to be. All samples have a taxon 
   and as a result, all associated data is associated with a taxon record.
@@ -48,56 +48,41 @@ files or publications associated with it.
 Any links that looks like *accessions* (a series of letters then numbers) will take you 
 to an associated record.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Navigation and Cross References
 ===============================
-
+*coming soon*
 
 
 Read Files
 ==========
-
+*coming soon*
 
 
 Analysis Files
 ==============
-
+*coming soon*
 
 
 Publications
 ============
-
+*coming soon*
 
 
 Component Projects
 ==================
-
+*coming soon*
 
 
 Portal Links
 ============
-
+*coming soon*
 
 
 Tax Tree
 ========
-
+*coming soon*
 
 
 Sequence Versions
 =================
-
+*coming soon*
