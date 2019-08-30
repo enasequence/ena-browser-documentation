@@ -22,6 +22,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    :maxdepth: 1
 
    browser/home
+   browser/submit
    browser/taxon_portal
    browser/search
    browser/rulespace
