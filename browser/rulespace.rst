@@ -5,13 +5,23 @@ Rulespace
 Introduction
 ============
 
+Explore your saved Rules with Rulespace. From here you can create a new rule or 
+share and re-run your saved rules generated from the 
+`ENA Advanced Search <https://www.ebi.ac.uk/ena/browser/advanced-search>`_.  
+
+Log into Rulespace
+==================
+
+What is Rulespace?
+------------------
+
 Rulespace can be used to save, share and re-run custom search queries generated from the 
 `ENA Advanced Search <https://www.ebi.ac.uk/ena/browser/advanced-search>`_. 
 
 Log in to access and manage your set of saved rules.
 
 Log in using an AAP Account
-===========================
+---------------------------
 
 The Authentication, Authorisation and Profile service (AAP) provides a central log-in 
 for multiple different services at EMBL-EBI (and can be used by other services and 
@@ -20,7 +30,7 @@ organisations as required).
 You can register for an AAP account `here <https://aai.ebi.ac.uk/registerUser>`_.
 
 Log in using an Elixir Account
-==============================
+------------------------------
 
 Logging in with your ELIXIR account enables you to log in to Rulespace use your 
 home or organisation credentials (including the options to log in with your 
