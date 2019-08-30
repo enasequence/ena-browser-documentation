@@ -115,30 +115,50 @@ The browser table display will only show up to 100 000 results but for large
 datasets, you can see all the results if you download the report or copy and run 
 the curl request.
 
-Download results - metadata
-===========================
+Download ENA records
+====================
 
-Download results as an XML
---------------------------
+Here you can download the ENA records resulting from your search.
 
-This feature allows you to download all the ENA metadata objects that resulted 
-from your search in XML format.
+This will download the whole ENA record stored for each of the results. If you 
+wish to only download the fields returned that were specified in your search, 
+use one of the **Download report** options (JSON or TSV).
 
-This will download **all** the metadata for each object in the standard ENA XML 
+XML records
+-----------
+
+XML records are available for all standard metadata objects held within ENA (all 
+results with the exception of sequence records).
+
+XML records hold **all** the metadata for each object concatonated into a single 
+bulk XML file. These XML metadata records are formatted in the standard ENA XML 
 format (the same XML format that is used for data submission and for data to be 
-displayed in the browser). If you wish to only download the fields returned that 
-were specified in your search, use one of the **Download report** options 
-(JSON or TSV).
+displayed in the browser).
+
+FASTA records
+-------------
+
+FASTA records hold all sequences resulting from your search concatonated into one 
+FASTA file. FASTA records are only available when searching against sequence 
+datatypes.
+
+TEXT records
+------------
+
+TEXT records hold all sequences resulting from your search and their annotation (if 
+available) concatonated into a single EMBL flat file. TEXT records are only available 
+when searching against sequence datatypes.
+
 
 Download results report
------------------------
+=======================
 
 This feature allows you to download all the results from your search in the 
 format of a JSON or TSV file. Any data filters set by you will apply here. If you 
 specified to return the full set, you can download all the results here.
 
-Download results - files
-========================
+Download associated data files
+==============================
 
 Pre-Conditions
 --------------
@@ -152,8 +172,8 @@ For example:
 
 **Data Type** = read_run and **fields** = fastq_ftp / sra_ftp / submitted_ftp
 
-Download files
---------------
+Download data files
+-------------------
 
 You can download the data files resulting from your search in a number of ways:
 
