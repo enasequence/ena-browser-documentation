@@ -23,6 +23,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
 
    browser/home
    browser/submit
+   browser/ena-record
    browser/taxon_portal
    browser/search
    browser/rulespace
