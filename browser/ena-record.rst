@@ -76,10 +76,12 @@ submission Project.
 Organisation of a Project in ENA
 --------------------------------
 
+When data is submitted to the archive, the data submitter establishes relationships 
+between each record in a research project following the ENA metadata model:
+
 .. image:: images/metadata-model.png
 
-When data is submitted to the archive, the data submitter establishes relationships 
-between the records so someone viewing the data can easily navigate between the records. 
+This is so someone viewing the data can easily navigate between the records. 
 This makes it easy to explore the data generated from biological samples which were 
 sequenced/analysed within the same research project.
 
@@ -127,7 +129,8 @@ columns' expandable menu.
 Publications
 ============
 
-Explore publications that either cite the record or where the record was generated.
+Explore publications that either cite the record or are document the research 
+where the record was generated.
 
 This view provides links to the DOI or in some cases, a direct link to the PDF or article in 
 Europe PMC.
@@ -145,34 +148,52 @@ a collaborative research effort.
 
 Portal Links
 ============
-*coming soon*
 
+This view provides a summary of all data associated with this record. Any submission in 
+ENA that is associated with this record is available here.
+
+This view is only available for three ENA record types:
+
+**Study**: Here you can find all components of the project including any sequence or 
+assembly records associated with the project.
+
+**Sample**: Here you can find all sequencing records or analyses associated with the 
+sample including assembly or sequence records. This view shows any third party uses 
+of the sequencing data registered with ENA.
+
+**Taxon**: Here you can see a summary of all ENA registered with that particular 
+taxon. This view also shows a summary of any records registered with descendant taxa.
 
 Tax Tree
 ========
-*coming soon*
 
+Here you can view the full tax tree of this taxon record.
 
-Sequence Versions
-=================
-*coming soon*
+From this view you can access all taxon records within this tax tree and explore ENA 
+records that are registered with related taxa.
 
+Click the arrows to expand the tree and explore the full lineage of the taxon.
 
 Assembly Versions
 =================
-*coming soon*
+
+If this assembly has been updated, you can view the past assembly versions here.
 
 
 Assembly Statistics
 ===================
-*coming soon*
 
+Assembly statistics are generated on submission for all assemblies submitted to ENA.
 
 Chromosomes
 ===========
 
-*coming soon*
-
+When an assembly is is declared as assembled to full chromosomal level on 
+submission, chromosome sequences are generated for each chromosome submitted 
+in the assembly.
+ 
+These chromosomes are available as individual sequence records and can be 
+explored in full here.
 
 BlobToolKit
 ===========
