@@ -129,7 +129,7 @@ columns' expandable menu.
 Publications
 ============
 
-Explore publications that either cite the record or are document the research 
+Explore publications that either cite the record or document the research 
 where the record was generated.
 
 This view provides links to the DOI or in some cases, a direct link to the PDF or article in 
@@ -161,7 +161,7 @@ assembly records associated with the project.
 sample including assembly or sequence records. This view shows any third party uses 
 of the sequencing data registered with ENA.
 
-**Taxon**: Here you can see a summary of all ENA registered with that particular 
+**Taxon**: Here you can see a summary of all ENA records registered with that particular 
 taxon. This view also shows a summary of any records registered with descendant taxa.
 
 Tax Tree
