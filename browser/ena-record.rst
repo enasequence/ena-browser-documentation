@@ -105,3 +105,13 @@ Tax Tree
 Sequence Versions
 =================
 *coming soon*
+
+
+Assembly Versions
+=================
+*coming soon*
+
+
+Assembly Statistics
+===================
+*coming soon*
