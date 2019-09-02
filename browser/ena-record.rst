@@ -129,7 +129,7 @@ columns' expandable menu.
 Publications
 ============
 
-Explore publications that either cite the record or are document the research 
+Explore publications that either cite the record or document the research 
 where the record was generated.
 
 This view provides links to the DOI or in some cases, a direct link to the PDF or article in 
