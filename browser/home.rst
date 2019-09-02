@@ -18,7 +18,7 @@ Exploring the ENA Browser
 
 From the homepage you can access:
 
-- `Submission Guidelines and Links <https://ena-docs.readthedocs.io/en/latest/submit/general-guide.html>`_
+- `Submission Guidelines and Links <submit.html>`_
 - `The ENA Search Services <search.html>`_
 - `Rulespace <rulespace.html>`_
 - `Our User Support Service <support.html>`_
