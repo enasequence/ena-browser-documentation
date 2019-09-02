@@ -69,28 +69,76 @@ Record types
 
 Navigation and Cross References
 ===============================
-*coming soon*
 
+From here you can navigate through all associated records that were submitted within the same 
+submission Project.
+
+Organisation of a project in ENA
+--------------------------------
+
+.. image:: images/metadata-model.png
+
+When a user submits data to the archive, they establish relationships between the records they 
+submit so someone viewing the data can easily navigate between the data types. This makes it easy 
+to explore the data generated from biological samples which were sequenced/analysed within the same 
+research project.
+
+This view gives a snapshot of the contents of the originally submitted research project 
+and any associated cross-references. For a view showing *all* records held in ENA which 
+are associated with this record (including any third-part analyses), you can see this in the 
+Portal Links tab (available for Project, Sample and Taxon records).
+
+Cross-references
+----------------
+
+From this tab you can also see any links from the record out to external data resources 
+that have used or generate these data which have registered with us as part of ENA's 
+cross-reference service.
 
 Read Files
 ==========
-*coming soon*
+
+Display and download any associated raw read files.
+
+You can download a Report of all the data displayed in the table or download files selected 
+from the table. To download all files in the column, click the download icon in the table 
+header.
+
+To choose additional metadata to add to the table display and report, use the 'Show selected 
+columns' expandable menu.
 
 
 Analysis Files
 ==============
-*coming soon*
+
+Display and download any associated analysis files.
+
+You can download a Report of all the data displayed in the table or download files selected 
+from the table. To download all files in the column, click the download icon in the table 
+header.
+
+To choose additional metadata to add to the table display and report, use the 'Show selected 
+columns' expandable menu.
 
 
 Publications
 ============
-*coming soon*
+
+Explore publications that either cite the record or where the record was generated.
+
+This view provides links to the DOI or in some cases, a direct link to the PDF or article in 
+Europe PMC.
 
 
 Component Projects
 ==================
-*coming soon*
 
+In the case of an **Umbrella Project** (a project which is used to group many related 
+sub-projects) there is the option to explore its Component Projects.
+
+Component projects are the same as other project records in ENA but are grouped under one 
+'umbrella' meaning they will often have the same research motivation and will often represent 
+a collaborative research effort.
 
 Portal Links
 ============
