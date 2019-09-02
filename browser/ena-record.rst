@@ -73,27 +73,30 @@ Navigation and Cross References
 From here you can navigate through all associated records that were submitted within the same 
 submission Project.
 
-Organisation of a project in ENA
+Organisation of a Project in ENA
 --------------------------------
 
 .. image:: images/metadata-model.png
 
-When a user submits data to the archive, they establish relationships between the records they 
-submit so someone viewing the data can easily navigate between the data types. This makes it easy 
-to explore the data generated from biological samples which were sequenced/analysed within the same 
-research project.
-
-This view gives a snapshot of the contents of the originally submitted research project 
-and any associated cross-references. For a view showing *all* records held in ENA which 
-are associated with this record (including any third-part analyses), you can see this in the 
-Portal Links tab (available for Project, Sample and Taxon records).
+When data is submitted to the archive, the data submitter establishes relationships 
+between the records so someone viewing the data can easily navigate between the records. 
+This makes it easy to explore the data generated from biological samples which were 
+sequenced/analysed within the same research project.
 
 Cross-references
 ----------------
 
 From this tab you can also see any links from the record out to external data resources 
-that have used or generate these data which have registered with us as part of ENA's 
-cross-reference service.
+that have used or generate these records as part of their services. These links are generated 
+as part of ENA's cross-reference service and so only show data from resources that are 
+registered with us. You can see more details on what services are 
+registered `here <https://www.ebi.ac.uk/ena/browser/xref>`_.
+
+*Note: This view only gives a snapshot of the associated records submitted as part of the 
+originally submitted research project and any registered cross-references. For a view 
+showing all ENA records which are associated with this record (including any other 
+links to this record within other ENA submission projects), you can see this in the Portal 
+Links tab (available for Project, Sample and Taxon records).*
 
 Read Files
 ==========
