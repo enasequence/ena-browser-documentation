@@ -115,3 +115,9 @@ Assembly Versions
 Assembly Statistics
 ===================
 *coming soon*
+
+
+Chromosomes
+===========
+
+*coming soon*
