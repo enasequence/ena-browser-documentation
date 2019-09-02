@@ -199,3 +199,17 @@ BlobToolKit
 ===========
 
 *coming soon*
+
+Checklist Fields
+================
+
+Sample Checklists are lists of fields that are required/recommended to be used 
+during registration to describe samples (depending on the type of sample).
+
+Explore the mandatory, recommended and optional fields defined as part of this 
+checklist.
+
+You can filter by requirement or by keywords in the field name or description.
+
+In some cases, fields can be restricted by regular expression, a list of text 
+choices, by valid taxonomy or by valid ontology terms.
