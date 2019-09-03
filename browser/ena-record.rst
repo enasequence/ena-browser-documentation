@@ -220,7 +220,7 @@ half the bases of the assembly.
 Chromosomes
 ===========
 
-When an assembly is is declared as assembled to full chromosomal level on 
+When an assembly is is declared as assembled to full chromosome level on 
 submission, chromosome sequences are generated for each chromosome submitted 
 in the assembly.
  
