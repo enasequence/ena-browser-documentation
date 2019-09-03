@@ -149,8 +149,8 @@ Component projects are the same as other project records in ENA but are grouped 
 'umbrella' meaning they will often have the same research motivation and will often represent 
 a collaborative research effort.
 
-Portal Links
-============
+Related ENA Records
+===================
 
 This view provides a summary of all data associated with this record. Any submission in 
 ENA that is associated with this record is available here.
