@@ -274,9 +274,8 @@ You can download the data files resulting from your search in one of three ways:
 1. You can download a single file directly from its link in the table.
 
 2. You can choose a selection of files to download using the available check boxes. 
-   Once you are happy with the selection, you can use the 'Download selected files' 
-   button at the top of the table to download these. If you wish to download these in 
-   a single ZIP format, you can use the 'Download files as ZIP' toggle switch.
+   Once you are happy with the selection, you can either download these as a bundled zip 
+   or as individual file downloads using the links at the top of the table.
    
 3. You can download all files resulting from your search by clicking the icon 
    in the table collumn header:
