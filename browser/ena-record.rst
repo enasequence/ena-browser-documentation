@@ -15,10 +15,9 @@ Exploring an ENA record
 
 All records have a selection of standard, indexed metadata which tells you about the 
 database entry. For example, where it is submitted, basic information on the record's 
-title and description etc.
-
-For more information about this record, you can click *Show More* to access additional data 
-that the data submitter has provided.
+title and description etc. To show the full set of indexed metadata for this record, 
+you can click *Show More*. For additional custom metadata provided by the submitter, 
+you can view this in the ENA record XML.
 
 To explore a record further, you can use the navigation box in the top right of the view 
 to show/hide different additional subsections of information.
