@@ -94,7 +94,7 @@ as part of ENA's cross-reference service and so only show data from resources th
 registered with us. You can see more details on what services are 
 registered `here <https://www.ebi.ac.uk/ena/browser/xref>`_.
 
-*Note: This view only gives a snapshot of the associated records submitted as part of the 
+*Note: This view only gives a view of the associated records submitted as part of the 
 originally submitted research project and any registered cross-references. For a view 
 showing all ENA records which are associated with this record (including any other 
 links to this record within other ENA submission projects), you can see this in the Portal 
@@ -112,6 +112,8 @@ header.
 To choose additional metadata to add to the table display and report, use the 'Show selected 
 columns' expandable menu.
 
+*Note: You can also download files from ENA using `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_. *
+
 
 Analysis Files
 ==============
@@ -125,6 +127,7 @@ header.
 To choose additional metadata to add to the table display and report, use the 'Show selected 
 columns' expandable menu.
 
+*Note: You can also download files from ENA using `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_. *
 
 Publications
 ============

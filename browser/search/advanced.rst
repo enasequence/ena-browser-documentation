@@ -86,37 +86,37 @@ What is in each data type?
 | | contig sets    | | metadata (information about the collected |                     |
 | | (WGS)          | | sample).                                  |                     |
 +------------------+---------------------------------------------+---------------------+
-| | Transcriptome  | | All transcriptome assembly sets in ENA.   | *tsa_set*           |
-| | assembly       | | This datatype can be filtered by sample   |                     | 
-| | contig sets    | | metadata (information about the collected |                     |
-| | (TSA)          | | sample).                                  |                     |
+| | Transcriptome  | | All transcriptome assembly contig sets in | *tsa_set*           |
+| | assembly       | | ENA. This datatype can be filtered by     |                     | 
+| | contig sets    | | sample metadata (information about the    |                     |
+| | (TSA)          | | collected sample).                        |                     |
 +------------------+---------------------------------------------+---------------------+
 | | Nucleotide     | | The most recent snapshot of all assembled | *sequence_release*  |
 | | sequences      | | and annotated sequences publicly          |                     |
-| | (Release)      | | available in ENA on the last release date |                     |
-|                  | | (including high level sequences from      |                     |
-|                  | | assembly submissions e.g.fully assembled  |                     |
-|                  | | chromosomes).                             |                     |
+| | (Release)      | | available in ENA on the last quarterly    |                     |
+|                  | | release date (including high level        |                     |
+|                  | | sequences from assembly submissions e.g.  |                     |
+|                  | | fully assembled chromosomes).             |                     |
 +------------------+---------------------------------------------+---------------------+
 | | Nucleotide     | | Any changes to public assembled and       | *sequence_update*   |
 | | sequences      | | annotated sequences held in ENA since the |                     |
-| | (Update)       | | last release.                             |                     |
+| | (Update)       | | last quarterly release.                   |                     |
 +------------------+---------------------------------------------+---------------------+
 | | Protein coding | | The most recent snapshot of all protein   | *coding_release*    |
 | | sequences      | | coding sequences publicly available in    |                     |
-| | (Release)      | | ENA on the last release date.             |                     |
+| | (Release)      | | ENA on the last quarterly release date.   |                     |
 +------------------+---------------------------------------------+---------------------+
 | | Protein coding | | Any changes to protein coding sequences   | *coding_update*     |
-| | sequences      | | held in ENA since the last release.       |                     |
-| | (Update)       |                                             |                     |
+| | sequences      | | held in ENA since the last quarterly      |                     |
+| | (Update)       | | release.                                  |                     |
 +------------------+---------------------------------------------+---------------------+
 | | Non-coding     | | The most recent snapshot of all non       | *noncoding_release* |
 | | sequences      | | coding sequences publicly available in    |                     |
-| | (Release)      | | ENA on the last release date.             |                     |
+| | (Release)      | | ENA on the last quarterly release date.   |                     |
 +------------------+---------------------------------------------+---------------------+
 | | Non-coding     | | Any changes to non coding sequences       | *noncoding_update*  |
-| | sequences      | | held in ENA since the last release.       |                     |
-| | (Update)       |                                             |                     |
+| | sequences      | | held in ENA since the last quarterly      |                     |
+| | (Update)       | | release.                                  |                     |
 +------------------+---------------------------------------------+---------------------+
 | | Taxonomic      | | All taxa and their tax IDs. Search for a  | *taxon*             |
 | | classification | | specific taxa or look for all taxa below  |                     |
@@ -295,3 +295,5 @@ Tips:
 
 - For large downloads you may wish to change the default download location of your browser. 
   The methods for how to do this are browser specific.
+
+- You can also download files from ENA using `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_.
