@@ -183,7 +183,36 @@ If this assembly has been updated, you can view the past assembly versions here.
 Assembly Statistics
 ===================
 
-Assembly statistics are generated on submission for all assemblies submitted to ENA.
+Assembly statistics are generated for all assemblies submitted to INSDC.
+
+**Total Length** (total sequence length) - total length of all top-level sequences.
+
+**Ungapped Length** (total ungapped length) - total length of all top-level sequences 
+ignoring gaps. Any stretch of 10 or more Ns in a sequence is treated like a gap.
+
+**Chromosomes & Plasmids** (total number of chromosomes and plasmids) - total number 
+of chromosomes, organelle genomes, and plasmids in the assembly.
+
+**Spanned Gaps** - total number of gaps between contigs/scaffolds.
+
+**Unspanned Gaps** - total number of unspanned gaps between scaffolds.
+
+**Regions/Patches/Alternative Loci** - (number of regions with alternate loci or 
+patches) - number of genomic regions that contain one or more alternate loci or 
+patch scaffolds.
+
+**Scaffolds** (number of scaffolds) - number of scaffolds including placed, 
+unlocalized, unplaced, alternate loci and patch scaffolds.
+
+**Scaffold N50** - length such that scaffolds of this length or longer include 
+half the bases of the assembly.
+
+**Contigs** (number of contigs) - total number of sequence contigs in the assembly. 
+Any stretch of 10 or more Ns in a sequence is treated as a gap between two contigs 
+in a scaffold when counting contigs and calculating contig N50 & L50 values.
+
+**Contig N50** - length such that sequence contigs of this length or longer include 
+half the bases of the assembly. 
 
 Chromosomes
 ===========
@@ -198,7 +227,7 @@ explored in full here.
 BlobToolKit
 ===========
 
-*coming soon*
+*help section coming soon*
 
 Checklist Fields
 ================
@@ -209,7 +238,8 @@ during registration to describe samples (depending on the type of sample).
 Explore the mandatory, recommended and optional fields defined as part of this 
 checklist.
 
-You can filter by requirement or by keywords in the field name or description.
+You can filter these fields further by requirement or by keywords in the field 
+name or description.
 
 In some cases, fields can be restricted by regular expression, a list of text 
 choices, by valid taxonomy or by valid ontology terms.
