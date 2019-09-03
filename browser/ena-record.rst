@@ -112,7 +112,7 @@ header.
 To choose additional metadata to add to the table display and report, use the 'Show selected 
 columns' expandable menu.
 
-*Note: You can also download files from ENA using `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_. *
+You can also download files from ENA using `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_.
 
 
 Analysis Files
@@ -127,7 +127,7 @@ header.
 To choose additional metadata to add to the table display and report, use the 'Show selected 
 columns' expandable menu.
 
-*Note: You can also download files from ENA using `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_. *
+You can also download files from ENA using `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_.
 
 Publications
 ============
