@@ -291,6 +291,10 @@ Tips:
 - If you wish to exclude any files from your search before you download the set 
   of resulting files, you can go back and define these in the "Exclude Accessions" 
   stage then repeat the search. 
+  
+- If your browser only downloads the first file of the selected set, this could 
+  be because your browser is not allowing pop-ups. Allow pop-ups to continue with the 
+  download.
 
 - For large downloads you may wish to change the default download location of your browser. 
   The methods for how to do this are browser specific.
