@@ -89,16 +89,16 @@ Cross-references
 ----------------
 
 From this tab you can also see any links from the record out to external data resources 
-that have used or generate these records as part of their services. These links are generated 
-as part of ENA's cross-reference service and so only show data from resources that are 
-registered with us. You can see more details on what services are 
-registered `here <https://www.ebi.ac.uk/ena/browser/xref>`_.
+that have used or generated these records as part of their services. These mappings are compiled 
+as part of ENA's cross-reference service, and so only show data from resources that are 
+registered with us. You can see more details on such
+registered resources `here <https://www.ebi.ac.uk/ena/browser/xref>`_.
 
 *Note: This view only gives a view of the associated records submitted as part of the 
 originally submitted research project and any registered cross-references. For a view 
 showing all ENA records which are associated with this record (including any other 
-links to this record within other ENA submission projects), you can see this in the Portal 
-Links tab (available for Project, Sample and Taxon records).*
+links to this record within other ENA submission projects), you can see this in the Related ENA Records
+tab (available for Project, Sample and Taxon records).*
 
 Read Files
 ==========
