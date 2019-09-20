@@ -271,32 +271,26 @@ Download data files
 
 You can download the data files resulting from your search in one of three ways:
 
-1. You can download a single file directly from its link in the table.
+1. You can download a single file by clicking on its link in the FASTQ FTP, SRA FTP, or SUBMITTED FTP column.
 
-2. You can choose a selection of files to download using the available check boxes. 
-   Once you are happy with the selection, you can either download these as a bundled zip 
-   or as individual file downloads using the links at the top of the table.
+2. You can select one or more files using the check boxes, and either download these as a bundled ZIP file 
+   or as individual files using the "Bundled ZIP" or "Individually" links above the table.
    
-3. You can download all files resulting from your search by clicking the icon 
-   in the table collumn header:
-   
-   .. image:: images/download-all.png
-   
-*Please note: When downloading all files resulting from your search, if there 
-are large file sizes then there is a risk of incomplete download.*
+3. You can download ALL files resulting from your search as a bundled ZIP file by clicking 
+the .. image:: images/download-all.png icon in the collumn header.       
 
 Tips:
 ~~~~~
 
-- If you wish to exclude any files from your search before you download the set 
-  of resulting files, you can go back and define these in the "Exclude Accessions" 
-  stage then repeat the search. 
+- If you wish to exclude any records from your search results before you download all 
+the resulting files, you can go back and list these in the "Exclude Accessions" field 
+and then repeat the search. 
   
-- If your browser only downloads the first file of the selected set, this could 
-  be because your browser is not allowing pop-ups. Allow pop-ups to continue with the 
-  download.
+- If you selected multiple files and clicked the "Individually" link but only the first file is downloading, this could 
+  be because your browser is restricting multiple download pop-ups. Look for a browser warning or confirmation dialog
+  to allow this.
 
-- For large downloads you may wish to change the default download location of your browser. 
-  The methods for how to do this are browser specific.
+- If selesting many files and using the download "Individually" option, you may wish to change 
+the default download location of your browser. Look in your browser settings for this.
 
-- You can also download files from ENA using `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_.
+- You can also download files using a terminal from ENA using `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_.
