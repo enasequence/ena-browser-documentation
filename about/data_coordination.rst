@@ -22,8 +22,4 @@ Current Data Coordination projects include
 .. _`European Sequencing Facility access`: https://www.easi-genomics.eu/home
 
  `Contact us`_ to discuss Data Coordination collaboration
-.. _`Contact us`: https://www.ebi.ac.uk/ena/browser/support
-
-
-
-
+.. _`Contact us`: cochrane@ebi.ac.uk
