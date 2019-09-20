@@ -276,11 +276,9 @@ You can download the data files resulting from your search in one of three ways:
 2. You can select one or more files using the check boxes, and either download these as a bundled ZIP file 
    or as individual files using the "Bundled ZIP" or "Individually" links above the table.
    
-3. You can download ALL files resulting from your search as a bundled ZIP file by clicking the
+3. You can download ALL files resulting from your search as a bundled ZIP file by clicking the download icon in the column header.
 
-.. image:: images/download-all.png 
-
-   icon in the collumn header.       
+.. image:: images/download-all.png
 
 Tips:
 ~~~~~
