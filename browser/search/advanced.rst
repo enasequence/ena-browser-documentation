@@ -276,21 +276,21 @@ You can download the data files resulting from your search in one of three ways:
 2. You can select one or more files using the check boxes, and either download these as a bundled ZIP file 
    or as individual files using the "Bundled ZIP" or "Individually" links above the table.
    
-3. You can download ALL files resulting from your search as a bundled ZIP file by clicking 
-the .. image:: images/download-all.png icon in the collumn header.       
+3. You can download ALL files resulting from your search as a bundled ZIP file by clicking the 
+.. image:: images/download-all.png 
+   icon in the collumn header.       
 
 Tips:
 ~~~~~
 
-- If you wish to exclude any records from your search results before you download all 
-the resulting files, you can go back and list these in the "Exclude Accessions" field 
-and then repeat the search. 
+- If you wish to exclude any records from your search results before you download all the resulting files, 
+  you can go back and list these in the "Exclude Accessions" field and then repeat the search. 
   
 - If you selected multiple files and clicked the "Individually" link but only the first file is downloading, this could 
   be because your browser is restricting multiple download pop-ups. Look for a browser warning or confirmation dialog
   to allow this.
 
 - If selesting many files and using the download "Individually" option, you may wish to change 
-the default download location of your browser. Look in your browser settings for this.
+  the default download location of your browser. Look in your browser settings for this.
 
 - You can also download files using a terminal from ENA using `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_.
