@@ -25,6 +25,12 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    browser/search
    browser/rulespace
    
+.. toctree::
+   :caption: Help and Guides
+   :maxdepth: 1
+
+   help_and_guides/moving_from_release
+   
 .. Extra
 .. *****
 
