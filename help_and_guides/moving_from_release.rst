@@ -213,8 +213,7 @@ If you currently rely on any aspect of the separate assembled/annotated sequence
 
 In your query please list what features you utilised from the release process. We can discuss your requirements and determine how we might support your use case through one of our existing services or collaborate on an adapted or novel solution. Contacting us promptly with your requirements will allow us to ensure adequate time and resources to collaborate on a solution.
  
-Please contact us with your questions or concerns at datasubs@ebi.ac.uk with the subject ‘ENA release retirement’.
-
+Please contact us with your questions or concerns at https://www.ebi.ac.uk/ena/browser/support with subject ‘ENA release retirement’.
 
 
 Spot an edit or improvement to this page? Please report it using our `ENA Support Service <https://www.ebi.ac.uk/ena/browser/support>`_ quoting the URL of this page in your query. Alternatively submit a pull request with your proposed text change to the `Readthedocs Browser GitHub <https://github.com/enasequence/ena-browser-documentation>`_.
