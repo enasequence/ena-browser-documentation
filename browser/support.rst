@@ -10,8 +10,9 @@ European Nucleotide Archive (ENA). Please ensure you provide as
 much detail as possible here. This will ensure your query will be directed 
 to the right person and answered as soon as possible.
 
-.. ATTENTION::
-  Please Note: We are currently experiencing a large volume of queries and our response time is approximately 3 weeks. We apologise for this delay and thank you for your patience
+**Please Note:** We are currently experiencing a large volume of queries 
+and our response time is approximately **3 weeks**. We apologise for this
+delay and thank you for your patience
 
 Contact us
 ==========
