@@ -248,8 +248,8 @@ Download results report
 =======================
 
 This feature allows you to download all the results from your search in the 
-format of a JSON or TSV file. Any data filters set by you will apply here. If you 
-specified to return the full set, you can download all the results here.
+format of a JSON or TSV file. Any data filters set by you will apply here. These 
+links will only download the first 100 000 results.
 
 Download associated data files
 ==============================
