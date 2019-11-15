@@ -191,9 +191,10 @@ Offset
 ------
 
 You can specify an offset for the number of records you would like to skip
-from the beginning of your search. This can be used to fetch the results 
-available beyond the maximum number of records that can be fetched in one go
-(100 000).
+from the beginning of your search. This can be used to view results
+beyond the maximum number of records that can be viewed in the 
+results table (100 000) or to break up queries that result in a large 
+number of records into smaller batches.
 
 If you do not wish to skip any records, you can leave this field blank or 
 enter an offset of '0'.
@@ -202,7 +203,7 @@ Limit
 -----
 
 You can specify a data limit for the maximum number of records you would like 
-to retrieve from your search (up to a maximum of 100 000).
+to retrieve from your search.
 
 If you wish to fetch the full result set, leave this field blank or enter '0'. 
 The browser table display will only show up to 100 000 results but for large 
@@ -248,8 +249,7 @@ Download results report
 =======================
 
 This feature allows you to download all the results from your search in the 
-format of a JSON or TSV file. Any data filters set by you will apply here. These 
-links will only download the first 100 000 results.
+format of a JSON or TSV file. Any data filters set by you will apply here.
 
 Download associated data files
 ==============================
