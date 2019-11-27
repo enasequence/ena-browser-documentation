@@ -6,7 +6,7 @@ This section covers building an advanced search output for uploading to MicroRea
 
 Building Search
 ---------------
-Firstly, build an advanced search query. This involves selecting the data type to be queried (e.g. sample) and build the query with the desired parameters. Following this, when at the fields section, select ‘Manually select fields’ and specify fields which correspond to, and therefore map to the required input for uploading to MicroReact (see `here <https://microreact.org/instructions>`_ for MicroReact uploading instructions). Specifically, this includes values for id,  map_countryField, map_latitude, map_longitude and date. For example, for each of the aforementioned, within the advanced search, example fields to select include:
+Firstly, build an advanced search query. This involves selecting the data type to be queried (e.g. sample) and building the query with the desired parameters. Following this, in the fields section, select ‘Manually select fields’ and specify fields which correspond to, and therefore map to, the required input for uploading to MicroReact (see `here <https://microreact.org/instructions>`_ for MicroReact uploading instructions). Specifically, this includes values for id,  map_countryField, map_latitude, map_longitude and date. For example, for each of the aforementioned, within the advanced search, example fields to select include:
 
 - sample_accession for id
 - country for map_countryField
@@ -15,7 +15,7 @@ Firstly, build an advanced search query. This involves selecting the data type t
 - collection_date for date
 
 
-Search the built query with the specified fields and within the browser, copy the curl request (through the button on the search results page), an example is shown below. This is required to construct a URL pointing to the search results which are utilised within the configuration file for MicroReact upload.
+Search the built query with the specified fields and then within the browser copy the curl request (using the 'Copy Curl Request' button on the search results page), an example is shown below. This is required to construct a URL pointing to the search results which are utilised within the configuration file for MicroReact upload.
 
 Example browser advanced search result curl command to obtain human samples collected following 1/1/2018
 ::
@@ -29,7 +29,7 @@ The example URL from the advanced search curl command becomes:
 
 MicroReact Configuration
 ------------------------
-Once steps above have been completed, create a configuration file (JSON format) utilising the built search result information. The URL created above, forms the value for 'data'. The values for id, map_countryField, map_latitude, map_longitude and date must correspond to the field names specified in the advanced search.
+Once the above steps have been completed, create a configuration file (JSON format) utilising the built search result information. The URL created above, forms the value for 'data'. The values for id, map_countryField, map_latitude, map_longitude and date must correspond to the field names specified in the advanced search.
 
 An example of the contents of a configuration file (@microreact_configuration):
 ::
