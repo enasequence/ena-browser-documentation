@@ -10,9 +10,10 @@ Customise your own search query and tailor your results to fit a specific
 set of search criteria (which can be saved with `Rulespace <rulespace.html>`_):
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    search/advanced
+   search/microreact
 
 Search the archive for a specific sequence (Backed by NCBI BLAST+):
 
