@@ -19,15 +19,14 @@ The European Nucleotide Archive (ENA) captures, preserves and presents the world
 
 New data is already included in the ENA on a continuous basis and distributed daily from our browser, FTP and RESTful API services. The key change is that we will no longer make an additional separate quarterly release of the assembled/annotated subset of sequences. We will focus our resources on further developing and supporting our continuous distribution presentation products.
 
-As part of the release retirement we will no longer be creating cumulative FTP files in the FTP update folders (e.g. http://ftp.ebi.ac.uk/pub/databases/ena/sequence/update/). These cumulative files tracked daily changes in between release cycles and thus cannot continue to be produced sustainably. Release 143 will be the last available in the release folder (available here once released http://ftp.ebi.ac.uk/pub/databases/ena/sequence/release/), the update folder will be removed after this last release. Set based sequences have already been removed from the release and will continue to be added to the FTP in their corresponding folders (e.g. http://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/).
+As part of the release retirement we will no longer be creating cumulative FTP files in the FTP update folders (e.g. http://ftp.ebi.ac.uk/pub/databases/ena/sequence/update/). These cumulative files tracked daily changes in between release cycles and thus cannot continue to be produced sustainably. Release 143 will be the last available in the release folder (available here once released http://ftp.ebi.ac.uk/pub/databases/ena/sequence/release/), the update folder will be removed after this last release. Set based sequences have already been removed from the release and will continue to be added to the FTP in their corresponding folders (e.g. http://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/; http://ftp.ebi.ac.uk/pub/databases/ena/tsa/public/; http://ftp.ebi.ac.uk/pub/databases/ena/tls/public/).
 
-After the final release in March 2020 we will be merging the '_release' and '_update' data types for sequence, coding and non-coding. So the data types'sequence_release' and 'sequence_update' will be replaced with the data type 'sequence'. This affects users of our API and browser advanced search services, you will need to use the updated data type end points. The new data types will be available in parallel ahead of the switchover, so we advise switching ahead of March 2020.
+After the final release in March 2020 we will be merging the '_release' and '_update' data types for sequence, coding and non-coding. So the data types'sequence_release' and 'sequence_update' will be replaced with the data type 'sequence'. This affects users of our API and browser advanced search services, you will need to use the updated data type end points. The new data types will be available in parallel.
 
 The following guide has been created to assist users in moving away from the release. This guide outlines accessing assembled/annotated sequences, guidance on how to identify data based on a last updated timestamp and advice for establishing your own mirroring procedures using our portfolio of other access services. 
 
 Accessing assembled/annotated sequences
 =======================================
-..Edit if we are to discontinue FTP, following resolution of meeting about continuation  of this service.
 Assembled/annotated sequences can be obtained from our continuous daily distribution resources, with API, FTP and web browser-based options. For most use cases we would recommend the ENA Browser API as it provides the greatest specificity and flexibility for obtaining a tailored dataset of assembled/annotated sequences for your requirements.
 
 ENA API
@@ -38,12 +37,12 @@ Example of obtaining a single record by accession:
 In EMBL format:
 
 .. code:: curl
-curl -X GET "https://www.ebi.ac.uk/ena/browser/api/embl/BN000065?download=true&lineLimit=0" -H "accept: text/plain"
+curl -X GET "https://www.ebi.ac.uk/ena/browser/api/embl/BN000065?download=true" -H "accept: text/plain"
 
 In FASTA format
 
 .. code:: curl
-curl -X GET "https://www.ebi.ac.uk/ena/browser/api/fasta/BN000065?download=true&lineLimit=0" -H "accept: text/plain"
+curl -X GET "https://www.ebi.ac.uk/ena/browser/api/fasta/BN000065?download=true" -H "accept: text/plain"
 
 ..Update the data type to sequence in below examples once DCP-2172 is complete
 The ENA Browser API also allows the user to conduct a search for multiple Assembled/annotated sequences records and download them. In this example searching the sequence data type for human data distributed or updated since 19th August 2019:
@@ -74,12 +73,7 @@ We have added limits to the above examples to only return 5 records, remove this
 ..Edit if we are to discontinue FTP, following resolution of meeting about continuation of this service.
 ENA FTP
 -------
-Alternatively assembled/annotated sequence files our distributed daily to the `ENA FTP service <http://ftp.ebi.ac.uk/pub/databases/ena/sequence/>`_. 
-
-The release folders, for example the sequence release folder (http://ftp.ebi.ac.uk/pub/databases/ena/sequence/release/) will contain the final release 143 made in March 2020.
-
-..how to download distributed files, if we continue this service.
-..mention aspera download as alternative for large downloads as more stable?
+The release folders, for example the sequence release folder (http://ftp.ebi.ac.uk/pub/databases/ena/sequence/release/) will contain the final release 143 made in March 2020. No further FTP releases will be made after release 143.
 
 ENA Browser
 -----------
@@ -209,12 +203,10 @@ Further documentation on the above services is available in their respective doc
 
 Further assistance
 ==================
-If you currently rely on any aspect of the separate assembled/annotated sequence release process for your work or resource, and cannot switch to one of our continuous distribution processes outlined above, please feel free to contact us to discuss your requirements. 
+If you currently rely on any aspect of the separate assembled/annotated sequence release process for your work or resource, and cannot switch to one of our continuous distribution processes outlined above, please feel free to contact us to discuss your requirements.
 
 In your query please list what features you utilised from the release process. We can discuss your requirements and determine how we might support your use case through one of our existing services or collaborate on an adapted or novel solution. Contacting us promptly with your requirements will allow us to ensure adequate time and resources to collaborate on a solution.
  
 Please contact us with your questions or concerns at https://www.ebi.ac.uk/ena/browser/support with subject ‘ENA release retirement’.
 
-
-Spot an edit or improvement to this page? Please report it using our `ENA Support Service <https://www.ebi.ac.uk/ena/browser/support>`_ quoting the URL of this page in your query. Alternatively submit a pull request with your proposed text change to the `Readthedocs Browser GitHub <https://github.com/enasequence/ena-browser-documentation>`_.
-..consider update to specific URL for this page
+Spot an edit or improvement to this page? Please report it using our `ENA Support Service <https://www.ebi.ac.uk/ena/browser/support>`_ quoting the URL of this page in your query.
