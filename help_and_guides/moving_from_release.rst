@@ -213,7 +213,7 @@ We have added limits to the above examples to only return 5 records, remove this
 
 For the `ENA Browser advanced search <https://www.ebi.ac.uk/ena/browser/advanced-search>`_ the 'last_updated' filter can be included in your query. It is located in the Database record filter section.
 
-..consider complete section on reproducibility of queries
+.. consider complete section on reproducibility of queries
 
 Establishing your own release mirroring procedures - Conducting your own release
 ================================================================================
