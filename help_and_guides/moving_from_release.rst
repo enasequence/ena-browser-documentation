@@ -17,7 +17,7 @@ The ENA is retiring its periodic assembled/annotated sequence release in March 2
 The last release will be number 143.
 
 The European Nucleotide Archive (ENA) captures, preserves and presents the world's
-nucleotide sequence data. Since 1982 the European Nucleotide Archive has made 140
+nucleotide sequence data. Since 1982 the European Nucleotide Archive has made more than 140
 individual releases, providing a quarterly snapshot of ENA assembled/annotated
 sequence data. During this time, changes to the ways in which users access ENA data,
 have led us to develop a portfolio of data access tools, such as our daily FTP
@@ -35,7 +35,7 @@ will no longer make an additional separate quarterly release of the assembled/an
 subset of sequences. We will focus our resources on further developing and supporting
 our continuous distribution presentation products.
 
-As part of the release retirement we will no longer be creating cumulative FTP
+Additionally, as part of the release retirement we will no longer be creating cumulative FTP
 files in the FTP update folders (e.g. http://ftp.ebi.ac.uk/pub/databases/ena/sequence/update/).
 These cumulative files tracked daily changes in between release cycles and thus
 cannot continue to be produced sustainably. Release 143 will be the last available
@@ -56,7 +56,7 @@ and "sequence_update" which indexes the modified or added CON & STD records.
 coding_release & coding_update, noncoding_release & noncoding_update are equivalent format CDS and NCR subproducts
 from the sequence records respectively.
 
-After the final release in March 2020 we will be merging the '_release' and '_update'
+After the final release (143) in March 2020 we will be merging the '_release' and '_update'
 data types for sequence, coding and non-coding. So the data types 'sequence_release'
 and 'sequence_update' will be replaced with the data type 'sequence'. This affects
 users of our API and Browser advanced search services, who will need to use the
@@ -221,7 +221,7 @@ sequences without the ENA release. Successful mirroring includes the following c
 - Data provenance: Track the accessions obtained in your mirroring, so that the data can be obtained again in future.
 - Periodic release: Obtain ENA assembled/annotated sequence data from a defined last updated timestamp.
 - Data specificity: By preference use a filtered query to only obtain the data you need, unless you really do need to mirror everything.
-- Recapturing same data in future: Instructions for you or your users to use a summary file that you create to obtain the same dataset in future.
+- Recapturing the same data in future: Instructions for you or your users to use a summary file that you create to obtain the same dataset in future.
 
 This equates to utilizing two separate ENA API services:
 - The Data Discovery API to obtain a summary for data provenance
@@ -232,9 +232,9 @@ Data provenance
 Save the accessions and sequence versions that match your search criteria as a report,
 which will act as the master document for creating the release.
 To create such a list, you can query the ENA Portal API with search parameters
-and save the results on to a TSV or JSON file, which you can then use to retrieve the
+and save the results to a TSV or JSON file, which you can then use to retrieve the
 EMBL format or FASTA format records from the ENA Browser API. If you would like to get
-the current public versions of the records even at a later time, In the query to Portal
+the current public versions of the records even at a later time, in the query to Portal
 API, include 'sequence_version' in the fields list.
 A reason for doing this is to have a fixed list with which you could re-download
 the same set of records in the future. As records are added,updated or suppressed,
