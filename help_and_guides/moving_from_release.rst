@@ -82,6 +82,7 @@ Assembled/annotated sequences can be identified and downloaded with our `ENA Bro
 Examples: (we provide curl examples, but you could use wget or a web browser or a rest client)
 
 Obtaining the latest version of a sequence record by accession:
+
 In EMBL format:
 
 .. code:: bash
@@ -91,14 +92,15 @@ In EMBL format:
 
 In FASTA format
 
-.. code:: curl
+.. code:: bash
 
   curl -X GET "https://www.ebi.ac.uk/ena/browser/api/fasta/BN000065"
 
 Obtaining a specific version, including suppressed versions, of a sequence record by accession:
+
 In EMBL format:
 
-.. code:: curl
+.. code:: bash
 
   curl -X GET "https://www.ebi.ac.uk/ena/browser/api/embl/KF961410.1"
 
@@ -106,13 +108,13 @@ In EMBL format:
 The ENA Browser API also allows the user to conduct a search for multiple Assembled/annotated sequences records and download them. In this example searching the sequence data type for human data distributed or updated since 19th August 2019:
 In EMBL format
 
-.. code:: curl
+.. code:: bash
 
   curl 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence_update&query=tax_eq(9606)%20AND%20last_updated%3E%3D2019-08-18&limit=5' -o embl.txt
 
 or FASTA
 
-.. code:: curl
+.. code:: bash
 
   curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=tax_eq(9606)%20AND%20last_updated%3C%3D2019-08-18&limit=5' -o fasta.txt
 
@@ -189,19 +191,19 @@ It is recommended that you further customize the query with further filters
 
 Example in FASTA format
 
-.. code:: curl
+.. code:: bash
 
   curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=last_updated%3E%3D2019-08-18&limit=5' -o fasta.txt
 
 or in EMBL format
 
-.. code:: curl
+.. code:: bash
 
   curl 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence_update&query=last_updated%3E%3D2019-08-18&limit=5' -o embl.txt
 
 You can also provide multiple timestamp filters to give a specific from and to date range, rather than all data to this date, for example data for the first 5 days of August 2019:
 
-.. code:: curl
+.. code:: bash
 
   curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05&limit=5' -o fasta.txt
 
@@ -242,7 +244,8 @@ the public dataset is regularly changing, and as such you may not get a certain 
 or get a different version of a record were you to run the same query in a future date.
 
 e.g.
-.. code:: curl
+
+.. code:: bash
 
   curl 'https://www.ebi.ac.uk/ena/portal/api/search?result=sequence_update&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05&fields=sequence_version,last_updated' -o sequence_report.tsv
 
@@ -273,7 +276,7 @@ Using the accession and sequence_version fields from this report, you can then r
 
 e.g.
 
-.. code:: curl
+.. code:: bash
 
   curl 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence_update&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05' -o sequences.txt
 
@@ -287,7 +290,7 @@ e.g.
 Either of the above, you could parallelize by using the offset and limit parameters
 to get different chunks of the data simultaneously.
 
-.. code:: curl
+.. code:: bash
 
   curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05&offset=0&limit=100000' -o sequences_1.txt
 
