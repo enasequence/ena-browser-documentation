@@ -152,25 +152,27 @@ but we make a brief mention here:
 1. Start an advanced search at https://www.ebi.ac.uk/ena/browser/advanced-search
 
 2. Select an assembled/annotated sequence data type such as 'sequence_release',
-'coding_release' or 'noncoding_release'
+   'coding_release' or 'noncoding_release'
 
-3. (Recommended) Use the Query builder to be as specific as possible with the available filters to construct a query that will limit the resulting dataset to match your needs.
-e.g. Key filters include:
-  - limiting by date. Database record -> last updated
-  - taxon. Taxonomy and related -> NCBI taxonomy.
+3. (Recommended) Use the Query builder to be as specific as possible with the available filters to construct a query that will
+   limit the resulting dataset to match your needs.
+   e.g. Key filters include:
+
+   - limiting by date. Database record -> last updated
+   - taxon. Taxonomy and related -> NCBI taxonomy.
 
 4. (optional) Select the fields you want in the resulting data. By default, the INSDC accession and description is provided.
 
 5. (Optional) Use inclusion and exclusion lists of accessions to finely alter the
-returned records.
+   returned records.
 
 6. Once you have run your query you can click the hyperlinks to download the full data files  in in either EMBL or FASTA format.
 
 7. (Optional) If desired you can copy your query for command line use with the ENA APIs using the "Copy Curl Request" button.
 
 8. (Optional) You can save this query for future use, by saving it to your Rulespace
-account using the 'Save To Rulespace' button, please refer to this `guide for
-more information <https://www.ebi.ac.uk/ena/rulespace/api/doc>`_.
+   account using the 'Save To Rulespace' button, please refer to this `guide for
+   more information <https://www.ebi.ac.uk/ena/rulespace/api/doc>`_.
 
 
 How to identify data based on a last updated timestamp
