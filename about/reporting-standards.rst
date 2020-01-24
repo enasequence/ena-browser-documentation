@@ -19,10 +19,10 @@ ENA/INSDC reporting standards
 The European Nucleotide Archive requires, where appropriate, use of the following reporting standards:
 
 - `Feature Table <https://www.ebi.ac.uk/ena/WebFeat/>`_ – Description of nucleotide sequence provenance and functional
-   annotation of nucleotide sequence domains.
+  annotation of nucleotide sequence domains.
 
 - `Third Party Data <>`_ – Guidelines for submission of assembly and/or annotation or existing INSDC reads and
-   primary sequences by a third party.
+  primary sequences by a third party.
 
 - `Missing values <>`_ - Guidelines for registering metadata which is missing or restricted access.
 
