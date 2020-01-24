@@ -57,6 +57,8 @@ Specialised databases
 
 Submitters may also wish to submit to ENA after submitting to the following specialised databases:
 
-IPD-IMGT/HLA – For Human Leukocyte Antigen sequences, overseen by the WHO HLA Nomenclature Committee
-IPD-MHC – For non-Human Major Histocompatibility Complex sequences, overseen by Comparative MHC Nomenclature Committee
-IPD-KIR – For Human Killer-cell Immunoglobulin-like Receptor sequences
+- IPD-IMGT/HLA – For Human Leukocyte Antigen sequences, overseen by the WHO HLA Nomenclature Committee
+
+- IPD-MHC – For non-Human Major Histocompatibility Complex sequences, overseen by Comparative MHC Nomenclature Committee
+
+- IPD-KIR – For Human Killer-cell Immunoglobulin-like Receptor sequences

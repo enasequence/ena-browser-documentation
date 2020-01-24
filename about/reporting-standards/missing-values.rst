@@ -43,5 +43,7 @@ value.
 Example of usage:
 
 Checklist: `GSC MIxS host associated <https://www.ebi.ac.uk/ena/browser/view/ERC000013>`_
+
 host sex: not provided
+
 geographic location (country and/or sea): restricted access
