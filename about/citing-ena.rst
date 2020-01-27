@@ -18,6 +18,7 @@ browser, for example:
 
 “the data for this study have been deposited in the European Nucleotide Archive (ENA) at EMBL-EBI under
 accession number PRJEBxxxx (https://www.ebi.ac.uk/ena/data/view/PRJEBxxxx).”
+
 If there is a particular scenario where using the top level accession would not be suitable, for example, if you have
 multiple publications that reference individual components within a single ENA project (and therefore the project
 accession provides too much ambiguity), then the following accessions are also considered accessions that could
