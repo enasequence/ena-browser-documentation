@@ -20,7 +20,7 @@ CRAM Reference Registry reverse proxy
 =====================================
 
 To reduce network traffic originating from the use of the CRAM Reference Registry we recommend using locally
-cached reference sequences. In addition to local caches supported by Samtools it is possible to cache sequences
+cached reference sequences. In addition to local caches supported by Samtools, it is possible to cache sequences
 using an HTTP proxy.
 
 Please see our tutorial for how to set up a local cache using Squid HTTP proxy on
