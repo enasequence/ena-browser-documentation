@@ -2,7 +2,7 @@
 The European Nucleotide Archive (ENA)
 =====================================
 
-Welcome to the documentation for the European Nucleotide Archive (ENA).
+Welcome to the documentation for the European Nucleotide Archive (ENA) Web Browser.
 Please use the links below and to the left to navigate through information on the
 ENA browser, our collaboration projects and data policies.
 
@@ -18,6 +18,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    about/data-coordination
    about/cram-reference-registry
    about/citing-ena
+   about/events
 
 .. toctree::
    :caption: The ENA Browser
@@ -31,11 +32,10 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    browser/support
 
 .. toctree::
-   :caption: Support
+   :caption: Help and Guides
    :maxdepth: 1
 
-   support/events
-   support/programmatic-access
+   help_and_guides/moving_from_the_release
 
 .. Extra
 .. *****
