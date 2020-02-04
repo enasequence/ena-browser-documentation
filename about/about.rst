@@ -31,7 +31,7 @@ More About ENA
 - `Data Coordination <https://www.ebi.ac.uk/ena/browser/about/data_coordination>`_
 - `Data Policies <https://www.ebi.ac.uk/ena/browser/about/policies>`_
 - `Reporting Standards <https://www.ebi.ac.uk/ena/browser/about/standards>`_
-- `The CRAM Reference Registry <https://www.ebi.ac.uk/ena/browser/about/cram-reference-registry>`_
-- `Events <https://www.ebi.ac.uk/ena/browser/about/events>`_
+- `Funding <https://www.ebi.ac.uk/ena/browser/about/funding>`_
 - `Stats <https://www.ebi.ac.uk/ena/browser/about/statistics>`_
+- `Events <https://www.ebi.ac.uk/ena/browser/about/events>`_
 - `News <https://www.ebi.ac.uk/ena/browser/about/news>`_
