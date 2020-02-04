@@ -16,9 +16,9 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    about/ena_content
    about/citing-ena
    about/data-coordination
-   about/ena-policies
-   about/reporting-standards
-   about/cram-reference-registry
+   about/policies
+   about/data-standards
+   about/funding
    about/events
 
 .. toctree::
