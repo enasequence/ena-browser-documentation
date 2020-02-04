@@ -21,10 +21,11 @@ The European Nucleotide Archive requires, where appropriate, use of the followin
 - `Feature Table <https://www.ebi.ac.uk/ena/WebFeat/>`_ – Description of nucleotide sequence provenance and functional
   annotation of nucleotide sequence domains.
 
-- `Third Party Data <>`_ – Guidelines for submission of assembly and/or annotation or existing INSDC reads and
-  primary sequences by a third party.
+- Third Party Data – ENA use the INSDC agreed standards for capturing and presenting TPA data. `Contact us <https://www.ebi.ac.uk/ena/browser/support>`_
+  if you intend to submit data that comprises of assembled or annotated data of existing INSDC records.
 
-- `Missing values <>`_ - Guidelines for registering metadata which is missing or restricted access.
+- `Missing values <https://www.ebi.ac.uk/ena/browser/standards/missing-values>`_ - Guidelines for registering metadata
+  which is missing or restricted access.
 
 Community-developed reporting standards
 =======================================
@@ -50,7 +51,7 @@ software tools or data formats. Minimum information about any (x) nucleotide seq
 the core GSC standard consisting of checklists for describing genomes (MIGS), metagenomes (MIMS) and marker
 sequences (MIMARKS).
 
-Rad more information on the MIxS checklists `here <>`_.
+Rad more information on the MIxS checklists `here <https://www.ebi.ac.uk/ena/browser/standards/mixs>`_.
 
 Specialised databases
 =====================

@@ -41,7 +41,24 @@ Data availability policy
 ========================
 
 While the INSDC databases hold public data, there are several levels of data availability which control access to
-these data.  These are described `here <>`_.
+these data.  These are described `here <https://www.ebi.ac.uk/ena/browser/policies/data-availability>`_.
+
+Third Party Data
+================
+
+Third PArty data (TPA) are submitted to the International Nucleotide Sequence Databases as part of the process of
+publishing biological studies that include the assembly and/or annotation of *existing INSDC reads and primary sequences.*
+Publicly accessible TPA data are therefore linked to a publication or publications that document the derivation of the
+data supported by peer-reviewed scientific evidence.
+
+The ENA Content team review and assist with TPA submissions on a case-by-case basis. Please `contact us <https://www.ebi.ac.uk/ena/browser/support>`_
+if you would like to submit a record which fits the above description.
+
+Based on the nature of TPA data, i.e. a type of record that is generated from public INSDC Read or Sequence/Trace data,
+which is not owned by the submitting group, these records undergo a strict release policy. TPA sequences should be
+planned for publication in a peer-reviewed journal, which discusses the TPA records unambiguously and encompasses
+the concepts of (re-)annotation, (re-)assembly or a combination of these. Once TPA records have been accepted by the
+database, they must be cited by accession number in the peer-reviewed journal article.
 
 Publication
 ===========
@@ -50,8 +67,8 @@ Soren Brunak, Antoine Danchin, Masahira Hattori, Haruki Nakamura, Kazuo Shinozak
 Nucleotide Sequence Database Policies
 *Science 298 (5597): 1333 15 Nov 2002*
 
-Membership
-==========
+INSDC Membership
+================
 
 Please refer `here <https://www.ebi.ac.uk/about/leadership/advisory-boards>`_ for details of current membership of
 the European chapter of the INSDC IAC and the ENA SAB and `here <http://www.insdc.org/advisors>`_ for the full

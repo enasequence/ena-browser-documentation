@@ -18,7 +18,7 @@ We also provide user training and support.
 
 `Contact us <cochrane@ebi.ac.uk>`_ to discuss Data Coordination collaboration.
 
-Our Current Data Coordination projects involve:
+Our Current Data Coordination Projects Involve:
 ===============================================
 
 - `Pathogen epidemiology <https://www.ebi.ac.uk/ena/pathogens/home>`_
@@ -33,7 +33,7 @@ Our Current Data Coordination projects involve:
 
 - `European Sequencing Facility access <https://www.easi-genomics.eu/home>`_
 
-Previous Data Coordination projects include:
+Previous Data Coordination Projects Include:
 ============================================
 
 - `MicroB3 <https://www.microb3.eu/>`_ and `embric <http://www.embric.eu/>`_ within the marine science community

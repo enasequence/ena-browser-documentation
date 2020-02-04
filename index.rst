@@ -12,12 +12,13 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    :caption: About ENA
    :maxdepth: 1
 
-   about/about-ena
+   about/about
+   about/ena_content
+   about/citing-ena
+   about/data-coordination
    about/ena-policies
    about/reporting-standards
-   about/data-coordination
    about/cram-reference-registry
-   about/citing-ena
    about/events
 
 .. toctree::

@@ -9,9 +9,6 @@ pipeline. ENA records this information in a data model that covers input informa
 machine configuration), output machine data (sequence traces, reads and quality scores) and interpreted information
 (assembly, mapping, functional annotation).
 
-Where does the Data Come From?
-==============================
-
 Data arrive at ENA from a variety of sources. These include submissions of raw data, assembled sequences and annotation
 from small-scale sequencing efforts, data provision from the major European sequencing centres and routine and
 comprehensive exchange with our partners in the International Nucleotide Sequence Database Collaboration (`INSDC <http://www.insdc.org>`_).
