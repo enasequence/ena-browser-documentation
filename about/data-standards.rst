@@ -51,4 +51,4 @@ software tools or data formats. Minimum information about any (x) nucleotide seq
 the core GSC standard consisting of checklists for describing genomes (MIGS), metagenomes (MIMS) and marker
 sequences (MIMARKS).
 
-Rad more information on the MIxS checklists `here <https://www.ebi.ac.uk/ena/browser/standards/mixs>`_.
+Read more information on the MIxS checklists `here <https://www.ebi.ac.uk/ena/browser/standards/mixs>`_.
