@@ -22,3 +22,16 @@ and web/API data portals. `Read more here <https://www.ebi.ac.uk/ena/browser/abo
 
 **Ambition**: we are committed to the utility of the ENA platform and to achieving the broadest reach and utility
 of sequencing technology and data.
+
+More About ENA
+==============
+
+- `The Content of the European Nucleotide Archive <https://www.ebi.ac.uk/ena/browser/about/content>`_
+- `Citing ENA <https://www.ebi.ac.uk/ena/browser/about/citing-ena>`_
+- `Data Coordination <https://www.ebi.ac.uk/ena/browser/about/data_coordination>`_
+- `Data Policies <https://www.ebi.ac.uk/ena/browser/about/policies>`_
+- `Reporting Standards <https://www.ebi.ac.uk/ena/browser/about/standards>`_
+- `Funding <https://www.ebi.ac.uk/ena/browser/about/funding>`_
+- `Stats <https://www.ebi.ac.uk/ena/browser/about/statistics>`_
+- `Events <https://www.ebi.ac.uk/ena/browser/about/events>`_
+- `News <https://www.ebi.ac.uk/ena/browser/about/news>`_
