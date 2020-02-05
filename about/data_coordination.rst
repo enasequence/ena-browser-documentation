@@ -2,23 +2,14 @@
 Data Coordination
 =================
 
-We provide focused support for scientific projects and initiatives through our Data Coordination programme,
-in which we collaborate with partners across and beyond the life sciences to support the application of
-molecular methods.
+We provide focused support for scientific projects and initiatives through our Data Coordination programme, in which
+we collaborate with partners across and beyond the life sciences to support the application of molecular methods.
+Addressing the challenges of data-intensive methods, interdisciplinary science, multi-omics and complex and deep
+data, we typically provide web and programmatic platforms for data sharing and publication, comprising tools,
+analysis support, cloud compute accessibility, data navigation and visualisation systems and user training and
+support.
 
-As part of our work addressing the challenges of data-intensive methods, interdisciplinary science, multi-omics
-and complex and deep data, we typically provide web and programmatic platforms for:
-
-- Data sharing and publication
-- Analysis support
-- Cloud compute accessibility
-- Data navigation and visualisation systems
-
-We also provide user training and support.
-
-`Contact us <cochrane@ebi.ac.uk>`_ to discuss Data Coordination collaboration.
-
-Our Current Data Coordination Projects Involve:
+Our Current Data Coordination Projects Include:
 ===============================================
 
 - `Pathogen epidemiology <https://www.ebi.ac.uk/ena/pathogens/home>`_
@@ -33,9 +24,4 @@ Our Current Data Coordination Projects Involve:
 
 - `European Sequencing Facility access <https://www.easi-genomics.eu/home>`_
 
-Previous Data Coordination Projects Include:
-============================================
-
-- `MicroB3 <https://www.microb3.eu/>`_ and `embric <http://www.embric.eu/>`_ within the marine science community
-
-- The `Global Microbial Identifier initiative <https://www.globalmicrobialidentifier.org/>`_ and `COMPARE <https://www.compare-europe.eu/>`_ projects for pathogen surveillance
+`Contact us <cochrane@ebi.ac.uk>`_ to discuss Data Coordination collaboration.

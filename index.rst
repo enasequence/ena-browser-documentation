@@ -15,10 +15,10 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    about/about
    about/ena_content
    about/citing-ena
-   about/data-coordination
-   about/ena-policies
-   about/reporting-standards
-   about/cram-reference-registry
+   about/data_coordination
+   about/policies
+   about/data-standards
+   about/funding
    about/events
 
 .. toctree::
@@ -36,7 +36,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    :caption: Help and Guides
    :maxdepth: 1
 
-   help_and_guides/moving_from_the_release
+   help_and_guides/moving_from_release
 
 .. Extra
 .. *****

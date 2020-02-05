@@ -1,6 +1,6 @@
-===================
-Reporting standards
-===================
+==============
+Data Standards
+==============
 
 Harmonization of data and metadata collection becomes an essential effort in the age when data generation is often
 easier and more affordable then their organization and storage.
@@ -51,15 +51,4 @@ software tools or data formats. Minimum information about any (x) nucleotide seq
 the core GSC standard consisting of checklists for describing genomes (MIGS), metagenomes (MIMS) and marker
 sequences (MIMARKS).
 
-Rad more information on the MIxS checklists `here <https://www.ebi.ac.uk/ena/browser/standards/mixs>`_.
-
-Specialised databases
-=====================
-
-Submitters may also wish to submit to ENA after submitting to the following specialised databases:
-
-- IPD-IMGT/HLA – For Human Leukocyte Antigen sequences, overseen by the WHO HLA Nomenclature Committee
-
-- IPD-MHC – For non-Human Major Histocompatibility Complex sequences, overseen by Comparative MHC Nomenclature Committee
-
-- IPD-KIR – For Human Killer-cell Immunoglobulin-like Receptor sequences
+Read more information on the MIxS checklists `here <https://www.ebi.ac.uk/ena/browser/standards/mixs>`_.

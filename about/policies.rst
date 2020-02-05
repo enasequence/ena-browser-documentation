@@ -65,6 +65,7 @@ Publication
 
 Soren Brunak, Antoine Danchin, Masahira Hattori, Haruki Nakamura, Kazuo Shinozaki, Tara Matise, Daphne Preuss (2002)
 Nucleotide Sequence Database Policies
+
 *Science 298 (5597): 1333 15 Nov 2002*
 
 INSDC Membership
