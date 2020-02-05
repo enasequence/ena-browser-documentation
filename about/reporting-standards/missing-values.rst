@@ -12,24 +12,24 @@ the supported terms we enclose a table with the missing/null value terms and the
 INSDC missing value reporting terms
 ===================================
 
-+------------------------+--------------------------+-----------------------------------------------+
-| INSDC term (top level) | INSDC term (lower level) | Definition                                    |
-+------------------------+--------------------------+-----------------------------------------------+
-| not applicable         |                          | | information is inappropriate to report, can |
-|                        |                          | | indicate that the standard itself fails to  |
-|                        |                          | | model or represent the information          |
-|                        |                          | | appropriately                               |
-+------------------------+--------------------------+-----------------------------------------------+
-| missing                | not collected            | | information of an expected format was not   |
-|                        |                          | | given because it has not been collected     |
-|                        +--------------------------+-----------------------------------------------+
-|                        | not provided             | | information of an expected format was not   |
-|                        |                          | | given, a value may be given at the later    |
-|                        |                          | | stage                                       |
-|                        +--------------------------+-----------------------------------------------+
-|                        | restricted access        | | information exists but can not be released  |
-|                        |                          | | openly because of privacy concerns          |
-+------------------------+--------------------------+-----------------------------------------------+
++----------------------------+------------------------------+-----------------------------------------------+
+| **INSDC term (top level)** | **INSDC term (lower level)** | **Definition**                                |
++----------------------------+------------------------------+-----------------------------------------------+
+| not applicable             |                              | | information is inappropriate to report, can |
+|                            |                              | | indicate that the standard itself fails to  |
+|                            |                              | | model or represent the information          |
+|                            |                              | | appropriately                               |
++----------------------------+------------------------------+-----------------------------------------------+
+| missing                    | not collected                | | information of an expected format was not   |
+|                            |                              | | given because it has not been collected     |
+|                            +------------------------------+-----------------------------------------------+
+|                            | not provided                 | | information of an expected format was not   |
+|                            |                              | | given, a value may be given at the later    |
+|                            |                              | | stage                                       |
+|                            +------------------------------+-----------------------------------------------+
+|                            | restricted access            | | information exists but can not be released  |
+|                            |                              | | openly because of privacy concerns          |
++----------------------------+------------------------------+-----------------------------------------------+
 
 Usage of INSDC missing value reporting terms
 ============================================
