@@ -18,7 +18,7 @@ ENA Sample Fields for Core MIxS terms
 =====================================
 
 +------------------------------------------+-----------------------------------------------------------------+
-| Sample Field                             | Description                                                     |
+| **Sample Field**                         | **Description**                                                 |
 +------------------------------------------+-----------------------------------------------------------------+
 | investigation type                       | | Nucleic Acid Sequence Report is the root element of all MIxS  |
 |                                          | | compliant reports as standardised by Genomic Standards        |
