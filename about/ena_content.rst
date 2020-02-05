@@ -18,8 +18,10 @@ dissemination of research findings to the scientific community. ENA works with p
 funding bodies to ensure compliance with these principles and to provide optimal submission systems and data access
 tools that work seamlessly with the published literature.
 
-ENA is made up of a number of distinct classes of data organised into three tiers. Each class has its own data formats
-and standards. ENA data classes and formats are described `here <https://www.ebi.ac.uk/ena/submit/data-formats>`_.
+ENA is made up of a number of distinct classes of data organised into three tiers: reads, assemblies and annotations.
+
+.. image:: images/ena-three-tiers.png
+   :align: center
 
 Although the ENA has almost 30 years of history, the data and services are constantly changing to reflect growing
 volumes of data, ever improving sequencing technology and the broadening of applications to which sequencing is now
