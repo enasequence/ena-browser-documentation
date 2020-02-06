@@ -6,12 +6,12 @@ All accessions issued by ENA, along with all accessions issued by its internatio
 INSDC, can be viewed in the ENA browser by pasting the accession into the Text search box or through the following URL:
 http://www.ebi.ac.uk/ena/browser/view/<accession>
 
-e.g. http://www.ebi.ac.uk/ena/browser/view/BN000065
+   e.g. http://www.ebi.ac.uk/ena/browser/view/BN000065
 
 Numeric ranges for accessions with the same prefix are also supported via
 http://www.ebi.ac.uk/ena/browser/view/<accession1>-<accession2>
 
-e.g. http://www.ebi.ac.uk/ena/browser/view/BN000066-BN000070
+   e.g. http://www.ebi.ac.uk/ena/browser/view/BN000066-BN000070
 
 In all cases, the top-level Project accession should be cited as well as a link to where the data can be found in the
 browser, for example:
