@@ -46,26 +46,25 @@ these data:
 +------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 | **Status name**  | **Causes**                                                                  | **Implications**                                                                       |
 +------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-| **Public**       | | Data are submitted and have reached the owner agreed public release date  | | Data are fully available.                                                            |
+| **Public**       | Data are submitted and have reached the owner agreed release date.          | Data are fully available.                                                              |
 +------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-| **Confidential** | Data owner indicates that confidentiality is required until an              | Data are not available publicly through any means. A project release date is           |
-|                  | owner-managed release date.                                                 | recorded for the data, which are subsequently and automatically released as            |
+| **Confidential** | Data owner indicates during study/project registration that confidentiality | Data are not available publicly through any means. A project release date is           |
+|                  | is required until an owner-managed release date.                            | recorded for the data, which are subsequently and automatically released as            |
 |                  |                                                                             | **Public** on **reaching this date**. In the event that a release date must be         |
 |                  |                                                                             | extended, data owners can `extend the release`_ of their data.                         |
 +------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-| **Suppressed**   | 1. Data are found by the owner to be incorrectly annotated or               | Data are removed where possible from direct search tools (such as text and sequence    |
-|                  |    contaminated with no immediate opportunity on the part of the owner to   | similarity search) but remain available by accession number.                           |
-|                  |    be updated.                                                              |                                                                                        |
-|                  | 2. Data owners fail to manage their project release date and the data       |                                                                                        |
+| **Suppressed**   | 1. Data are found by the owner to be incorrectly annotated or contaminated  | Data are removed where possible from direct search tools (such as text and sequence    |
+|                  |    with no immediate opportunity on the part of the owner to be updated.    | similarity search). In the case of sequences and assemblies, these remain available    |
+|                  | 2. Data owner fails to manage their project release date and the data       | by accession number. For raw reads, these are still available by direct ftp location.  |
 |                  |    is released earlier than they intended.                                  |                                                                                        |
 +------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 | **Replaced**     | Data owners generate new data under new accession identifiers that          | Data are removed where possible from direct search tools (such as text and sequence    |
 |                  | directly replace existing data; this  is expected to be rare since          | similarity search) but remain available by accession number. Where possible,           |
-|                  | replacement data normally use the existing accession identifiers for the    | look-up by original accession identifiers leads to a re-direct to new records          |
-|                  | records that they replace.                                                  | available under the new accession identifiers.                                         |
+|                  | replacement data normally use the existing accession identifiers for the    | look-up by original accession identifiers leads to a re-direct to the new records.     |
+|                  | records that they replace.                                                  |                                                                                        |
 +------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-| **Killed**       | 1. The submitter has requested a **Confidential** status or an              | Data are not directly available publicly from INSDC partners through any means.        |
-|                  |    extension to an existing release date, but the ENA, or their submissions | However, because the data will have been distributed previously as Public, the INSDC   |
+| **Killed**       | 1. The submitter requested a **Confidential** status or an extension        | Data are not directly available publicly from INSDC partners through any means.        |
+|                  |    to an existing release date, but the ENA, or their submissions           | However, because the data will have been distributed previously as Public, the INSDC   |
 |                  |    brokering collaborator, has failed to apply the appropriate release date | partners cannot exercise any control on the resultant use of the data by third         |
 |                  |    correctly.                                                               | parties.                                                                               |
 |                  | 2. Data are found to have been submitted to the databases without the       |                                                                                        |
