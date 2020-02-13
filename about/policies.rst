@@ -74,7 +74,6 @@ these data:
 +------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 
 .. _`extend the release`: https://ena-docs.readthedocs.io/en/latest/faq/release.html#can-i-advance-postpone-the-release-date
-.. _`contact ena`: https://www.ebi.ac.uk/ena/browser/support
 
 Third Party Data
 ================

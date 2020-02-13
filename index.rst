@@ -12,7 +12,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    :caption: About ENA
    :maxdepth: 1
 
-   about/about
+   about/about_ena
    about/ena_content
    about/citing-ena
    about/data_coordination
