@@ -37,6 +37,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    :maxdepth: 1
 
    help_and_guides/moving_from_release
+   help_and_guides/sars-cov-2-submissions
 
 .. Extra
 .. *****
