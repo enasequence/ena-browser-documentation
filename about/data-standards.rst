@@ -24,7 +24,7 @@ The European Nucleotide Archive requires, where appropriate, use of the followin
 - Third Party Data – ENA use the INSDC agreed standards for capturing and presenting TPA data. `Contact us <https://www.ebi.ac.uk/ena/browser/support>`_
   if you intend to submit data that comprises of assembled or annotated data of existing INSDC records.
 
-- `Missing values <https://www.ebi.ac.uk/ena/browser/standards/missing-values>`_ - Guidelines for registering metadata
+- `Missing values <https://ena-docs.readthedocs.io/en/latest/faq/missing-values.html>`_ - Guidelines for registering metadata
   which is missing or restricted access.
 
 Community-developed reporting standards
