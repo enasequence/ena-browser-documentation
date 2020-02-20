@@ -27,6 +27,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
 
    browser/home
    browser/submit
+   browser/sample-checklists
    browser/ena-record
    browser/search
    browser/rulespace
