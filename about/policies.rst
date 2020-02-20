@@ -41,7 +41,7 @@ Data availability policy
 ========================
 
 While the INSDC databases hold public data, there are several levels of data availability which control access to
-these data.  These are described `here <https://www.ebi.ac.uk/ena/browser/policies/data-availability>`_.
+these data.  These are described `here <https://www.ebi.ac.uk/ena/about/data-availability-policy>`_.
 
 Third Party Data
 ================
