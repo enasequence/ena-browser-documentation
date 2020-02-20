@@ -50,5 +50,3 @@ software tools or data formats. Minimum information about any (x) nucleotide seq
 (MIxS, `Yilmaz et al, 2011 <http://www.nature.com/nbt/journal/v29/n5/full/nbt.1823.html>`_) is
 the core GSC standard consisting of checklists for describing genomes (MIGS), metagenomes (MIMS) and marker
 sequences (MIMARKS).
-
-Read more information on the MIxS checklists `here <https://www.ebi.ac.uk/ena/browser/standards/mixs>`_.
