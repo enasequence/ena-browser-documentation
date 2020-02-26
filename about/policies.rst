@@ -41,39 +41,46 @@ Data availability policy
 ========================
 
 While the INSDC databases hold public data, there are several levels of data availability which control access to
-these data:
+these data before publication and when data needs removing from the public browser or search services.
+The two main levels to data availability are when data are confidential pre-publication and then after public release.
 
-+------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-| **Status name**  | **Causes**                                                                  | **Implications**                                                                       |
-+------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-| **Public**       | Data are submitted and have reached the owner agreed release date.          | Data are fully available.                                                              |
-+------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-| **Confidential** | Data owner indicates during study/project registration that confidentiality | Data are not available publicly through any means. A project release date is           |
-|                  | is required until an owner-managed release date.                            | recorded for the data, which are subsequently and automatically released as            |
-|                  |                                                                             | **Public** on **reaching this date**. In the event that a release date must be         |
-|                  |                                                                             | extended, data owners can `extend the release`_ of their data.                         |
-+------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-| **Suppressed**   | 1. Data are found by the owner to be incorrectly annotated or contaminated  | Data are removed where possible from direct search tools (such as text and sequence    |
-|                  |    with no immediate opportunity on the part of the owner to be updated.    | similarity search). In the case of sequences and assemblies, these remain available    |
-|                  | 2. Data owner fails to manage their project release date and the data       | by accession number. For raw reads, these are still available by direct ftp location.  |
-|                  |    is released earlier than they intended.                                  |                                                                                        |
-+------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-| **Replaced**     | Data owners generate new data under new accession identifiers that          | Data are removed where possible from direct search tools (such as text and sequence    |
-|                  | directly replace existing data; this  is expected to be rare since          | similarity search) but remain available by accession number. Where possible,           |
-|                  | replacement data normally use the existing accession identifiers for the    | look-up by original accession identifiers leads to a re-direct to the new records.     |
-|                  | records that they replace.                                                  |                                                                                        |
-+------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-| **Killed**       | 1. The submitter requested a **Confidential** status or an extension        | Data are not directly available publicly from INSDC partners through any means.        |
-|                  |    to an existing release date, but the ENA, or their submissions           | However, because the data will have been distributed previously as Public, the INSDC   |
-|                  |    brokering collaborator, has failed to apply the appropriate release date | partners cannot exercise any control on the resultant use of the data by third         |
-|                  |    correctly.                                                               | parties.                                                                               |
-|                  | 2. Data are found to have been submitted to the databases without the       |                                                                                        |
-|                  |    permission of the rightful owner; this is expected to be extremely rare  |                                                                                        |
-|                  |    and requires formal institutional contact with the submitting            |                                                                                        |
-|                  |    institution                                                              |                                                                                        |
-+------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
+| **Confidential Data**                                                            | **Public Data**                                                                  |
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
+| A data owner can indicate during study/project registration that confidentiality | A project is subsequently and automatically released as Public on reaching the   |
+| is required until an owner-managed release date or publication in the            | specified release date or when the relevant INSDC accession cited online or in a |
+| literature, whichever comes earlier. During the confidential phase, data are     | publication prior to this date. In the event that a release date must be         |
+| not available publicly through any means.                                        | extended, data owners can `extend the release of their data`_ before it becomes  |
+|                                                                                  | public.                                                                          |
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
 
-.. _`extend the release`: https://ena-docs.readthedocs.io/en/latest/faq/release.html#can-i-advance-postpone-the-release-date
+.. _`extend the release of their data`: https://ena-docs.readthedocs.io/en/latest/faq/release.html#can-i-advance-postpone-the-release-date
+
+Removing Data from the Public Browser
+-------------------------------------
+
+ENA general policy is that data which has been released into the public domain should remain public.
+As the submitter you need to make sure you specify the correct release date when submitting and send release date
+extension requests to ENA at least two weeks before the release date. Once the data has been fully released, the
+availability of the data is then managed at ENA and you must contact us in the event of there being an issue with
+the public availability of your data.
+
+In particular, please get into contact with us at the ENA in the event that:
+
+1. You realise that your data is incorrect or contaminated with no immediate opportunity to be updated.
+
+2. You failed to manage your project release date and your project is released earlier than intended.
+   If this is the case, please provide a reason that your data requires suppression from the browser and provide a
+   new date for the project release.
+
+3. You requested a **Confidential** status or an extension to an existing release date, but the ENA, or their submissions
+   brokering collaborator, has failed to apply the appropriate release date correctly.
+
+4. Data are found to have been submitted to the databases without the permission of the rightful owner.
+   *This is expected to be extremely rare and requires formal institutional contact with the submitting institution.*
+
+In any case where the data has been distributed as public, the INSDC partners cannot exercise any control on the
+resultant use of the data by third parties, even if it is subsequently removed from the service.
 
 Third Party Data
 ================
