@@ -63,8 +63,8 @@ Removing Data from the Public Browser
 ENA general policy is that data which has been released into the public domain should remain public.
 As the submitter you need to make sure you specify the correct release date when submitting and send release date
 extension requests to ENA at least two weeks before the release date. Once the data has been fully released, the
-availability of the data is then managed at ENA and you must contact us in the event of there being an issue with
-the public availability of your data.
+availability of the data is then managed at ENA and you must `contact us <https://www.ebi.ac.uk/ena/browser/support>`_
+in the event of there being an issue with the public availability of your data.
 
 **In particular, please** `contact us <https://www.ebi.ac.uk/ena/browser/support>`_ **in the event that:**
 
