@@ -65,7 +65,7 @@ extension requests to ENA at least two weeks before the release date. Once the d
 availability of the data is then managed at ENA and you must contact us in the event of there being an issue with
 the public availability of your data.
 
-**In particular, please ** `contact us<https://www.ebi.ac.uk/ena/browser/support>`_ **in the event that:**
+**In particular, please** `contact us <https://www.ebi.ac.uk/ena/browser/support>`_ **in the event that:**
 
 1. You realise that your data is incorrect or contaminated with no immediate opportunity to be updated.
 
