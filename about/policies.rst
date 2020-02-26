@@ -49,9 +49,10 @@ The two main levels to data availability are when data are confidential pre-publ
 +----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
 | A data owner can indicate during study/project registration that confidentiality | A project is subsequently and automatically released as Public on reaching the   |
 | is required until an owner-managed release date or publication in the            | specified release date or when the relevant INSDC accession cited online or in a |
-| literature, whichever comes earlier. During the confidential phase, data are     | publication prior to this date. In the event that a release date must be         |
-| not available publicly through any means.                                        | extended, data owners can `extend the release of their data`_ before it becomes  |
-|                                                                                  | public.                                                                          |
+| literature, whichever comes earlier.                                             | publication prior to this date.                                                  |
+|                                                                                  |                                                                                  |
+| During the confidential phase, data are not available publicly through any       | In the event that a release date must be extended, data owners can               |
+| means.                                                                           | `extend the release of their data`_ before it becomes public.                    |
 +----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
 
 .. _`extend the release of their data`: https://ena-docs.readthedocs.io/en/latest/faq/release.html#can-i-advance-postpone-the-release-date
