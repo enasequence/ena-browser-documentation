@@ -41,7 +41,9 @@ Data availability policy
 ========================
 
 While the INSDC databases hold public data, there are several levels of data availability which control access to
-these data before publication and when data needs removing from the public browser or search services.
+these data. See the `INSDC Data Availability Policy <https://ena-docs.readthedocs.io/en/latest/faq/release/data-availability-policy.html>`_
+for full details of INSDC data access and control.
+
 The two main levels to data availability are when data are confidential pre-publication and then after public release.
 
 +----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
