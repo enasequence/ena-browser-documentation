@@ -24,7 +24,7 @@ The European Nucleotide Archive requires, where appropriate, use of the followin
 - Third Party Data – ENA use the INSDC agreed standards for capturing and presenting TPA data. `Contact us <https://www.ebi.ac.uk/ena/browser/support>`_
   if you intend to submit data that comprises of assembled or annotated data of existing INSDC records.
 
-- `Missing values <https://www.ebi.ac.uk/ena/browser/standards/missing-values>`_ - Guidelines for registering metadata
+- `Missing values <https://ena-docs.readthedocs.io/en/latest/faq/missing-values.html>`_ - Guidelines for registering metadata
   which is missing or restricted access.
 
 Community-developed reporting standards
@@ -50,5 +50,3 @@ software tools or data formats. Minimum information about any (x) nucleotide seq
 (MIxS, `Yilmaz et al, 2011 <http://www.nature.com/nbt/journal/v29/n5/full/nbt.1823.html>`_) is
 the core GSC standard consisting of checklists for describing genomes (MIGS), metagenomes (MIMS) and marker
 sequences (MIMARKS).
-
-Read more information on the MIxS checklists `here <https://www.ebi.ac.uk/ena/browser/standards/mixs>`_.

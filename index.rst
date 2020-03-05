@@ -12,7 +12,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    :caption: About ENA
    :maxdepth: 1
 
-   about/about
+   about/about_ena
    about/ena_content
    about/citing-ena
    about/data_coordination
@@ -27,6 +27,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
 
    browser/home
    browser/submit
+   browser/sample-checklists
    browser/ena-record
    browser/search
    browser/rulespace
@@ -37,6 +38,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    :maxdepth: 1
 
    help_and_guides/moving_from_release
+   help_and_guides/sars-cov-2-submissions
 
 .. Extra
 .. *****
