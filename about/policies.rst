@@ -41,7 +41,49 @@ Data availability policy
 ========================
 
 While the INSDC databases hold public data, there are several levels of data availability which control access to
-these data.  These are described `here <https://www.ebi.ac.uk/ena/about/data-availability-policy>`_.
+these data. See the `INSDC Data Availability Policy <https://ena-docs.readthedocs.io/en/latest/faq/release/data-availability-policy.html>`_
+for full details of INSDC data access and control.
+
+The two main levels to data availability are when data are confidential pre-publication and then after public release.
+
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
+| **Confidential Data**                                                            | **Public Data**                                                                  |
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
+| A data owner can indicate during study/project registration that confidentiality | A project is subsequently and automatically released as Public on reaching the   |
+| is required until an owner-managed release date or publication in the            | specified release date or when the relevant INSDC accession cited online or in a |
+| literature, whichever comes earlier.                                             | publication prior to this date.                                                  |
+|                                                                                  |                                                                                  |
+| During the confidential phase, data are not available publicly through any       | In the event that a release date must be extended, data owners can               |
+| means.                                                                           | `extend the release of their data`_ before it becomes public.                    |
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
+
+.. _`extend the release of their data`: https://ena-docs.readthedocs.io/en/latest/faq/release.html#can-i-advance-postpone-the-release-date
+
+Removing Data from the Public Browser
+-------------------------------------
+
+ENA general policy is that data which has been released into the public domain should remain public.
+As the submitter you need to make sure you specify the correct release date when submitting and send release date
+extension requests to ENA at least two weeks before the release date. Once the data has been fully released, the
+availability of the data is then managed at ENA and you must `contact us <https://www.ebi.ac.uk/ena/browser/support>`_
+in the event of there being an issue with the public availability of your data.
+
+**In particular, please** `contact us <https://www.ebi.ac.uk/ena/browser/support>`_ **in the event that:**
+
+1. You realise that your data is incorrect or contaminated with no immediate opportunity to be updated.
+
+2. You failed to manage your project release date and your project is released earlier than intended.
+   If this is the case, please provide a reason that your data requires suppression from the browser and provide a
+   new date for the project release.
+
+3. You requested a **Confidential** status or an extension to an existing release date, but the ENA, or their submissions
+   brokering collaborator, has failed to apply the appropriate release date correctly.
+
+4. Data are found to have been submitted to the databases without the permission of the rightful owner.
+   *This is expected to be extremely rare and requires formal institutional contact with the submitting institution.*
+
+In any case where the data has been distributed as public, the INSDC partners cannot exercise any control on the
+resultant use of the data by third parties, even if it is subsequently removed from the service.
 
 Third Party Data
 ================
