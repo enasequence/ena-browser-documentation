@@ -20,7 +20,7 @@ tools that work seamlessly with the published literature.
 
 ENA is organised into three tiers: reads, assemblies and annotations.
 
-.. image:: images/ena-three-tiers.png
+.. image:: images/data-tiers-diagram.png
    :align: center
 
 Although the ENA has almost 30 years of history, the data and services are constantly changing to reflect growing
