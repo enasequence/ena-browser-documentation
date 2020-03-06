@@ -23,6 +23,9 @@ ENA is organised into three tiers: reads, assemblies and annotations.
 .. image:: images/data_tiers_diagram.png
    :align: center
 
+Data from the ENA tiers are organised into domains. See `here <https://ena-docs.readthedocs.io/en/latest/retrieval/general-guide.html>`_ 
+for the full list of ENA data domains with descriptions and example records.
+
 Although the ENA has almost 30 years of history, the data and services are constantly changing to reflect growing
 volumes of data, ever improving sequencing technology and the broadening of applications to which sequencing is now
 put. Latest developments and changes to services are announced `here <https://www.ebi.ac.uk/ena/browser/about/news>`_ and
