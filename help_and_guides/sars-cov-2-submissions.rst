@@ -2,7 +2,7 @@
 SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2) Submissions
 ========================================================================
 
-Please see below for instructions on how to submit SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2) data. If you have any queries or assistance with your submission please contact us at: virus-dataflow@ebi.ac.uk.
+Please see below for instructions on how to submit SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2) data. If you have any queries or require assistance with your submission please contact us at: virus-dataflow@ebi.ac.uk.
 
 Registering Studies
 ===================
