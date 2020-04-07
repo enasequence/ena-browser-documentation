@@ -2,7 +2,7 @@
 SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2) Submissions
 ========================================================================
 
-Please see below for instructions on how to submit SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2) data.
+Please see below for instructions on how to submit SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2) data. If you have any queries or assistance with your submission please contact us at: virus-dataflow@ebi.ac.uk.
 
 Registering Studies
 ===================
@@ -25,9 +25,9 @@ If submitting assemblies, you must have registered a study and a sample beforeha
 
 Submitting Targeted Sequences
 =============================
-If submitting targeted or annotated sequences, you must register a study as described above. Instructions for submitting sequence data are found here: https://ena-docs.readthedocs.io/en/latest/submit/sequence.html. As part of this process, if submitting annotated sequences, you must select an annotation checklist, found here: https://www.ebi.ac.uk/ena/submit/annotation-checklists. There are several virus-specific annotation checklists, with “Single Viral CDS” the most appropriate for complete or partial coding sequence from a viral gene. If your sequences do not fit the annotation checklists above please contact us at ena-path-collabs@ebi.ac.uk.
+If submitting targeted or annotated sequences, you must register a study as described above. Instructions for submitting sequence data are found here: https://ena-docs.readthedocs.io/en/latest/submit/sequence.html. As part of this process, if submitting annotated sequences, you must select an annotation checklist, found here: https://www.ebi.ac.uk/ena/submit/annotation-checklists. There are several virus-specific annotation checklists, with “Single Viral CDS” the most appropriate for complete or partial coding sequence from a viral gene. If your sequences do not fit the annotation checklists above please contact us at virus-dataflow@ebi.ac.uk.
 
-If submitting single contig assemblies, or for any other support or issues around SARS-CoV-2 submissions please contact ena-path-collabs@ebi.ac.uk.
+If submitting single contig assemblies, or for any other support or issues around SARS-CoV-2 submissions please contact virus-dataflow@ebi.ac.uk.
 
 Release of Data
 ===============
