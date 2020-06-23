@@ -12,6 +12,8 @@ support.
 Our Current Data Coordination Projects Include:
 ===============================================
 
+- `European COVID-19 Data Platform <https://www.covid19dataportal.org/>`_
+
 - `Pathogen epidemiology <https://www.ebi.ac.uk/ena/pathogens/home>`_
 
 - `Livestock functional genomics <https://data.faang.org/home>`_
