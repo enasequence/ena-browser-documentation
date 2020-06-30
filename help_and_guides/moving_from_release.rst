@@ -30,7 +30,7 @@ have concluded that it is no longer viable for us to continue the current releas
 process as part of our presentation portfolio.
 
 New data is already included in the ENA on a continuous basis and distributed
-daily from our browser, FTP and RESTful API services. The key change is that we
+daily from our ENA Browser, FTP and RESTful API services. The key change is that we
 will no longer make an additional separate quarterly release of the assembled/annotated
 subset of sequences. We will focus our resources on further developing and supporting
 our continuous distribution presentation products.
@@ -48,15 +48,15 @@ http://ftp.ebi.ac.uk/pub/databases/ena/tsa/public/; http://ftp.ebi.ac.uk/pub/dat
 Release vs Update search data
 =============================
 
-Currently we maintain separately indexed datasets for RELEASE and UPDATE data for Sequence and Coding & NonCoding records.
+Currently we maintain separately indexed datasets for RELEASE and UPDATE data for Sequence and Coding & NonCoding RNA records.
 Where RELEASE refers to the last ENA release, and UPDATE refers to any records that have been added or modified since the
 last release.
-So we have the search result type "sequence_release" which indexes all CON & STD class records from the last release,
+So we have the search result type "sequence_release" which indexes all CON & STD (including EST, GSS, PAT etc.) class records from the last release,
 and "sequence_update" which indexes the modified or added CON & STD records.
-coding_release & coding_update, noncoding_release & noncoding_update are equivalent format CDS and NCR subproducts
+coding_release & coding_update, noncoding_release & noncoding_update are equivalent format CDS and NCRNA subproducts
 from the sequence records respectively.
 
-After the final release (143) in March 2020 we will be merging the '_release' and '_update'
+After the final release (143) in March 2020, in our Advanced Search service, we will be merging the '_release' and '_update'
 data types for sequence, coding and non-coding. So the data types 'sequence_release'
 and 'sequence_update' will be replaced with the data type 'sequence'. This affects
 users of our API and Browser advanced search services, who will need to use the
@@ -77,7 +77,8 @@ for obtaining a tailored dataset of assembled/annotated sequences for your requi
 
 ENA API
 -------
-Assembled/annotated sequences can be identified and downloaded with our `ENA Browser API <https://www.ebi.ac.uk/ena/browser/api/>`_. The http API Swagger interface lists the endpoints, documenting expected parameter and errors.
+Assembled/annotated sequences can be identified and downloaded with our `ENA Browser API <https://www.ebi.ac.uk/ena/browser/api/>`_.
+The http API Swagger interface lists the endpoints, documenting expected parameter and errors.
 
 Examples: (we provide curl examples, but you could use wget or a web browser or a rest client)
 
@@ -110,15 +111,17 @@ In EMBL format
 
 .. code:: bash
 
-  curl 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence_update&query=tax_eq(9606)%20AND%20last_updated%3E%3D2019-08-18&limit=5' -o embl.txt
+  curl 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence&query=tax_eq(9606)%20AND%20last_updated%3E%3D2019-08-18&limit=5' -o embl.txt
 
 or FASTA
 
 .. code:: bash
 
-  curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=tax_eq(9606)%20AND%20last_updated%3C%3D2019-08-18&limit=5' -o fasta.txt
+  curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence&query=tax_eq(9606)%20AND%20last_updated%3C%3D2019-08-18&limit=5' -o fasta.txt
 
-We have added limits to the above examples to only return 5 records, remove this under normal use. You can search using the sequence, coding or non-coding data type endpoints. In general when using the API search it is important to be as specific as possible with your query to save on downloading sequences that you do not require.
+We have added limits to the above examples to only return 5 records, remove this under normal use. You can search using
+the sequence, coding or non-coding data type endpoints. In general when using the API search it is important to be as
+specific as possible with your query to save on downloading sequences that you do not require.
 
 .. read current release notes on data types to help here.
 
@@ -151,7 +154,7 @@ but we make a brief mention here:
 
 1. Start an advanced search at https://www.ebi.ac.uk/ena/browser/advanced-search
 
-2. Select an assembled/annotated sequence data type such as 'sequence_release',
+2. Select an assembled/annotated sequence data type such as 'sequence',
    'coding_release' or 'noncoding_release'
 
 3. (Recommended) Use the Query builder to be as specific as possible with the available filters to construct a query that will
@@ -174,6 +177,51 @@ but we make a brief mention here:
    account using the 'Save To Rulespace' button, please refer to this `guide for
    more information <https://www.ebi.ac.uk/ena/rulespace/api/doc>`_.
 
+Periodic Snapshots
+------------------
+For sequence, coding and noncoding RNA data, we produce a periodic snapshot which includes all public records at that
+time point. These are available from FTP. These snapshots are different from the old release approach in these aspects:
+
+1. Are more frequent. We aim to produce these once a month, but can be more frequent if requirements dictate.
+
+2. Release numbers will not be updated in the flatfile
+
+Assembled/Annotated Sequences
+=============================
+
+Latest snapshot is available at ftp.ebi.ac.uk/pub/databases/ena/sequence/con-std_latest/
+con-std_latest is a symlink that points to the most recent snapshot. This is also listed in the text file con-std_latest.txt
+In this folder, the records are divided into con and std subfolders. std subfolder contains all dataclasses that are not CON
+(STD, EST, GSS, PAT etc.)
+Records are in gzip files, further divided by taxonomic division, with upto 1,000,000 records per file.
+
+Coding & Noncoding RNA Sequences
+================================
+CDS and NCRNA subproducts from CON & STD (incld. EST, GSS etc) are treated the same was as Assembled/Annotated Sequences.
+The latest snapshots are avialble at
+ftp.ebi.ac.uk/pub/databases/ena/coding/con-std_latest
+and
+ftp.ebi.ac.uk/pub/databases/ena/non-coding/con-std_latest respectively.
+
+But for subproducts from WGS/TSA/TLS sequences, the records are made available in a different manner. The reason for this is
+that given the massive (ever increasing) number of WGS sequence sets, we don't individually index WGS sequences and by relation,
+scalability makes it difficult to produce fully inclusive files for subproduts.
+Instead, we group the coding records from a given WGS set in to one file in the FTP tree.
+
+e.g. Consider the WGS set WYAA01, that includes the indivdiual WGS records WYAA01000001-WYAA01000116.
+The WGS sequence set for this is available on FTP at http://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/wy/
+
+Corespondingly, the coding subproducts from sequences WYAA01000001-WYAA01000116 are avialble together in
+ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public/wy/ with the name WYAA01.cds.gz
+Similarly, the noncoding RNA file is available in
+ftp.ebi.ac.uk/pub/databases/ena/non-coding/wgs/public/wy/ with the name WYAA01.ncr.gz
+
+So, if you wanted all coding from WGS, you would need to start at the tp.ebi.ac.uk/pub/databases/ena/coding/wgs/public level,
+delve into each subfolder and download the *.cds.gz files.
+Note that there are some cds.gz files that have no content. This would mean that there were no CDS features in any of the sequences
+in that WSG set. While not ideal, we have to retain these empty files for the pipeline to know that the subproducts have already
+been extracted from a given set, unless the parent set itself is updated.
+
 
 How to identify data based on a last updated timestamp
 ======================================================
@@ -195,25 +243,29 @@ Example in FASTA format
 
 .. code:: bash
 
-  curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=last_updated%3E%3D2019-08-18&limit=5' -o fasta.txt
+  curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence&query=last_updated%3E%3D2019-08-18&limit=5' -o fasta.txt
 
 or in EMBL format
 
 .. code:: bash
 
-  curl 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence_update&query=last_updated%3E%3D2019-08-18&limit=5' -o embl.txt
+  curl 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence&query=last_updated%3E%3D2019-08-18&limit=5' -o embl.txt
 
-You can also provide multiple timestamp filters to give a specific from and to date range, rather than all data to this date, for example data for the first 5 days of August 2019:
+You can also provide multiple timestamp filters to give a specific from and to date range, rather than all data to this
+date, for example data for the first 5 days of August 2019:
 
 .. code:: bash
 
-  curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05&limit=5' -o fasta.txt
+  curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05&limit=5' -o fasta.txt
 
-We have added limits to the above examples to only return 5 records, remove this under normal use. You can search using the sequence, coding or non-coding data type endpoints. In general when using the API search it is important to be as specific as possible with your query to save on downloading sequences that you do not require.
+We have added limits to the above examples to only return 5 records, remove this under normal use. You can search using
+the sequence, coding or non-coding data type endpoints. In general when using the API search it is important to be as
+specific as possible with your query to save on downloading sequences that you do not require.
 
 .. Give link for more information on API when DCP-2176 is complete
 
-For the `ENA Browser advanced search <https://www.ebi.ac.uk/ena/browser/advanced-search>`_ the 'last_updated' filter can be included in your query. It is located in the Database record filter section.
+For the `ENA Browser advanced search <https://www.ebi.ac.uk/ena/browser/advanced-search>`_ the 'last_updated' filter can
+be included in your query. It is located in the Database record filter section.
 
 .. consider complete section on reproducibility of queries
 
@@ -249,7 +301,7 @@ e.g.
 
 .. code:: bash
 
-  curl 'https://www.ebi.ac.uk/ena/portal/api/search?result=sequence_update&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05&fields=sequence_version,last_updated' -o sequence_report.tsv
+  curl 'https://www.ebi.ac.uk/ena/portal/api/search?result=sequence&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05&fields=sequence_version,last_updated' -o sequence_report.tsv
 
 
 Periodic release and data specificity
@@ -280,7 +332,7 @@ e.g.
 
 .. code:: bash
 
-  curl 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence_update&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05' -o sequences.txt
+  curl 'https://www.ebi.ac.uk/ena/browser/api/embl/search?result=sequence&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05' -o sequences.txt
 
 .. provide details on the how to do this.
 
@@ -294,9 +346,9 @@ to get different chunks of the data simultaneously.
 
 .. code:: bash
 
-  curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05&offset=0&limit=100000' -o sequences_1.txt
+  curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05&offset=0&limit=100000' -o sequences_1.txt
 
-  curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence_update&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05&offset=100000&limit=100000' -o sequences_2.txt
+  curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05&offset=100000&limit=100000' -o sequences_2.txt
 
 etc.
 
@@ -307,7 +359,9 @@ the process for your next update. Obviously you can now pick an update frequency
 
 .. The important for your users is to provide the report you generated earlier, they can then get a better reconstruction of the same dataset as it will contain suppressed records. Killed records can never be retrieved.
 
- If you need to resume a large download which wasn't parallelized, we would recommend calculating how many records were retrieved so far (e.g. using grep), and then use the offset parameter to get the rest from there onwards. If there is a significant delay between the first and the second call, please be aware that the indexed data may have been updated.
+ If you need to resume a large download which wasn't parallelized, we would recommend calculating how many records were
+retrieved so far (e.g. using grep), and then use the offset parameter to get the rest from there onwards. If there is a
+significant delay between the first and the second call, please be aware that the indexed data may have been updated.
 
 .. Describe new endpoint that will tell you if any records in report file have been updated supressed or killed since it was generated.
 
