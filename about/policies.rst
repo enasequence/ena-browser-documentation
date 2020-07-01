@@ -37,6 +37,7 @@ The INSDC is an outstanding example of success in building an immensely valuable
 voluntary cooperation across the international scientific community. This success has been achieved by following the
 guidelines and principles outlined above.
 
+
 Data availability policy
 ========================
 
@@ -59,7 +60,7 @@ The two main levels to data availability are when data are confidential pre-publ
 
 .. _`extend the release of their data`: https://ena-docs.readthedocs.io/en/latest/faq/release.html#can-i-advance-postpone-the-release-date
 
-Removing Data from the Public Browser
+Removing data from the public browser
 -------------------------------------
 
 ENA general policy is that data which has been released into the public domain should remain public.
@@ -85,7 +86,34 @@ in the event of there being an issue with the public availability of your data.
 In any case where the data has been distributed as public, the INSDC partners cannot exercise any control on the
 resultant use of the data by third parties, even if it is subsequently removed from the service.
 
-Third Party Data
+
+ENA policy relating to compression of submitted data
+====================================================
+
+The European Nucleotide Archive (ENA) is committed to the safeguarding into the future of the world's public domain 
+nucleic acid sequencing data.
+
+In order to provide economically sustainable archiving, ENA team is actively developing 
+`CRAM <https://ena-docs.readthedocs.io/en/latest/retrieval/programmatic-access.html#cram-format>`_, a technology for 
+raw sequence read data compression. This technology offers both lossless compression, in which read sequence and 
+per-base quality information is faithfully preserved, and lossy models, in which data are selectively reduced to 
+reach an optimal balance between data preservation and compression.
+
+It is our aim with CRAM to provide a flexible technological framework in which data producers, the broad scientific 
+community that consumes ENA data, and funding agencies are empowered to make decisions about the level of compression 
+that can appropriately be applied to different data sets.
+
+ENA does not currently apply CRAM compression on incoming data and will not in the future apply lossy compression on 
+submitted data without prior announcement and prior consultation with principal stakeholders. In addition, for legacy 
+data already submitted and loaded into ENA, we will not seek to apply lossy compression without discussion with data 
+owners.
+
+Users may be aware that we currently preserve original submitted data files. Once data are loaded, these files contain 
+redundant information with that integrated into ENA. As such, we have never committed to preserving these submitted 
+files and will, in due course, cease to sustain their storage.
+
+
+Third party data
 ================
 
 Third PArty data (TPA) are submitted to the International Nucleotide Sequence Databases as part of the process of
@@ -110,7 +138,7 @@ Nucleotide Sequence Database Policies
 
 *Science 298 (5597): 1333 15 Nov 2002*
 
-INSDC Membership
+INSDC membership
 ================
 
 Please refer `here <https://www.ebi.ac.uk/about/leadership/advisory-boards>`_ for details of current membership of
