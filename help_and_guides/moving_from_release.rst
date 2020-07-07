@@ -177,8 +177,8 @@ but we make a brief mention here:
    account using the 'Save To Rulespace' button, please refer to this `guide for
    more information <https://www.ebi.ac.uk/ena/rulespace/api/doc>`_.
 
-Periodic Snapshots
-------------------
+Periodic Snapshots & Support API
+================================
 For sequence, coding and noncoding RNA data, we produce a periodic snapshot which includes all public records at that
 time point. These are available from FTP. These snapshots are different from the old release approach in these aspects:
 
@@ -189,8 +189,9 @@ time point. These are available from FTP. These snapshots are different from the
 Assembled/Annotated Sequences
 =============================
 
-Latest snapshot is available at ftp.ebi.ac.uk/pub/databases/ena/sequence/con-std_latest/
-con-std_latest is a symlink that points to the most recent snapshot. This is also listed in the text file con-std_latest.txt
+Latest snapshot is available at `ftp.ebi.ac.uk/pub/databases/ena/sequence/con-std_latest/ <http://ftp.ebi.ac.uk/pub/databases/ena/sequence/con-std_latest>`_.
+
+con-std_latest is a symlink that points to the most recent snapshot. This is also listed in the text file con-std_latest.txt in the parent folder.
 In this folder, the records are divided into con and std subfolders. std subfolder contains all dataclasses that are not CON
 (STD, EST, GSS, PAT etc.)
 Records are in gzip files, further divided by taxonomic division, with upto 1,000,000 records per file.
@@ -198,30 +199,57 @@ Records are in gzip files, further divided by taxonomic division, with upto 1,00
 Coding & Noncoding RNA Sequences
 ================================
 CDS and NCRNA subproducts from CON & STD (incld. EST, GSS etc) are treated the same was as Assembled/Annotated Sequences.
-The latest snapshots are avialble at
-ftp.ebi.ac.uk/pub/databases/ena/coding/con-std_latest
+The latest snapshots are available at
+
+`ftp.ebi.ac.uk/pub/databases/ena/coding/con-std_latest <http://ftp.ebi.ac.uk/pub/databases/ena/coding/con-std_latest>`_
 and
-ftp.ebi.ac.uk/pub/databases/ena/non-coding/con-std_latest respectively.
+
+`ftp.ebi.ac.uk/pub/databases/ena/non-coding/con-std_latest <http://ftp.ebi.ac.uk/pub/databases/ena/non-coding/con-std_latest>`_ respectively.
 
 But for subproducts from WGS/TSA/TLS sequences, the records are made available in a different manner. The reason for this is
 that given the massive (ever increasing) number of WGS sequence sets, we don't individually index WGS sequences and by relation,
 scalability makes it difficult to produce fully inclusive files for subproduts.
 Instead, we group the coding records from a given WGS set in to one file in the FTP tree.
 
-e.g. Consider the WGS set WYAA01, that includes the indivdiual WGS records WYAA01000001-WYAA01000116.
-The WGS sequence set for this is available on FTP at http://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/wy/
+e.g. Consider the WGS set WYAA01, that includes the individual WGS records WYAA01000001-WYAA01000116.
+The WGS sequence set for this is available on FTP at
+`ftp.ebi.ac.uk/pub/databases/ena/wgs/public/wy <http://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/wy/>`_.
 
-Corespondingly, the coding subproducts from sequences WYAA01000001-WYAA01000116 are avialble together in
-ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public/wy/ with the name WYAA01.cds.gz
+Corespondingly, the coding subproducts from sequences WYAA01000001-WYAA01000116 are available together in
+`ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public/wy <http://ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public/wy>`_
+with the name WYAA01.cds.gz
+
 Similarly, the noncoding RNA file is available in
-ftp.ebi.ac.uk/pub/databases/ena/non-coding/wgs/public/wy/ with the name WYAA01.ncr.gz
+`ftp.ebi.ac.uk/pub/databases/ena/non-coding/wgs/public/wy <http://ftp.ebi.ac.uk/pub/databases/ena/non-coding/wgs/public/wy>`_
+with the name WYAA01.ncr.gz
 
-So, if you wanted all coding from WGS, you would need to start at the tp.ebi.ac.uk/pub/databases/ena/coding/wgs/public level,
+So, if you wanted all coding from WGS, you would need to start at the
+`ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public <http://ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public>`_  level,
 delve into each subfolder and download the *.cds.gz files.
 Note that there are some cds.gz files that have no content. This would mean that there were no CDS features in any of the sequences
 in that WSG set. While not ideal, we have to retain these empty files for the pipeline to know that the subproducts have already
 been extracted from a given set, unless the parent set itself is updated.
 
+Find Deleted (suppressed/killed) Records
+----------------------------------------
+For Sequence, Coding & Non-coding, to find deleted record IDs since a given date, call the API as follows:
+
+`https://www.ebi.ac.uk/ena/browser/api/deleted/sequence/2020-07-01 <https://www.ebi.ac.uk/ena/browser/api/deleted/sequence/2020-07-01>`_
+
+`https://www.ebi.ac.uk/ena/browser/api/deleted/coding/2020-07-01 <https://www.ebi.ac.uk/ena/browser/api/deleted/coding/2020-07-01>`_
+
+`https://www.ebi.ac.uk/ena/browser/api/deleted/noncoding/2020-07-01 <https://www.ebi.ac.uk/ena/browser/api/deleted/noncoding/2020-07-01>`_
+
+Find Changed Sets
+-----------------
+To get a list of Coding or ncRNA set files that have been added/updated since a given date, without having to check
+through all the subfolders, we provide an API. Call it as follows.
+
+`https://www.ebi.ac.uk/ena/browser/api/changed_sets/coding/2020-07-01 <https://www.ebi.ac.uk/ena/browser/api/changed_sets/coding/2020-07-01>`_
+
+and
+
+`https://www.ebi.ac.uk/ena/browser/api/changed_sets/noncoding/2020-07-01 <https://www.ebi.ac.uk/ena/browser/api/changed_sets/noncoding/2020-07-01>`_
 
 How to identify data based on a last updated timestamp
 ======================================================
