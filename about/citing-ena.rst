@@ -2,17 +2,6 @@
 How to Cite Data in ENA
 =======================
 
-All accessions issued by ENA, along with all accessions issued by its international partner institutions under
-INSDC, can be viewed in the ENA browser by pasting the accession into the Text search box or through the URL:
-http://www.ebi.ac.uk/ena/browser/view/<accession>
-
-*e.g. http://www.ebi.ac.uk/ena/browser/view/BN000065*
-
-Numeric ranges for accessions with the same prefix are also supported via
-http://www.ebi.ac.uk/ena/browser/view/<accession1>-<accession2>
-
-*e.g. http://www.ebi.ac.uk/ena/browser/view/BN000066-BN000070*
-
 In all cases, the top-level Project accession should be cited as well as a link to where the data can be found in the
 browser, for example:
 
@@ -28,3 +17,14 @@ be used for publication:
 - BioSamples in the context of associated data (e.g. format SAMEA123456)
 - Assembled/Annotated Sequences including contig, scaffold and chromosome sequences generated from an assembly
   submission (e.g. format A12345.1)
+
+All accessions issued by ENA, along with all accessions issued by its international partner institutions under
+INSDC, can be viewed in the ENA browser by pasting the accession into the Text search box or through the URL:
+http://www.ebi.ac.uk/ena/browser/view/<accession>
+
+*e.g. http://www.ebi.ac.uk/ena/browser/view/BN000065*
+
+Numeric ranges for accessions with the same prefix are also supported via
+http://www.ebi.ac.uk/ena/browser/view/<accession1>-<accession2>
+
+*e.g. http://www.ebi.ac.uk/ena/browser/view/BN000066-BN000070*
