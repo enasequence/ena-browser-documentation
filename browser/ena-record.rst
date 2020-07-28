@@ -158,6 +158,18 @@ Component projects are the same as other project records in ENA but are grouped 
 'umbrella' meaning they will often have the same research motivation and will often represent
 a collaborative research effort.
 
+
+Parent Projects
+===============
+
+If a project has a parent project it is part of an **Umbrella Project** (a project which is used to 
+group many related sub-projects).
+
+Projects grouped under one 'umbrella' often have the same research motivation and will often represent
+a collaborative research effort. You can navigate to the parent project through this tab and view 
+other related component projects through the 'Component Projects' tab.
+
+
 Related ENA Records
 ===================
 
