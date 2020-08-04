@@ -14,7 +14,7 @@ Having registered a study, please proceed to register your samples. These are me
 
 Instructions for sample registration can be found in our `Sample Registration Guide <https://ena-docs.readthedocs.io/en/latest/submit/samples.html>`_. As part of this process, you must select a sample checklist to describe metadata. The most appropriate checklist for Coronavirus submissions is the “ENA virus pathogen reporting standard checklist” - `ERC000033 <https://www.ebi.ac.uk/ena/browser/view/ERC000033>`_. This presents 9 mandatory, 15 recommended and 11 optional fields (along with any additional user-defined fields).
 
-Please use the organism name “Severe acute respiratory syndrome coronavirus 2” and taxonomic ID 2697049. It is recommended, as a minimum, that collection date and geographic location (e.g. country) are specified and sample capture status field is provided a value of ‘active response in response to outbreak’. If you require support regarding sample metadata, please contact virus-dataflow@ebi.ac.uk.
+Please use the organism name “Severe acute respiratory syndrome coronavirus 2” and taxonomic ID 2697049. It is recommended, as a minimum, that collection date and geographic location (e.g. country) are specified and sample capture status field is provided a value of ‘active surveillance in response to outbreak’. If you require support regarding sample metadata, please contact virus-dataflow@ebi.ac.uk.
 
 If you have already submitted data to the GISAID database, a corresponding GISAID ID can be specified when using the ERC000033 checklist by creating a user-defined field named ‘GISAID Accession ID’.
 
@@ -32,6 +32,8 @@ If submitting assemblies, you must have registered a study and a sample beforeha
 Assemblies can only be submitted using `Webin-CLI <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html>`_, using `-context genome`.  During the process, you must define metadata in the `manifest file(s) <https://ena-docs.readthedocs.io/en/latest/submit/assembly/genome.html#manifest-files>`_. Please specify ‘COVID-19 outbreak’ as the ‘ASSEMBLY_TYPE’.
 
 Any annotations, where provided, are captured according to `INSDC Feature Table Definitions <http://www.insdc.org/files/feature_table.html>`_.
+
+In alignment with INSDC partners, COVID-19 assemblies will **not** be assigned a GCA accession. However, sequence accessions will continue to be assigned, alongside ERZ analysis accessions which are the point of access for the submitted file(s). For more details on accessioning, view our `Accessions Guide <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/accessions.html>`_. To cite data, top-level project accessions (PRJ...) should be used as these are the most stable long-term accessions. View our `guide to cite data <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/accessions.html#how-to-cite-your-ena-study>`_ for further details.
 
 Submitting Targeted Sequences
 =============================
