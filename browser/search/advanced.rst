@@ -91,32 +91,16 @@ What is in each data type?
 | | contig sets    | | sample metadata (information about the    |                     |
 | | (TSA)          | | collected sample).                        |                     |
 +------------------+---------------------------------------------+---------------------+
-| | Nucleotide     | | The most recent snapshot of all assembled | *sequence_release*  |
-| | sequences      | | and annotated sequences publicly          |                     |
-| | (Release)      | | available in ENA on the last quarterly    |                     |
-|                  | | release date (including high level        |                     |
-|                  | | sequences from assembly submissions e.g.  |                     |
-|                  | | fully assembled chromosomes).             |                     |
+| | Nucleotide     | | All assembled and annotated sequences     | *sequence*          |
+| | sequences      | | publicly available in ENA (including high |                     |
+| |                | | level sequences from assembly submissions |                     |
+|                  | | e.g. fully assembled chromosomes).        |                     |
 +------------------+---------------------------------------------+---------------------+
-| | Nucleotide     | | Any changes to public assembled and       | *sequence_update*   |
-| | sequences      | | annotated sequences held in ENA since the |                     |
-| | (Update)       | | last quarterly release.                   |                     |
+| | Protein coding | | All protein coding sequences publicly     | *coding*            |
+| | sequences      | | available in ENA                          |                     |
 +------------------+---------------------------------------------+---------------------+
-| | Protein coding | | The most recent snapshot of all protein   | *coding_release*    |
-| | sequences      | | coding sequences publicly available in    |                     |
-| | (Release)      | | ENA on the last quarterly release date.   |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Protein coding | | Any changes to protein coding sequences   | *coding_update*     |
-| | sequences      | | held in ENA since the last quarterly      |                     |
-| | (Update)       | | release.                                  |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Non-coding     | | The most recent snapshot of all non       | *noncoding_release* |
-| | sequences      | | coding sequences publicly available in    |                     |
-| | (Release)      | | ENA on the last quarterly release date.   |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Non-coding     | | Any changes to non coding sequences       | *noncoding_update*  |
-| | sequences      | | held in ENA since the last quarterly      |                     |
-| | (Update)       | | release.                                  |                     |
+| | Non-coding     | | All non coding sequences publicly         | *noncoding*         |
+| | sequences      | | available in ENA                          |                     |
 +------------------+---------------------------------------------+---------------------+
 | | Taxonomic      | | All taxa and their tax IDs. Search for a  | *taxon*             |
 | | classification | | specific taxa or look for all taxa below  |                     |
