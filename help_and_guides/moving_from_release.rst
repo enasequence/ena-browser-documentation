@@ -45,23 +45,18 @@ have already been removed from the release and will continue to be added to the
 FTP in their corresponding folders (e.g. http://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/;
 http://ftp.ebi.ac.uk/pub/databases/ena/tsa/public/; http://ftp.ebi.ac.uk/pub/databases/ena/tls/public/).
 
-Release vs Update search data
+Deprecated: Release vs Update search results
 =============================
 
-Currently we maintain separately indexed datasets for RELEASE and UPDATE data for Sequence and Coding & NonCoding RNA records.
-Where RELEASE refers to the last ENA release, and UPDATE refers to any records that have been added or modified since the
+We no longer maintain separately indexed datasets for RELEASE and UPDATE data for Sequence and Coding & NonCoding RNA records.
+Where RELEASE referred to the last ENA release, and UPDATE referred to any records that had been added or modified since the
 last release.
-So we have the search result type "sequence_release" which indexes all CON & STD (including EST, GSS, PAT etc.) class records from the last release,
-and "sequence_update" which indexes the modified or added CON & STD records.
-coding_release & coding_update, noncoding_release & noncoding_update are equivalent format CDS and NCRNA subproducts
-from the sequence records respectively.
 
-After the final release (143) in March 2020, in our Advanced Search service, we will be merging the '_release' and '_update'
+After the final release (143) in March 2020, in our Advanced Search service, we've now merged the '_release' and '_update'
 data types for sequence, coding and non-coding. So the data types 'sequence_release'
-and 'sequence_update' will be replaced with the data type 'sequence'. This affects
+and 'sequence_update' were replaced with the data type 'sequence'. This affects
 users of our API and Browser advanced search services, who will need to use the
-updated data type end points. We're working to make the new data types available in parallel to
-the last indexed release & update datasets.
+updated data type end points.
 
 The following guide has been created to assist users in moving away from the release.
 This guide outlines accessing assembled/annotated sequences, guidance on how to identify data
@@ -119,9 +114,12 @@ or FASTA
 
   curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence&query=tax_eq(9606)%20AND%20last_updated%3C%3D2019-08-18&limit=5' -o fasta.txt
 
-We have added limits to the above examples to only return 5 records, remove this under normal use. You can search using
-the sequence, coding or non-coding data type endpoints. In general when using the API search it is important to be as
-specific as possible with your query to save on downloading sequences that you do not require.
+We have added limits to the above examples to only return 5 records.
+
+If not provided, limit defaults to 100000. To retrieve ALL records matching a query, user limit=0.
+
+You can search using the sequence, coding or noncoding data type endpoints. In general when using the API search it is
+important to be as specific as possible with your query to save on downloading sequences that you do not require.
 
 .. read current release notes on data types to help here.
 
@@ -155,7 +153,7 @@ but we make a brief mention here:
 1. Start an advanced search at https://www.ebi.ac.uk/ena/browser/advanced-search
 
 2. Select an assembled/annotated sequence data type such as 'sequence',
-   'coding_release' or 'noncoding_release'
+   'coding' or 'noncoding'
 
 3. (Recommended) Use the Query builder to be as specific as possible with the available filters to construct a query that will
    limit the resulting dataset to match your needs.
@@ -182,9 +180,9 @@ Periodic Snapshots & Support API
 For sequence, coding and noncoding RNA data, we produce a periodic snapshot which includes all public records at that
 time point. These are available from FTP. These snapshots are different from the old release approach in these aspects:
 
-1. Are more frequent. We aim to produce these once a month, but can be more frequent if requirements dictate.
+1. Are more frequent. We aim to produce these twice a month.
 
-2. Release numbers will not be updated in the flatfile
+2. Release numbers will not be updated in the flatfile DT lines
 
 Assembled/Annotated Sequences
 =============================
@@ -215,7 +213,7 @@ e.g. Consider the WGS set WYAA01, that includes the individual WGS records WYAA0
 The WGS sequence set for this is available on FTP at
 `ftp.ebi.ac.uk/pub/databases/ena/wgs/public/wy <http://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/wy/>`_.
 
-Corespondingly, the coding subproducts from sequences WYAA01000001-WYAA01000116 are available together in
+Correspondingly, the coding subproducts from sequences WYAA01000001-WYAA01000116 are available together in
 `ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public/wy <http://ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public/wy>`_
 with the name WYAA01.cds.gz
 
@@ -286,7 +284,7 @@ date, for example data for the first 5 days of August 2019:
 
   curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05&limit=5' -o fasta.txt
 
-We have added limits to the above examples to only return 5 records, remove this under normal use. You can search using
+We have added limits to the above examples to only return 5 records. Use limit=0 to retrieve ALL matching records. You can search using
 the sequence, coding or non-coding data type endpoints. In general when using the API search it is important to be as
 specific as possible with your query to save on downloading sequences that you do not require.
 
