@@ -30,82 +30,82 @@ narrow down your search results with any additional criteria.
 What is in each data type?
 --------------------------
 
-+------------------+---------------------------------------------+---------------------+
-| **Data Type**    | **Description**                             | **API Result type** |
-+------------------+---------------------------------------------+---------------------+
-| Studies          | | All studies in ENA. Studies can be        | *study*             |
-|                  | | searched by the study metadata, e.g.      |                     |
-|                  | | title or by related taxonomy of data.     |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Studies used   | | All studies that hold raw read datasets.  | *read_study*        |
-| | for raw reads  | | Searching across this data type can give  |                     |
-|                  | | you information on these studies and can  |                     |
-|                  | | be filtered down by sample metadata       |                     |
-|                  | | (information about the collected samples  |                     |
-|                  | | in the study).                            |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Studies used   | | All studies that hold any nucleotide      | *analysis_study*    |
-| | for nucleotide | | analyses. Searching across this data type |                     |
-| | sequence       | | can give you information on these studies |                     |
-| | analyses from  | | and can be filtered down by sample        |                     |
-| | reads          | | metadata (information about the collected |                     |
-|                  | | samples in the study).                    |                     |
-+------------------+---------------------------------------------+---------------------+
-| Samples          | | All samples in ENA. Samples can be        | *sample*            |
-|                  | | searched by sample metadata.              |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Environmental  | | All samples in ENA that the submitter has | *environmental*     |
-| | samples        | | flagged as 'evironmental' during sample   |                     | 
-| |                | | registration. Please note, this does not  |                     | 
-| |                | | include all environmental samples.        |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Experiments    | | All metadata associated with sequencing   | *read_experiment*   |
-| | used for raw   | | event used to generate raw reads          |                     |
-| | reads          | | submitted to ENA.                         |                     |
-+------------------+---------------------------------------------+---------------------+
-| Raw reads        | | All raw read datasets in ENA. This        | *read_run*          |
-|                  | | datatype can be filtered by sample        |                     |
-|                  | | metadata (information about the collected |                     |
-|                  | | sample) as well as return directly        |                     |
-|                  | | downloadable files.                       |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Nucleotide     | | All nucleotide analyses held in ENA.      | *analysis*          |
-| | sequence       | | This datatype can be filtered by sample   |                     |
-| | analyses from  | | metadata (information about the collected |                     |
-| | reads          | | sample) as well as return directly        |                     |
-|                  | | downloadable files.                       |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Genome         | | All genome assembly records (excluding    | *assembly*          |
-| | assemblies     | | primary or binned metagenomes which are   |                     |
-|                  | | considered *analyses*). This datatype can |                     |
-|                  | | only be filtered by assembly metadata     |                     |
-|                  | | e.g. project accession or taxonomy.       |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Genome         | | All genome assembly contig sets in ENA.   | *wgs_set*           |
-| | assembly       | | This datatype can be filtered by sample   |                     |
-| | contig sets    | | metadata (information about the collected |                     |
-| | (WGS)          | | sample).                                  |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Transcriptome  | | All transcriptome assembly contig sets in | *tsa_set*           |
-| | assembly       | | ENA. This datatype can be filtered by     |                     | 
-| | contig sets    | | sample metadata (information about the    |                     |
-| | (TSA)          | | collected sample).                        |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Nucleotide     | | All assembled and annotated sequences     | *sequence*          |
-| | sequences      | | publicly available in ENA (including high |                     |
-| |                | | level sequences from assembly submissions |                     |
-|                  | | e.g. fully assembled chromosomes).        |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Protein coding | | All protein coding sequences publicly     | *coding*            |
-| | sequences      | | available in ENA                          |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Non-coding     | | All non coding sequences publicly         | *noncoding*         |
-| | sequences      | | available in ENA                          |                     |
-+------------------+---------------------------------------------+---------------------+
-| | Taxonomic      | | All taxa and their tax IDs. Search for a  | *taxon*             |
-| | classification | | specific taxa or look for all taxa below  |                     |
-|                  | | a tax node.                               |                     | 
-+------------------+---------------------------------------------+---------------------+
++------------------+---------------------------------------------+---------------------+---------------------+
+| **Data Type**    | **Description**                             | **API Result type** | **Domain**          |
++------------------+---------------------------------------------+---------------------+---------------------+
+| Studies          | | All studies in ENA. Studies can be        | *study*             | *sra-study*         |
+|                  | | searched by the study metadata, e.g.      |                     |                     |
+|                  | | title or by related taxonomy of data.     |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
+| | Studies used   | | All studies that hold raw read datasets.  | *read_study*        | *sra-study*         |
+| | for raw reads  | | Searching across this data type can give  |                     |                     |
+|                  | | you information on these studies and can  |                     |                     |
+|                  | | be filtered down by sample metadata       |                     |                     |
+|                  | | (information about the collected samples  |                     |                     |
+|                  | | in the study).                            |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
+| | Studies used   | | All studies that hold any nucleotide      | *analysis_study*    | *sra-study*         |
+| | for nucleotide | | analyses. Searching across this data type |                     |                     |
+| | sequence       | | can give you information on these studies |                     |                     |
+| | analyses from  | | and can be filtered down by sample        |                     |                     |
+| | reads          | | metadata (information about the collected |                     |                     |
+|                  | | samples in the study).                    |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
+| Samples          | | All samples in ENA. Samples can be        | *sample*            | *sra-sample*        |
+|                  | | searched by sample metadata.              |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
+| | Environmental  | | All samples in ENA that the submitter has | *environmental*     |                     |
+| | samples        | | flagged as 'evironmental' during sample   |                     |                     |
+| |                | | registration. Please note, this does not  |                     |                     |
+| |                | | include all environmental samples.        |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
+| | Experiments    | | All metadata associated with sequencing   | *read_experiment*   | *sra-experiment*    |
+| | used for raw   | | event used to generate raw reads          |                     |                     |
+| | reads          | | submitted to ENA.                         |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
+| Raw reads        | | All raw read datasets in ENA. This        | *read_run*          | *sra-run*           |
+|                  | | datatype can be filtered by sample        |                     |                     |
+|                  | | metadata (information about the collected |                     |                     |
+|                  | | sample) as well as return directly        |                     |                     |
+|                  | | downloadable files.                       |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
+| | Nucleotide     | | All nucleotide analyses held in ENA.      | *analysis*          | *sra-analysis*      |
+| | sequence       | | This datatype can be filtered by sample   |                     |                     |
+| | analyses from  | | metadata (information about the collected |                     |                     |
+| | reads          | | sample) as well as return directly        |                     |                     |
+|                  | | downloadable files.                       |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
+| | Genome         | | All genome assembly records (excluding    | *assembly*          | *genome_assembly*   |
+| | assemblies     | | primary or binned metagenomes which are   |                     |                     |
+|                  | | considered *analyses*). This datatype can |                     |                     |
+|                  | | only be filtered by assembly metadata     |                     |                     |
+|                  | | e.g. project accession or taxonomy.       |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
+| | Genome         | | All genome assembly contig sets in ENA.   | *wgs_set*           | *wgs_masters*       |
+| | assembly       | | This datatype can be filtered by sample   |                     |                     |
+| | contig sets    | | metadata (information about the collected |                     |                     |
+| | (WGS)          | | sample).                                  |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
+| | Transcriptome  | | All transcriptome assembly contig sets in | *tsa_set*           | *tsa_masters*       |
+| | assembly       | | ENA. This datatype can be filtered by     |                     |                     |
+| | contig sets    | | sample metadata (information about the    |                     |                     |
+| | (TSA)          | | collected sample).                        |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
+| | Nucleotide     | | All assembled and annotated sequences     | *sequence*          | *embl*              |
+| | sequences      | | publicly available in ENA (including high |                     |                     |
+| |                | | level sequences from assembly submissions |                     |                     |
+|                  | | e.g. fully assembled chromosomes).        |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
+| | Protein coding | | All protein coding sequences publicly     | *coding*            | *coding*            |
+| | sequences      | | available in ENA                          |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
+| | Non-coding     | | All non coding sequences publicly         | *noncoding*         | *non-coding*        |
+| | sequences      | | available in ENA                          |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
+| | Taxonomic      | | All taxa and their tax IDs. Search for a  | *taxon*             | *taxonomy*          |
+| | classification | | specific taxa or look for all taxa below  |                     |                     |
+|                  | | a tax node.                               |                     |                     |
++------------------+---------------------------------------------+---------------------+---------------------+
 
 Search Query
 ============
