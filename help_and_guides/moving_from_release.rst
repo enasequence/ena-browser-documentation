@@ -224,9 +224,6 @@ with the name WYAA01.ncr.gz
 So, if you wanted all coding from WGS, you would need to start at the
 `ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public <http://ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public>`_  level,
 delve into each subfolder and download the *.cds.gz files.
-Note that there are some cds.gz files that have no content. This would mean that there were no CDS features in any of the sequences
-in that WSG set. While not ideal, we have to retain these empty files for the pipeline to know that the subproducts have already
-been extracted from a given set, unless the parent set itself is updated.
 
 Find Deleted (suppressed/killed) Records
 ----------------------------------------
