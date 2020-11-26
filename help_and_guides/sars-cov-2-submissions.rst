@@ -12,12 +12,26 @@ Registering Samples
 ===================
 Having registered a study, please proceed to register your samples. These are metadata objects that describe the source biological material of your experiments. Following this, the sequence data can be registered (as described in later sections).
 
-Instructions for sample registration can be found in our `Sample Registration Guide <https://ena-docs.readthedocs.io/en/latest/submit/samples.html>`_. As part of this process, you must select a sample checklist to describe metadata. The most appropriate checklist for Coronavirus submissions is the “ENA virus pathogen reporting standard checklist” - `ERC000033 <https://www.ebi.ac.uk/ena/browser/view/ERC000033>`_. This presents 9 mandatory, 15 recommended and 11 optional fields (along with any additional user-defined fields).
+Instructions for sample registration can be found in our `Sample Registration Guide <https://ena-docs.readthedocs.io/en/latest/submit/samples.html.>`_. As part of this process, you must select a sample checklist to describe metadata. If you require any support regarding sample metadata, please contact virus-dataflow@ebi.ac.uk.
 
-Please use the organism name “Severe acute respiratory syndrome coronavirus 2” and taxonomic ID 2697049. It is recommended, as a minimum, that collection date and geographic location (e.g. country) are specified and sample capture status field is provided a value of ‘active surveillance in response to outbreak’. If you require support regarding sample metadata, please contact virus-dataflow@ebi.ac.uk.
+###Viral Samples
+The most appropriate checklist for SARS-CoV-2 submissions is the “ENA virus pathogen reporting standard checklist” - `ERC000033 <https://www.ebi.ac.uk/ena/browser/view/ERC000033>`_. This presents 9 mandatory, 15 recommended and 11 optional fields (along with any additional user-defined fields).
 
-If you have already submitted data to the GISAID database, a corresponding GISAID ID can be specified when using the ERC000033 checklist by creating a user-defined field named ‘GISAID Accession ID’.
+Please use the organism name “Severe acute respiratory syndrome coronavirus 2” and taxonomic ID 2697049. It is recommended, as a minimum, that collection date and geographic location (e.g. country) are specified and sample capture status field is provided a value of ‘active surveillance in response to outbreak’.
 
+###Metagenomic Samples
+Data submissions which include metagenomic samples, should be registered with a relevant metagenome taxonomy - visit our FAQ on `Tips for Taxonomy <https://ena-docs.readthedocs.io/en/latest/faq/taxonomy.html#environmental-biome-level-taxonomy>`_ for more information. A few examples include human lung metagenome - `433733 <https://www.ebi.ac.uk/ena/browser/view/Taxon:433733>`_, human saliva metagenome - `1679718 <https://www.ebi.ac.uk/ena/browser/view/Taxon:1679718>`_, human tracheal metagenome - `1712573 <https://www.ebi.ac.uk/ena/browser/view/Taxon:1712573>`_ or human metagenome - `646099 <https://www.ebi.ac.uk/ena/browser/view/Taxon:646099>`_, among many others.
+
+The most appropriate sample checklists depending on the source of your biological samples, are likely to include:
+* GSC MIxS host associated (`ERC000013 <https://www.ebi.ac.uk/ena/browser/view/ERC000013>`_)
+* GSC MIxS human associated (`ERC000014 <https://www.ebi.ac.uk/ena/browser/view/ERC000014>`_)
+
+Visit our `ENA Sample Checklists <https://www.ebi.ac.uk/ena/browser/checklists>`_ page for a full listing of sample checklists.
+
+When using the GSC MIxS checklists for your submission, please include the optional field ‘host disease status’ with a value of ‘COVID-19’.
+
+###Other Sample Fields
+If you have already submitted data to the GISAID database, a corresponding GISAID ID can be specified when using a sample checklist by creating a user-defined field named ‘GISAID Accession ID’.
 
 Submitting Reads
 ================
