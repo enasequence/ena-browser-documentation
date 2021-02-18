@@ -13,8 +13,8 @@ Moving away from the release
 Introduction
 ============
 
-The ENA is retiring its periodic assembled/annotated sequence release in March 2020.
-The last release will be number 143.
+The ENA retired its periodic assembled/annotated sequence release in March 2020.
+The last release was number 143.
 
 The European Nucleotide Archive (ENA) captures, preserves and presents the world's
 nucleotide sequence data. Since 1982 the European Nucleotide Archive has made more than 140
@@ -187,28 +187,31 @@ time point. These are available from FTP. These snapshots are different from the
 Assembled/Annotated Sequences
 =============================
 
-Latest snapshot is available at `ftp.ebi.ac.uk/pub/databases/ena/sequence/con-std_latest/ <http://ftp.ebi.ac.uk/pub/databases/ena/sequence/con-std_latest>`_.
+Latest snapshot is available at
+`ftp.ebi.ac.uk/pub/databases/ena/sequence/snapshot_latest/ <http://ftp.ebi.ac.uk/pub/databases/ena/sequence/snapshot_latest>`_.
 
-con-std_latest is a symlink that points to the most recent snapshot. This is also listed in the text file con-std_latest.txt in the parent folder.
-In this folder, the records are divided into con and std subfolders. std subfolder contains all dataclasses that are not CON
-(STD, EST, GSS, PAT etc.)
+snapshot_latest is a symlink that points to the most recent snapshot. This is also listed in the text file
+snapshot_latest.txt in the parent folder.
+In this folder, the records are divided into con, expanded_con and std subfolders. std subfolder contains all
+dataclasses that are not CON (STD, EST, GSS, PAT etc.)
 Records are in gzip files, further divided by taxonomic division, with upto 1,000,000 records per file.
 
 Coding & Noncoding RNA Sequences
 ================================
-CDS and NCRNA subproducts from CON & STD (incld. EST, GSS etc) are treated the same was as Assembled/Annotated Sequences.
+CDS and NCRNA subproducts from CON & STD (incl. EST, GSS etc) are treated the same was as Assembled/Annotated Sequences.
 The latest snapshots are available at
 
-`ftp.ebi.ac.uk/pub/databases/ena/coding/con-std_latest <http://ftp.ebi.ac.uk/pub/databases/ena/coding/con-std_latest>`_
+`ftp.ebi.ac.uk/pub/databases/ena/coding/snapshot_latest <http://ftp.ebi.ac.uk/pub/databases/ena/coding/snapshot_latest>`_
 and
 
-`ftp.ebi.ac.uk/pub/databases/ena/non-coding/con-std_latest <http://ftp.ebi.ac.uk/pub/databases/ena/non-coding/con-std_latest>`_ respectively.
+`ftp.ebi.ac.uk/pub/databases/ena/non-coding/snapshot_latest <http://ftp.ebi.ac.uk/pub/databases/ena/non-coding/snapshot_latest>`_ respectively.
 
-But for subproducts from WGS/TSA/TLS sequences, the records are made available in a different manner. The reason for this is
-that given the massive (ever increasing) number of WGS sequence sets, we don't individually index WGS sequences and by relation,
-scalability makes it difficult to produce fully inclusive files for subproduts.
-Instead, we group the coding records from a given WGS set in to one file in the FTP tree.
+But for subproducts from WGS/TSA/TLS sequences, the records are made available in a different manner.
+We group the coding records from a given WGS set in to one file. Then files are grouped set-name based on 3 character prefix
+into a tar file.
+e.g. ftp.ebi.ac.uk/pub/databases/ena/non-coding/snapshot_latest/wgs/aaa.tar contains Coding features from AAAA02, AAAB01 and so on.
 
+Individual set files are also made available separately on FTP.
 e.g. Consider the WGS set WYAA01, that includes the individual WGS records WYAA01000001-WYAA01000116.
 The WGS sequence set for this is available on FTP at
 `ftp.ebi.ac.uk/pub/databases/ena/wgs/public/wy <http://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/wy/>`_.
