@@ -214,14 +214,14 @@ e.g. ftp.ebi.ac.uk/pub/databases/ena/non-coding/snapshot_latest/wgs/aaa.tar cont
 Individual set files are also made available separately on FTP.
 e.g. Consider the WGS set WYAA01, that includes the individual WGS records WYAA01000001-WYAA01000116.
 The WGS sequence set for this is available on FTP at
-`ftp.ebi.ac.uk/pub/databases/ena/wgs/public/wy <http://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/wy/>`_.
+`ftp.ebi.ac.uk/pub/databases/ena/wgs/public/wya <http://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/wya/>`_.
 
 Correspondingly, the coding subproducts from sequences WYAA01000001-WYAA01000116 are available together in
-`ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public/wy <http://ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public/wy>`_
+`ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public/wya <http://ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public/wya>`_
 with the name WYAA01.cds.gz
 
 Similarly, the noncoding RNA file is available in
-`ftp.ebi.ac.uk/pub/databases/ena/non-coding/wgs/public/wy <http://ftp.ebi.ac.uk/pub/databases/ena/non-coding/wgs/public/wy>`_
+`ftp.ebi.ac.uk/pub/databases/ena/non-coding/wgs/public/wya <http://ftp.ebi.ac.uk/pub/databases/ena/non-coding/wgs/public/wya>`_
 with the name WYAA01.ncr.gz
 
 So, if you wanted all coding from WGS, you would need to start at the
