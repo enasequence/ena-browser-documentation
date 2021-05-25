@@ -9,7 +9,7 @@ Details of upcoming meetings where you might find us are available below.
 +-------------+-----------------------+--------------------------------------------------------------------------------+
 | Date        | Event                 | Description                                                                    |
 +-------------+-----------------------+--------------------------------------------------------------------------------+
-| Autumn 2020 | `ENA Facilities Day`_ | | Facilities Day is an annual meeting of ENA staff with                        |
+| Autumn 2021 | ENA Facilities Day    | | Facilities Day is an annual meeting of ENA staff with                        |
 |             |                       | | frequent users. We invite representatives of sequencing                      |
 |             |                       | | facilities, brokers, and other major service users to                        |
 |             |                       | | discuss developments at ENA, and how our services are used.                  |
@@ -29,8 +29,8 @@ you.
 +-----------------+------------------------------------+---------------------------------------------------------------+
 | Date            | Event                              | Description                                                   |
 +-----------------+------------------------------------+---------------------------------------------------------------+
-| | 13th - 17th   | `Metagenomics Bioinformatics`_     | | This course will provide biologists                         |
-| | July 2020     |                                    | | who are embarking upon metagenomics                         |
+| | 8th - 12th    | `Metagenomics Bioinformatics`_     | | This course will provide biologists                         |
+| | July 2021     |                                    | | who are embarking upon metagenomics                         |
 |                 |                                    | | research projects training to use                           |
 |                 |                                    | | publicly available resources to                             |
 |                 |                                    | | manage, share, analyse and interpret                        |
@@ -38,21 +38,9 @@ you.
 |                 |                                    | | marker gene and whole gene shotgun                          |
 |                 |                                    | | (WGS) approaches                                            |
 +-----------------+------------------------------------+---------------------------------------------------------------+
-| | 14th - 16th   | `Exploring Biological Sequences`_  | | This workshop will introduce basic                          |
-| | October 2020  |                                    | | bioinformatics approaches that are                          |
-|                 |                                    | | used to find, analyse and understand                        |
-|                 |                                    | | nucleotide or protein sequences                             |
-+-----------------+------------------------------------+---------------------------------------------------------------+
-| | 23rd - 27th   | `NGS Bioinformatics`_              | | This course will provide an introduction                    |
-| | November 2020 |                                    | | to the technology, analysis workflows,                      |
-|                 |                                    | | tools and resources for next generation                     |
-|                 |                                    | | sequencing data analysis.                                   |
-+-----------------+------------------------------------+---------------------------------------------------------------+
 
 
-.. _`ENA Facilities Day` : https://www.ebi.ac.uk/ena/support/facilities-day
-
-.. _`Metagenomics Bioinformatics` : https://www.ebi.ac.uk/training/events/2020/metagenomics-bioinformatics-4
+.. _`Metagenomics Bioinformatics` : https://www.ebi.ac.uk/training/events/metagenomics-bioinformatics-virtual-2021/
 .. _`Exploring Biological Sequences` :  https://www.ebi.ac.uk/training/events/2020/exploring-biological-sequences-3
 .. _`NGS Bioinformatics` : https://www.ebi.ac.uk/training/events/2020/next-generation-sequencing-bioinformatics-0
 
