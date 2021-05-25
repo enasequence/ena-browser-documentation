@@ -18,7 +18,7 @@ that build on ENA services and content.
 **Data coordination**: our data coordination partnerships span the life sciences, covering such areas as livestock
 genomics, marine biotechnology, biodiversity, pathogen surveillance and stem cell biology. Within these partnerships,
 we support data operations variously through the provision of technology, standards, data analysis, training, support
-and web/API data portals. `Read more here <https://www.ebi.ac.uk/ena/browser/about/data_coordination>`_.
+and web/API data portals. `Read more here <https://www.ebi.ac.uk/ena/browser/about/data-coordination>`_.
 
 **Ambition**: we are committed to the utility of the ENA platform and to achieving the broadest reach and utility
 of sequencing technology and data.
