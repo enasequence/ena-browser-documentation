@@ -76,3 +76,13 @@ The sample representing the human donor (1) must be registered first as the huma
 Release of Data
 ===============
 We recommend that submitted data is set to public as soon as possible to enable early presentation in `ENA <https://www.ebi.ac.uk/ena/browser/home>`_ and also on the `COVID-19 data platform <https://www.covid19dataportal.org/>`_. Users are responsible for releasing data they submit to ENA. This is done by setting an appropriate release date, as detailed in our `Data Release Policies <https://ena-docs.readthedocs.io/en/latest/faq/release.html#can-i-advance-postpone-the-release-date>`_.
+
+DOI Issuing
+===========
+We can now offer DOI issuing for SARS-CoV-2 projects. Digital Object Identifiers (DOIs) are persistent identifiers that can be assigned to any type of entity. From the `DOI handbook <https://www.doi.org/doi_handbook/1_Introduction.html#1.6.1>`_:
+
+  A DOI name is an identifier (not a location) of an entity on digital networks. It provides a system for persistent and actionable identification and interoperable exchange of managed information on digital networks. A DOI name can be assigned to any entity — physical, digital or abstract — primarily for sharing with an interested user community or managing as intellectual property. The DOI system is designed for interoperability; that is to use, or work with, existing identifier and metadata schemes. DOI names may also be expressed as URLs (URIs).
+
+DOI issuing for ENA records is performed by creating a BioStudies record containing all relevant ENA projects (https://www.ebi.ac.uk/biostudies/about). We will generate this BioStudies record on your behalf and it will hold pointers to the ENA project(s) of your choosing.
+
+To request a DOI for your data, please email virus-dataflow@ebi.ac.uk.
