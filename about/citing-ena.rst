@@ -28,3 +28,11 @@ Numeric ranges for accessions with the same prefix are also supported via
 http://www.ebi.ac.uk/ena/browser/view/<accession1>-<accession2>
 
 *e.g. http://www.ebi.ac.uk/ena/browser/view/BN000066-BN000070*
+
+ORCID Data Claiming
+===================
+The ORCID system (https://orcid.org/) will be familiar to many as a way to claim publications, grants and other types of contributions against an ID that is unique to you.
+
+ENA studies/projects can now be claimed against your ORCID ID, in the same way that publications can. This is implemented through the EBI search interface : https://www.ebi.ac.uk/ebisearch/orcidclaimdocumentation.ebi
+
+To claim your data, simply search in the ‘ENA Study’ search box using accession numbers or keywords to find your project(s). This will return a list of results for your review. To claim projects, select the relevant checkboxes and click ‘Claim to ORCID’ at the top of the search results. This will prompt you to log in to your ORCID account, if you haven’t already done so.
