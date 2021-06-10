@@ -22,9 +22,7 @@ The most appropriate checklist for SARS-CoV-2 viral submissions is the “ENA vi
 
 Please use the organism name “Severe acute respiratory syndrome coronavirus 2” and taxonomic ID 2697049. It is recommended, as a minimum, that collection date and geographic location (e.g. country) are specified and sample capture status field is provided a value of ‘active surveillance in response to outbreak’.
  
-Please see below for a template SARS-CoV-2 viral sample xml for programmatic submission to the ENA:
-
-**sample.xml:**
+**Please see below for a template SARS-CoV-2 viral sample xml for programmatic submission to the ENA:**
 
 .. code-block:: xml
 
