@@ -27,7 +27,7 @@ Please use the organism name â€œSevere acute respiratory syndrome coronavirus 2â
 .. code-block:: xml
 
  <SAMPLE_SET>
-   <SAMPLE alias="Test SARS-CoV-2 sample" center_name="EBI">
+   <SAMPLE alias="Test SARS-CoV-2 sample 1" center_name="EBI">
     <TITLE>Test SARS-CoV-2 Sample 1 Title</TITLE>
     <SAMPLE_NAME>
       <TAXON_ID>2697049</TAXON_ID>
@@ -82,10 +82,6 @@ Please use the organism name â€œSevere acute respiratory syndrome coronavirus 2â
       <SAMPLE_ATTRIBUTE>
         <TAG>ENA-CHECKLIST</TAG>
         <VALUE>ERC000033</VALUE>
-      </SAMPLE_ATTRIBUTE>
-      <SAMPLE_ATTRIBUTE>
-        <TAG>sample derived from</TAG>
-        <VALUE>SAMEA7000146</VALUE>
       </SAMPLE_ATTRIBUTE>
     </SAMPLE_ATTRIBUTES>
    </SAMPLE>
