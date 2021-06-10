@@ -24,11 +24,13 @@ Please use the organism name â€œSevere acute respiratory syndrome coronavirus 2â
  
 Please see below for a template SARS-CoV-2 viral sample xml for programmatic submission to the ENA:
 
-```xml    
-<?xml version="1.0" encoding="UTF-8"?>
-<SAMPLE_SET>
-  <SAMPLE alias="Test SARS-CoV-2 sample 2" center_name="EBI">
-    <TITLE>Test SARS-CoV-2 Sample 2 Title</TITLE>
+**sample.xml:**
+
+.. code-block:: xml
+
+ <SAMPLE_SET>
+   <SAMPLE alias="Test SARS-CoV-2 sample" center_name="EBI">
+    <TITLE>Test SARS-CoV-2 Sample 1 Title</TITLE>
     <SAMPLE_NAME>
       <TAXON_ID>2697049</TAXON_ID>
       <SCIENTIFIC_NAME>Severe acute respiratory syndrome coronavirus 2</SCIENTIFIC_NAME>
@@ -39,54 +41,57 @@ Please see below for a template SARS-CoV-2 viral sample xml for programmatic sub
         <TAG>geographic location (country and/or sea)</TAG>
         <VALUE>United Kingdom</VALUE>
       </SAMPLE_ATTRIBUTE>
-	  <SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
         <TAG>collection date</TAG>
         <VALUE>2020-04-26</VALUE>
       </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
         <TAG>host common name</TAG>
         <VALUE>human</VALUE>
-     </SAMPLE_ATTRIBUTE>
+      </SAMPLE_ATTRIBUTE>
       <SAMPLE_ATTRIBUTE>
         <TAG>host subject id</TAG>
         <VALUE>1</VALUE>
-	  </SAMPLE_ATTRIBUTE>
-	  <SAMPLE_ATTRIBUTE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
         <TAG>host health state</TAG>
         <VALUE>diseased</VALUE>
-	  </SAMPLE_ATTRIBUTE>
-	  <SAMPLE_ATTRIBUTE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
         <TAG>host sex</TAG>
         <VALUE>female</VALUE>
-	  </SAMPLE_ATTRIBUTE>
-	  <SAMPLE_ATTRIBUTE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
         <TAG>host scientific name</TAG>
         <VALUE>homo sapien</VALUE>
-	  </SAMPLE_ATTRIBUTE>
-	  <SAMPLE_ATTRIBUTE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
         <TAG>collector name</TAG>
         <VALUE>Jane Smith</VALUE>
-	  </SAMPLE_ATTRIBUTE>
-	  <SAMPLE_ATTRIBUTE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
         <TAG>collecting institution</TAG>
         <VALUE>EMBL-EBI, Wellcome Genome Campus Cambridge CB10 1SD</VALUE>
-	  </SAMPLE_ATTRIBUTE>
-	  <SAMPLE_ATTRIBUTE>
+      </SAMPLE_ATTRIBUTE> 
+      <SAMPLE_ATTRIBUTE>
         <TAG>isolate</TAG>
         <VALUE>hCoV-19/UK/Bristol/2020</VALUE>
-	  </SAMPLE_ATTRIBUTE>
-	  <SAMPLE_ATTRIBUTE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
         <TAG>sample capture status</TAG>
         <VALUE>active surveillance in response to outbreak</VALUE>
-	  </SAMPLE_ATTRIBUTE>
-	  <SAMPLE_ATTRIBUTE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
         <TAG>ENA-CHECKLIST</TAG>
         <VALUE>ERC000033</VALUE>
       </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample derived from</TAG>
+        <VALUE>SAMEA7000146</VALUE>
+      </SAMPLE_ATTRIBUTE>
     </SAMPLE_ATTRIBUTES>
-	</SAMPLE>
-</SAMPLE_SET>    
-```
+   </SAMPLE>
+ </SAMPLE_SET>
 
 Metagenomic Samples
 -------------------
