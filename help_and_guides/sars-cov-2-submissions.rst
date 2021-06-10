@@ -87,6 +87,7 @@ Please use the organism name â€œSevere acute respiratory syndrome coronavirus 2â
    </SAMPLE>
  </SAMPLE_SET>
 
+
 Metagenomic Samples
 -------------------
 Data submissions which include metagenomic samples, should be registered with a relevant metagenome taxonomy - visit our FAQ on `Tips for Taxonomy <https://ena-docs.readthedocs.io/en/latest/faq/taxonomy.html#environmental-biome-level-taxonomy>`_ for more information. A few examples include human lung metagenome - `433733 <https://www.ebi.ac.uk/ena/browser/view/Taxon:433733>`_, human saliva metagenome - `1679718 <https://www.ebi.ac.uk/ena/browser/view/Taxon:1679718>`_, human tracheal metagenome - `1712573 <https://www.ebi.ac.uk/ena/browser/view/Taxon:1712573>`_ or human metagenome - `646099 <https://www.ebi.ac.uk/ena/browser/view/Taxon:646099>`_, among many others. Please contact us if you require help with this.
