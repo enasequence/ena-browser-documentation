@@ -138,7 +138,7 @@ for sample in data:
     sample_json = json.dumps(sample)
     response = requests.post(
         server, headers={"accept":"application/json", "Content-Type":"application/json"}, 
-        data=sample_json, auth=('Webin-56388', 'IlR07wf18uaE')
+        data=sample_json, auth=('Webin-XXXXXX', 'password')
     )
     status = response.status_code
     if status != 200:
