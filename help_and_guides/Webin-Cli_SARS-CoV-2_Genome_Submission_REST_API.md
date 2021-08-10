@@ -1,12 +1,12 @@
-# Webin-Cli SARS-CoV-2 Genome Submission REST API
+# Webin SARS-CoV-2 Genome Submission Web API
+
 ## Introduction
 
-Webin-Cli Covid-19 Genome Submission API, is a JSON based service uses Webin-Cli REST to validate, upload and submit COVID-19 genomic assemblies to the European Nucleotide Archive (ENA). 
-Webin-CLI is the only way to submit assembled genomes and transcriptomes.
+Webin SARS-CoV-2 Genome Submission Web API is a JSON based service used to submit SARS-CoV-2 genome assemblies to the European Nucleotide Archive (ENA).
 
-There are two submission services. One for test submissions and another for production submissions:
-#### Test Service
-- Test service URL: https://wwwdev.ebi.ac.uk/ena/submit/webin-cli/swagger-ui/index.html?configUrl=/ena/submit/webin-cli/v3/api-docs/swagger-config#/Covid-19%20GenomeAPI
+There are two submission services:
+- Test service: https://wwwdev.ebi.ac.uk/ena/submit/webin-cli
+- Production service: https://www.ebi.ac.uk/ena/submit/webin-cli
 
 The test service is recreated from the full content of the production service every day at 03.00 GMT/BST. Therefore, any submissions made to the test service will be removed by the following day.
 
@@ -14,52 +14,57 @@ When you are using the test service the receipt will contain the following messa
 ```sh
 "info":["This submission is a TEST submission and will be discarded within 24 hours"] 
 ```
-#### Production Service 
-- Production service URL: https://www.ebi.ac.uk/ena/submit/webin-cli/swagger-ui/index.html?configUrl=/ena/submit/webin-cli/v3/api-docs/swagger-config#/Covid-19%20GenomeAPI
+
+## Service endpoints
+
+This service has two endpoints.
+
+1. Submit SARS-CoV-2 genomes:
+- Test service: https://wwwdev.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19
+- Production service: https://www.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19
+ 
+2. Validate but do NOT submit SARS-CoV-2 genomes:
+- Test service: https://wwwdev.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19/validate
+- Production service: https://www.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19/validate
+
+The second endpoint can be used to test if a SARS-CoV-2 genome is valid without submitting it into ENA.
 
 ## Submission process 
-#### Pre-register Study and Sample
-Each submission must be associated with a pre-registered study and a sample.
+### Pre-register Study and Sample
+Each submission must be associated with a pre-registered study and a sample. 
+
+Please find instruction on how to register studies and samples below:
 - [Register a Study](https://ena-docs.readthedocs.io/en/latest/submit/study.html) 
 - [Register a Sample](https://ena-docs.readthedocs.io/en/latest/submit/samples.html)
 
-#### Authorisation 
-By using either service (Test or Production), authorisation is needed by entering the Webin credentials (ID and password).
-Webin user name and password must be provided using basic HTTP authentication.
-When using curl the user name and password are provided using the ``` -u ``` option:
-for example: 
-```sh
-curl -X 'POST'  -u WebinID:password  'https://wwwdev.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19/ ....etc
-```
-### Validation 
-Base URL: /api/v1/genome/covid-19/validate
-The validation step is necessary to detect the errors that found in the sequence or metadata. 
-Please note that in the validation step, the error reporting is more specific, and it will specify the exact issue if present. 
-### Submission 
-Base URL: /api/v1/genome/covid-19
+### Authentication 
+This service supports basic HTTP authentication only. Please use your Webin submission account name (Webin-N) as the username with your Webin submission account password. New Webin submission accounts can be registered in [Webin Portal](https://www.ebi.ac.uk/ena/submit/webin/).
 
-Requested body format (JSON file format)
+When using curl the username and password are provided using the ``` -u ``` option:
+```sh
+curl -X 'POST'  -u Webin-N:password  'https://wwwdev.ebi.ac.uk/ena/submit/webin-cli...
+```
+### JSON payload
+Both the submission and validation endpoints require a JSON payload in the HTTP body. Below, mandatory fields are marked by * and field descriptions start with #:
 ```sh
 {
-  *"name": "string", #(Unique name for the assembly)
-  *"study": "string", #(study accession number or unique name (alias))
-  *"sample": "string", #(sample accession number or unique name (alias))
-  *"coverage": number, ($double) #(The estimated depth of sequencing coverage)
-  *"program": "string", #(The assembly program)
-  *"platform": "string", #(The sequencing platform)
-  *"sequence": "string", #(assembly sequence in nucleotides)
-  "description": "string", #(Free text description of the genome assembly)
-  "minGapLength": integer, ($int32) #(Minimum length of consecutive Ns to be considered a gap)
+  *"name": "string", # Unique name for the assembly within the Webin submission account
+  *"study": "string", # Study accession number or unique name (alias)
+  *"sample": "string", # Sample accession number or unique name (alias)
+  *"coverage": "number", # The estimated depth of sequencing coverage
+  *"program": "string", # The assembly program
+  *"platform": "string", # The sequencing platform
+  *"sequence": "string", # The assembled genome sequence
+  "description": "string", # Free text description of the genome assembly
+  "minGapLength": "integer", # Minimum length of consecutive Ns to be considered a gap
   "moleculeType": "genomic DNA",
-  "runRef": "string", #(run accession number)
-  "analysisRef": "string", #(analysis accession number)
-  "tpa": boolean,
-  "authors": "string",
-  "address": "string",
-  "submissionTool": "string", #(Webin-cli REST)
-  "submissionToolVersion": "string" 
+  "runRef": "string", # Run accession number containing the raw reads associated with this genome assembly
+  "tpa": boolean, # Set to true for third party assemblies (by default false)
+  "authors": "string" # List of authors associated with this genome assembly (by default authors of the submission account will be used)
+  "address": "string", # Address where this genome was assembled (by default addrss of the submission account will be used)
+  "submissionTool": "string", # Submission tool that called this endpoint
+  "submissionToolVersion": "string"  # Submission tool version that called this endpoint
 }
- "*" Indicates Mandatory Fields.
 ```
 
 ***Example***
@@ -75,17 +80,17 @@ Requested body format (JSON file format)
   "description": "This is a test submission",
   "minGapLength": 1,
   "moleculeType": "genomic DNA",
-  "tpa": false,
   "authors": "EMBL-EBI",
-  "address": "United Kingdom",
-  "submissionTool": "Webin-Cli REST",
-  "submissionToolVersion": "v1"
+  "address": "United Kingdom"
 }
 ```
 
-***Webin-Cli API service using curl command (command-line) example:***
+### Submission
+
+#### Example using curl
+
 ```sh
-curl -X 'POST' -u WebinID:password   \
+curl -X 'POST' -u Webin-N:password   \
   'https://wwwdev.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
@@ -100,15 +105,13 @@ curl -X 'POST' -u WebinID:password   \
   "description": "test",
   "minGapLength": 1,
   "moleculeType": "genomic DNA",
-  "tpa": false,
   "authors": "test",
-  "address": "test",
-  "submissionTool": "webin-cli REST",
-  "submissionToolVersion": "0"
+  "address": "test"
 }'
 ```
 
-***Webin-Cli API service using python example:***
+#### Example using python
+
 ```python
 import sys
 import requests
@@ -127,11 +130,11 @@ data = [
       "coverage": 100, "program": "Ilumina", "platform": "Ilumina",
       "sequence": "CTCTCGATCGATCAAATTTGGGTTTAAGGCCCTTGGAATT",
       "description": "test", "minGapLength": 1, "moleculeType": "genomic DNA",
-      "tpa": False, "authors": "test", "address": "test"
+       "authors": "test", "address": "test"
     }
 ]
 
-## Here we used the validation test(dev) URL
+## Please remove /validate from the URL to submit the genome instead of just validating it
 server = "https://wwwdev.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19/validate"
 
 for sample in data:
@@ -148,10 +151,22 @@ for sample in data:
         receipt = json.loads(response.content)
         print("{} : {}".format(sample['name'], receipt))
 ```
-### Receipt JSON Format
-Once a submission has been processed a JSON receipt is returned
+### JSON response and HTTP status code
 
-***Response body example (Submission)*** 
+HTTP status code 200 indicates that the submission was successful. More information is available from the JSON response returned in the response body including the assigned accession number and any validation errors.
+
+Please note that an accession will not be assigned when using the ```/validate``` endpoint.
+
+#### HTTP status codes 
+| Code | Description |
+| ------ | ------ |
+| 200 | OK |
+| 400 | Bad Request |
+| 401 | Forbidden |
+| 500 | Internal Server error |
+
+
+#### JSON response body example: Successful test service submission
 ```sh
 {
   "accession": "ERZ2881825",
@@ -162,7 +177,18 @@ Once a submission has been processed a JSON receipt is returned
   "error": []
 }
 ```
-***Response body example (Validation) with no errors***
+
+#### JSON response body example: Successful production service submission
+```sh
+{
+  "accession": "ERZ2881825",
+  "alias": "webin-genome-test_1",
+  "info": [],
+  "error": []
+}
+```
+
+#### JSON response body example: Successful validation
 ```sh
 {
   "accession": null,
@@ -171,9 +197,12 @@ Once a submission has been processed a JSON receipt is returned
   "error": []
 }
 ```
-***Response body examples (Validation) with errors***
+
+#### JSON response body example: Failed validation
+
+Invalid molecule type:
+
 ```sh
-#Example 1: Invalid MOLECULETYPE
 {
   "accession": null,
   "alias": null,
@@ -182,8 +211,11 @@ Once a submission has been processed a JSON receipt is returned
     "ERROR: Invalid MOLECULETYPE field value: \"reads\". Valid values are: [genomic DNA, genomic RNA, viral cRNA]. [manifest file: /tmp/288f4f48-132e-4e90-bb56-5d8afe8af4c45476417061259693052/manifest.json, file name: /tmp/288f4f48-132e-4e90-bb56-5d8afe8af4c45476417061259693052/manifest.json, field: MOLECULETYPE, value: reads]"
   ]
 }
+```
 
-#Example 2: No study and sample been registered with the accession provided
+No study and sample found:
+
+``` 
 {
   "accession": null,
   "alias": null,
@@ -193,10 +225,3 @@ Once a submission has been processed a JSON receipt is returned
   ]
 }
 ```
-### Responses 
-| Code | Description |
-| ------ | ------ |
-| 200 | OK |
-| 400 | Bad Request |
-| 401 | Forbidden |
-| 500 | Internal Server error |
