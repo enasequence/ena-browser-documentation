@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Webin SARS-CoV-2 Genome Submission Web API is a JSON based service used to submit SARS-CoV-2 genome assemblies to the European Nucleotide Archive (ENA).
+Webin SARS-CoV-2 Genome Submission Web API is a JSON based service used to submit SARS-CoV-2 genome assemblies to the European Nucleotide Archive (ENA). For further information on submitting SARS-CoV-2 genomes, see our [SARS-CoV-2 Submission Instructions](https://ena-browser-docs.readthedocs.io/en/latest/help_and_guides/sars-cov-2-submissions.html#submitting-assemblies).
 
 There are two submission services:
 - Test service: https://wwwdev.ebi.ac.uk/ena/submit/webin-cli
