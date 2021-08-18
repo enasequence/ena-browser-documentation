@@ -119,7 +119,7 @@ If submitting assemblies, you must have registered a study and a sample beforeha
 
 Assemblies can only be submitted using `Webin-CLI program <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html>`_ or `Webin SARS-CoV-2 Genome Submission Web API <https://ena-browser-docs.readthedocs.io/en/latest/help_and_guides/Webin-Cli_SARS-CoV-2_Genome_Submission_REST_API.html>`_ 
 
-In case of `Webin-CLI program <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html>`_ `-context genome` need to be used.  During the process, you must define metadata in the `manifest file(s) <https://ena-docs.readthedocs.io/en/latest/submit/assembly/genome.html#manifest-files>`_. Please specify ‘COVID-19 outbreak’ as the ‘ASSEMBLY_TYPE’.
+In case of `Webin-CLI program <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html>`_ `-context genome` should be used.  During the process, you must define metadata in the `manifest file(s) <https://ena-docs.readthedocs.io/en/latest/submit/assembly/genome.html#manifest-files>`_. Please specify ‘COVID-19 outbreak’ as the ‘ASSEMBLY_TYPE’.
 
 Any annotations, where provided, are captured according to `INSDC Feature Table Definitions <http://www.insdc.org/files/feature_table.html>`_.
 
