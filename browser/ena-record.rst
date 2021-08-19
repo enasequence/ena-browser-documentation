@@ -138,7 +138,7 @@ columns' expandable menu.
 Analysis Files
 ==============
 
-Display and download any associated analysis files. There are three ways to download read files:
+Display and download any associated analysis files. There are three ways to download analysis files:
 
 1.  Using ENA File Downloader Command Line Tool
        ---------------------------------------------
