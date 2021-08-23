@@ -159,29 +159,12 @@ Please note that an accession will not be assigned when using the ```/validate``
 
 #### HTTP status codes 
 
-+------------------------+------------+----------+----------+
-| Code          | Description   | Header 3 | Header 4       |
-|               |               |          |                |
-+========================+============+==========+==========+
-| 200           | OK  | column 3 | column 4                 |
-+------------------------+------------+----------+----------+
-| 400           | Bad Request                               |
-+------------------------+------------+---------------------+
-| 401           | Forbidden      | - Table cells            |
-+------------------------+ span rows. | - contain           |
-| 500           |Internal Server error| - body elements.    |
-+------------------------+------------+----------+----------+
-| body row 5             | Cells may also be     |          |
-|                        | empty: ``-->``        |          |
-+------------------------+-----------------------+----------+
-
-
-| Code | Description |
-| ------ | ------ |
-| 200 | OK |
-| 400 | Bad Request |
-| 401 | Forbidden |
-| 500 | Internal Server error |
+| Code | Description           |
+|------|-----------------------|
+| 200  | OK                    |
+| 400  | Bad Request           |
+| 401  | Forbidden             |
+| 500  | Internal Server error |
 
 
 #### JSON response body example: Successful test service submission
