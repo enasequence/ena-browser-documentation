@@ -158,6 +158,18 @@ HTTP status code 200 indicates that the submission was successful. More informat
 Please note that an accession will not be assigned when using the ```/validate``` endpoint.
 
 #### HTTP status codes 
+
+=====   ======
+Code   Description
+------  ------
+=====    ======
+200      OK
+400      Bad Request
+401      Forbidden
+500      Internal Server error
+=====    ======
+
+
 | Code | Description |
 | ------ | ------ |
 | 200 | OK |
