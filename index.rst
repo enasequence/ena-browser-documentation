@@ -39,6 +39,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
 
    help_and_guides/moving_from_release
    help_and_guides/sars-cov-2-submissions
+   help_and_guides/Webin-Cli_SARS-CoV-2_Genome_Submission_REST_API
 
 .. Extra
 .. *****
