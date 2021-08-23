@@ -5,8 +5,8 @@
 Webin SARS-CoV-2 Genome Submission Web API is a JSON based service used to submit SARS-CoV-2 genome assemblies to the European Nucleotide Archive (ENA). For further information on submitting SARS-CoV-2 genomes, see our [SARS-CoV-2 Submission Instructions](https://ena-browser-docs.readthedocs.io/en/latest/help_and_guides/sars-cov-2-submissions.html#submitting-assemblies).
 
 There are two submission services:
-- [Test service] (https://wwwdev.ebi.ac.uk/ena/submit/webin-cli)
-- [Production service] (https://www.ebi.ac.uk/ena/submit/webin-cli)
+- [Test service](https://wwwdev.ebi.ac.uk/ena/submit/webin-cli)
+- [Production service](https://www.ebi.ac.uk/ena/submit/webin-cli)
 
 The test service is recreated from the full content of the production service every day at 03.00 GMT/BST. Therefore, any submissions made to the test service will be removed by the following day.
 
@@ -20,12 +20,12 @@ When you are using the test service the receipt will contain the following messa
 This service has two endpoints.
 
 1. Submit SARS-CoV-2 genomes:
-- Test service: https://wwwdev.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19
-- Production service: https://www.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19
+- Test service : [https://wwwdev.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19](https://wwwdev.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19)
+- Production [service: https://www.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19](https://www.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19)
  
 2. Validate but do NOT submit SARS-CoV-2 genomes:
-- Test service: https://wwwdev.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19/validate
-- Production service: https://www.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19/validate
+- Test service: [https://wwwdev.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19/validate](https://wwwdev.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19/validate)
+- Production service: [https://www.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19/validate](https://www.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19/validate)
 
 The second endpoint can be used to test if a SARS-CoV-2 genome is valid without submitting it into ENA.
 
