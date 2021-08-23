@@ -21,6 +21,7 @@ This service has two endpoints.
 
 1. Submit SARS-CoV-2 genomes:
 - Test service: https://wwwdev.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19
+-
 - Production service: https://www.ebi.ac.uk/ena/submit/webin-cli/api/v1/genome/covid-19
  
 2. Validate but do NOT submit SARS-CoV-2 genomes:
