@@ -10,9 +10,9 @@ Archive (ENA). For further information on submitting SARS-CoV-2 genomes,
 see our `SARS-CoV-2 Submission
 Instructions <https://ena-browser-docs.readthedocs.io/en/latest/help_and_guides/sars-cov-2-submissions.html#submitting-assemblies>`__.
 
-There are two submission services: - `Test
-service <https://wwwdev.ebi.ac.uk/ena/submit/webin-cli>`__ - `Production
-service <https://www.ebi.ac.uk/ena/submit/webin-cli>`__
+There are two submission services: 
+- `Test service <https://wwwdev.ebi.ac.uk/ena/submit/webin-cli>`__ 
+- `Production service <https://www.ebi.ac.uk/ena/submit/webin-cli>`__
 
 The test service is recreated from the full content of the production
 service every day at 03.00 GMT/BST. Therefore, any submissions made to
@@ -273,6 +273,7 @@ Invalid molecule type:
         "ERROR: Invalid MOLECULETYPE field value: \"reads\". Valid values are: [genomic DNA, genomic RNA, viral cRNA]. [manifest file: /tmp/288f4f48-132e-4e90-bb56-5d8afe8af4c45476417061259693052/manifest.json, file name: /tmp/288f4f48-132e-4e90-bb56-5d8afe8af4c45476417061259693052/manifest.json, field: MOLECULETYPE, value: reads]"
       ]
     }
+
 
 No study and sample found:
 
