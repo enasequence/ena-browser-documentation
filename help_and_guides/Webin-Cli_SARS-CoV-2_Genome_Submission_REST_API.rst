@@ -11,7 +11,9 @@ see our `SARS-CoV-2 Submission
 Instructions <https://ena-browser-docs.readthedocs.io/en/latest/help_and_guides/sars-cov-2-submissions.html#submitting-assemblies>`__.
 
 There are two submission services: 
+
 - `Test service <https://wwwdev.ebi.ac.uk/ena/submit/webin-cli>`__ 
+
 - `Production service <https://www.ebi.ac.uk/ena/submit/webin-cli>`__
 
 The test service is recreated from the full content of the production
