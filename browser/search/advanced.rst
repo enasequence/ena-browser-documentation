@@ -253,14 +253,25 @@ For example:
 Download data files
 -------------------
 
-You can download the data files resulting from your search in one of three ways:
+You can download the data files resulting from your search in one of four ways:
 
-1. You can download a single file by clicking on its link in the FASTQ FTP, SRA FTP, or SUBMITTED FTP column.
+1.  Using ENA File Downloader Command Line Tool
+    ---------------------------------------------
+    The ENA File Downloader is a new Java based command line application. You have to
+    submit one or more comma separated accessions, or a file with accessions that you
+    want to download data for. This tool allows downloading of read and analysis files,
+    using FTP or Aspera. It has an easy to use interactive interface and can also create
+    a script which can be run programatically or integrated with pipelines.
 
-2. You can select one or more files using the check boxes, and either download these as a bundled ZIP file 
+    Download the latest version from
+    `ENA Tools <http://ftp.ebi.ac.uk/pub/databases/ena/tools/ena-file-downloader.zip>`_.
+
+2. You can download a single file by clicking on its link in the FASTQ FTP, SRA FTP, or SUBMITTED FTP column.
+
+3. You can select one or more files using the check boxes, and either download these as a bundled ZIP file
    or as individual files using the "Bundled ZIP" or "Individually" links above the table.
    
-3. You can download ALL files resulting from your search as a bundled ZIP file by clicking the download icon in the column header.
+4. You can download ALL files resulting from your search as a bundled ZIP file by clicking the download icon in the column header.
 
 .. image:: images/download-all.png
 
