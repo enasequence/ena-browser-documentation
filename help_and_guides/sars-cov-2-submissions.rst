@@ -133,11 +133,9 @@ For SARS-CoV-2 submissions, the chromosome list file should contain the followin
 
 e.g:
 
-``LR991698    1       Monopartite``   
+``LR991698 1 Monopartite``   
 
 |
-|
-
 Any assembly annotations, where provided, are captured according to `INSDC Feature Table Definitions <http://www.insdc.org/files/feature_table.html>`_.
 
 In alignment with INSDC partners, COVID-19 assemblies will **not** be assigned a GCA accession. However, sequence accessions will continue to be assigned, alongside ERZ analysis accessions which are the point of access for the submitted file(s). For more details on accessioning, view our `Accessions Guide <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/accessions.html>`_. To cite data, top-level project accessions (PRJ...) should be used as these are the most stable long-term accessions. View our `guide to cite data <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/accessions.html#how-to-cite-your-ena-study>`_ for further details.
