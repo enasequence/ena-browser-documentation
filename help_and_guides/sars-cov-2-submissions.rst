@@ -119,6 +119,29 @@ If submitting assemblies, you must have registered a study and a sample beforeha
 
 Assemblies can only be submitted using `Webin-CLI program <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html>`_ or `Webin SARS-CoV-2 Genome Submission Web API <https://ena-browser-docs.readthedocs.io/en/latest/help_and_guides/Webin-Cli_SARS-CoV-2_Genome_Submission_REST_API.html>`_ 
 
+Submitting SARS-CoV-2 assembled sequences with Webin-CLI
+--------------------------------------------------------
+In case of the `Webin-CLI program <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html>`_ `-context genome` should be used.  During the process, you must define metadata in the `manifest file(s) <https://ena-docs.readthedocs.io/en/latest/submit/assembly/genome.html#manifest-files>`_. Please specify ‘COVID-19 outbreak’ as the ‘ASSEMBLY_TYPE’.
+
+Each assembly/consensus sequence should also be submitted with a **chromosome list file** (see `here <https://ena-docs.readthedocs.io/en/latest/submit/fileprep/assembly.html#chromosome-list-file>`_), which should be gzipped and referenced in the assembly manifest file, with 'CHROMOSOME_LIST'.
+
+For SARS-CoV-2 submissions, the chromosome list file should contain the following tab-separated columns (with no column header line):
+
+* fasta header
+* chromosome number (arbitrary value, set to 1)
+* chromosome type (Monopartite for coronaviruses)
+
+e.g:
+
+``LR991698    1       Monopartite``   
+
+|
+|
+
+Any assembly annotations, where provided, are captured according to `INSDC Feature Table Definitions <http://www.insdc.org/files/feature_table.html>`_.
+
+In alignment with INSDC partners, COVID-19 assemblies will **not** be assigned a GCA accession. However, sequence accessions will continue to be assigned, alongside ERZ analysis accessions which are the point of access for the submitted file(s). For more details on accessioning, view our `Accessions Guide <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/accessions.html>`_. To cite data, top-level project accessions (PRJ...) should be used as these are the most stable long-term accessions. View our `guide to cite data <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/accessions.html#how-to-cite-your-ena-study>`_ for further details.
+
 In case of `Webin-CLI program <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html>`_ `-context genome` should be used.  During the process, you must define metadata in the `manifest file(s) <https://ena-docs.readthedocs.io/en/latest/submit/assembly/genome.html#manifest-files>`_. Please specify ‘COVID-19 outbreak’ as the ‘ASSEMBLY_TYPE’.
 
 Any annotations, where provided, are captured according to `INSDC Feature Table Definitions <http://www.insdc.org/files/feature_table.html>`_.
