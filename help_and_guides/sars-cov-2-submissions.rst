@@ -123,7 +123,7 @@ Submitting SARS-CoV-2 assembled sequences with Webin-CLI
 --------------------------------------------------------
 In case of the `Webin-CLI program <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html>`_ `-context genome` should be used.  During the process, you must define metadata in the `manifest file(s) <https://ena-docs.readthedocs.io/en/latest/submit/assembly/genome.html#manifest-files>`_. Please specify ‘COVID-19 outbreak’ as the ‘ASSEMBLY_TYPE’.
 
-Each assembly/consensus sequence should also be submitted with a **chromosome list file** (see `here <https://ena-docs.readthedocs.io/en/latest/submit/fileprep/assembly.html#chromosome-list-file>`_), which should be gzipped and referenced in the assembly manifest file.
+Each assembly/consensus sequence should also be submitted with a **chromosome list file** (see `here <https://ena-docs.readthedocs.io/en/latest/submit/fileprep/assembly.html#chromosome-list-file>`_), which should be gzipped and referenced in the assembly manifest file, with 'CHROMOSOME_LIST'.
 
 For SARS-CoV-2 submissions, the chromosome list file should contain the following tab-separated columns (with no header line):
 
