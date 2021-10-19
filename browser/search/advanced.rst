@@ -189,8 +189,8 @@ Limit
 You can specify a data limit for the maximum number of records you would like 
 to retrieve from your search.
 
-If you wish to fetch the full result set, leave this field blank or enter '0'. 
-The browser table display will only show up to 100 000 results but for large 
+If you wish to fetch the full result set enter '0'. Leaving the limit field blank makes
+the browser table display only show up to 100 000 results but for large
 datasets, you can see all the results if you download the report or copy and run 
 the curl request.
 
