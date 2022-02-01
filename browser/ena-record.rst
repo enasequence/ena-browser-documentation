@@ -162,33 +162,53 @@ Read Files
 Display and download any associated raw read files.
 Please refer to `Archive Generated Files <https://ena-docs.readthedocs.io/en/latest/faq/archive-generated-files.html>`_
 for more information about file formats.
+There are three ways to download read files:
 
-You can download a Report of all the data displayed in the table or download files selected
+1.  Using ENA File Downloader Command Line Tool
+       ---------------------------------------------
+       The ENA File Downloader is a new Java based command line application. You have to
+       submit one or more comma separated accessions, or a file with accessions that you
+       want to download data for. This tool allows downloading of read and analysis files,
+       using FTP or Aspera. It has an easy to use interactive interface and can also create
+       a script which can be run programatically or integrated with pipelines.
+
+       Download the latest version from
+       `ENA Tools <http://ftp.ebi.ac.uk/pub/databases/ena/tools/ena-file-downloader.zip>`_.
+
+2. You can download a Report of all the data displayed in the table or download files selected
 from the table. To download all files in the column, click the download icon in the table
 header.
 
 To choose additional metadata to add to the table display and report, use the 'Show selected
 columns' expandable menu.
 
-You can also download files from ENA using the Python 3 based `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_
-or the `Java based tools <https://github.com/enasequence/ena-ftp-downloader/tree/master/command-line-downloader>`_.
-Or download the latest version of the
-Java based downloader tool from `our public FTP <http://ftp.ebi.ac.uk/pub/databases/ena/tools>`_.
+3. You can also download files from ENA using the Pythong based scripts `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_.
 
 
 Analysis Files
 ==============
 
-Display and download any associated analysis files.
+Display and download any associated analysis files. There are three ways to download analysis files:
 
-You can download a Report of all the data displayed in the table or download files selected
+1.  Using ENA File Downloader Command Line Tool
+       ---------------------------------------------
+       The ENA File Downloader is a new Java based command line application. You have to
+       submit one or more comma separated accessions, or a file with accessions that you
+       want to download data for. This tool allows downloading of read and analysis files,
+       using FTP or Aspera. It has an easy to use interactive interface and can also create
+       a script which can be run programatically or integrated with pipelines.
+
+       Download the latest version from
+       `ENA Tools <http://ftp.ebi.ac.uk/pub/databases/ena/tools/ena-file-downloader.zip>`_.
+
+2. You can download a Report of all the data displayed in the table or download files selected
 from the table. To download all files in the column, click the download icon in the table
 header.
 
 To choose additional metadata to add to the table display and report, use the 'Show selected
 columns' expandable menu.
 
-You can also download files from ENA using `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_.
+3. You can also download files from ENA using `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_.
 
 Publications
 ============
