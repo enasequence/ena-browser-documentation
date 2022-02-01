@@ -48,8 +48,11 @@ Record types
 | Analyses              | | Hold results files of analyses performed  | `ERZ841272`_              |
 |                       | | on sequencing data and analysis methods   |                           |
 +-----------------------+---------------------------------------------+---------------------------+
-| WGS contig set        | | Hold Whole Genome Sequencing contig sets  |  `CABHOY010000000.1`_     |
+| WGS contig set        | | Hold Whole Genome Sequencing contig sets  | `CABHOY010000000.1`_      |
 |                       | | generated as part of a genome assembly.   |                           |
+|                       | |                                           | `CABHOY010000000`_        |
+|                       | |                                           |                           |
+|                       | |                                           | `CABHOY01`_               |
 +-----------------------+---------------------------------------------+---------------------------+
 | Assemblies            | | Represents an entire genome assembly and  | `GCA_000001405.28`_       |
 |                       | | holds any contig sets or sequence records |                           |
@@ -71,10 +74,54 @@ Record types
 .. _`ERR1701760/ERX1772048`: https://www.ebi.ac.uk/ena/browser/view/ERR1701760
 .. _`ERZ841272`: https://www.ebi.ac.uk/ena/browser/view/ERZ841272
 .. _`CABHOY010000000.1`: https://www.ebi.ac.uk/ena/browser/view/CABHOY010000000.1
+.. _`CABHOY010000000`: https://www.ebi.ac.uk/ena/browser/view/CABHOY010000000
+.. _`CABHOY01`: https://www.ebi.ac.uk/ena/browser/view/CABHOY01
 .. _`GCA_000001405.28`: https://www.ebi.ac.uk/ena/browser/view/GCA_000001405.28
 .. _`CM000667.2`: https://www.ebi.ac.uk/ena/browser/view/CM000667.2
 .. _`Taxon:9606`: https://www.ebi.ac.uk/ena/browser/view/Taxon:9606
 .. _`ERC000013`: https://www.ebi.ac.uk/ena/browser/view/ERC000013
+
+View and Download Links
+=======================
+
+This panel contains the different data formats available for the current record.
+
+Contigset (WGS/TLS/TSA)
+-----------------------
+
+- View/Download flatfile for the master record describing the set
+
+  - EMBL `https://www.ebi.ac.uk/ena/browser/api/embl/CABHOY010000000 <https://www.ebi.ac.uk/ena/browser/api/embl/CABHOY010000000>`_
+
+- Download the full set of sequences in one file (Using ftp:// is recommended for programmatic downloads)
+
+  - EMBL (from FTP) `ftp://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/cab/CABHOY01.dat.gz <http://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/cab/CABHOY01.dat.gz>`_
+  - FASTA (from FTP) `ftp://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/cab/CABHOY01.fasta.gz <http://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/cab/CABHOY01.fasta.gz>`_
+  - FASTA (via API) `https://www.ebi.ac.uk/ena/browser/api/fasta/CABHOY010000000 <https://www.ebi.ac.uk/ena/browser/api/fasta/CABHOY010000000>`_
+
+Project/Sample/Run/Analysis/Submission (XML types)
+--------------------------------------------------
+
+- View/Download metadata in XML format
+
+  - `https://www.ebi.ac.uk/ena/browser/api/xml/PRJEB402 <https://www.ebi.ac.uk/ena/browser/api/xml/PRJEB402>`_
+
+Assembly (Genome Collection)
+----------------------------
+
+- View/Download metadata in XML format
+
+  - `https://www.ebi.ac.uk/ena/browser/api/xml/PRJEB402 <https://www.ebi.ac.uk/ena/browser/api/xml/PRJEB402>`_
+
+- View/Download Sequence report as a text file
+
+  - `ftp://ftp.ebi.ac.uk/pub/databases/ena/assembly/GCA_900/GCA_900257/GCA_900257145.2_sequence_report.txt <ftp://ftp.ebi.ac.uk/pub/databases/ena/assembly/GCA_900/GCA_900257/GCA_900257145.2_sequence_report.txt>`_
+
+- Download all sequences in the assembly, including chromosomes, WGS set and scaffolds as one file
+
+  - EMBL `https://www.ebi.ac.uk/ena/browser/api/embl/GCA_900257145.2?download=true&gzip=true <https://www.ebi.ac.uk/ena/browser/api/embl/GCA_900257145.2?download=true&gzip=true>`_
+  - FASTA `https://www.ebi.ac.uk/ena/browser/api/fasta/GCA_900257145.2?download=true&gzip=true <https://www.ebi.ac.uk/ena/browser/api/fasta/GCA_900257145.2?download=true&gzip=true>`_
+
 
 Navigation and Cross References
 ===============================
@@ -113,6 +160,8 @@ Read Files
 ==========
 
 Display and download any associated raw read files.
+Please refer to `Archive Generated Files <https://ena-docs.readthedocs.io/en/latest/faq/archive-generated-files.html>`_
+for more information about file formats.
 
 You can download a Report of all the data displayed in the table or download files selected
 from the table. To download all files in the column, click the download icon in the table
@@ -121,7 +170,10 @@ header.
 To choose additional metadata to add to the table display and report, use the 'Show selected
 columns' expandable menu.
 
-You can also download files from ENA using `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_.
+You can also download files from ENA using the Python 3 based `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_
+or the `Java based tools <https://github.com/enasequence/ena-ftp-downloader/tree/master/command-line-downloader>`_.
+Or download the latest version of the
+Java based downloader tool from `our public FTP <http://ftp.ebi.ac.uk/pub/databases/ena/tools>`_.
 
 
 Analysis Files
@@ -162,11 +214,11 @@ a collaborative research effort.
 Parent Projects
 ===============
 
-If a project has a parent project it is part of an **Umbrella Project** (a project which is used to 
+If a project has a parent project it is part of an **Umbrella Project** (a project which is used to
 group many related sub-projects).
 
 Projects grouped under one 'umbrella' often have the same research motivation and will often represent
-a collaborative research effort. You can navigate to the parent project through this tab and view 
+a collaborative research effort. You can navigate to the parent project through this tab and view
 other related component projects through the 'Component Projects' tab.
 
 
