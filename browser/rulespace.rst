@@ -29,16 +29,16 @@ organisations as required).
 
 You can register for an AAP account `here <https://aai.ebi.ac.uk/registerUser>`_.
 
-Log in using an Elixir Account
-------------------------------
+Log in using a Life Science Account
+-----------------------------------
 
-Logging in with your ELIXIR account enables you to log in to Rulespace use your 
+Logging in with your Life Science account enables you to log in to Rulespace use your
 home or organisation credentials (including the options to log in with your 
-LinkedIn, Google account or ORCID).
+Google, Apple or ORCID accounts).
 
-To log in with ELIXIR, you first need to register for an ELIXIR ID.
+To log in with LIFE SCIENCE, you first need to register for a `LIFE SCIENCE ID <https://lifescience-ri.eu/ls-login/users/how-to-get-and-use-life-science-id.html>`_.
 
-You can register with ELIXIR `here <https://elixir-europe.org/register>`_.
+You can register with LIFE SCIENCE `here <https://signup.aai.lifescience-ri.eu/fed/registrar/?vo=lifescience>`_.
 
 Create a Rule
 =============
