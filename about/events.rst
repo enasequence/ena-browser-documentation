@@ -40,7 +40,7 @@ you.
 +-----------------+------------------------------------+---------------------------------------------------------------+
 
 
-.. _`Metagenomics Bioinformatics` : https://www.ebi.ac.uk/training/events/metagenomics-bioinformatics-virtual-2021/
+.. _`Metagenomics Bioinformatics` : https://www.ebi.ac.uk/training/events/metagenomics-bioinformatics-2022/
 .. _`Exploring Biological Sequences` :  https://www.ebi.ac.uk/training/events/2020/exploring-biological-sequences-3
 .. _`NGS Bioinformatics` : https://www.ebi.ac.uk/training/events/2020/next-generation-sequencing-bioinformatics-0
 
