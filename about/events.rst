@@ -29,8 +29,8 @@ you.
 +-----------------+------------------------------------+---------------------------------------------------------------+
 | Date            | Event                              | Description                                                   |
 +-----------------+------------------------------------+---------------------------------------------------------------+
-| | 31st Oct -    | | `Genome-resolved                 | | This course will provide biologists                         |
-| | 4th Nov 2022  | | metagenomics bioinformatics`_    | | who are embarking upon metagenomics                         |
+| | 31st Oct -    | | `Genome-resolved`_               | | This course will provide biologists                         |
+| | 4th Nov 2022  | | `metagenomics bioinformatics`_   | | who are embarking upon metagenomics                         |
 |                 |                                    | | research projects training to use                           |
 |                 |                                    | | publicly available resources to                             |
 |                 |                                    | | manage, share, analyse and interpret                        |
@@ -40,7 +40,8 @@ you.
 +-----------------+------------------------------------+---------------------------------------------------------------+
 
 
-.. _`Genome-resolved metagenomics bioinformatics` : https://www.ebi.ac.uk/training/events/metagenomics-bioinformatics-2022/
+.. _`Genome-resolved` : https://www.ebi.ac.uk/training/events/metagenomics-bioinformatics-2022/
+.. _`metagenomics bioinformatics` : https://www.ebi.ac.uk/training/events/metagenomics-bioinformatics-2022/
 .. _`Exploring Biological Sequences` :  https://www.ebi.ac.uk/training/events/2020/exploring-biological-sequences-3
 .. _`NGS Bioinformatics` : https://www.ebi.ac.uk/training/events/2020/next-generation-sequencing-bioinformatics-0
 
