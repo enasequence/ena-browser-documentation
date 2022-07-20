@@ -9,8 +9,8 @@ Details of upcoming meetings where you might find us are available below.
 +-------------+-----------------------+--------------------------------------------------------------------------------+
 | Date        | Event                 | Description                                                                    |
 +-------------+-----------------------+--------------------------------------------------------------------------------+
-| Autumn 2021 | ENA Facilities Day    | | Facilities Day is an annual meeting of ENA staff with                        |
-|             |                       | | frequent users. We invite representatives of sequencing                      |
+| | 1st - 2nd | ENA Facilities Day    | | Facilities Day is an annual meeting of ENA staff with                        |
+| | Dec 2022  |                       | | frequent users. We invite representatives of sequencing                      |
 |             |                       | | facilities, brokers, and other major service users to                        |
 |             |                       | | discuss developments at ENA, and how our services are used.                  |
 +-------------+-----------------------+--------------------------------------------------------------------------------+
@@ -29,8 +29,8 @@ you.
 +-----------------+------------------------------------+---------------------------------------------------------------+
 | Date            | Event                              | Description                                                   |
 +-----------------+------------------------------------+---------------------------------------------------------------+
-| | 8th - 12th    | `Metagenomics Bioinformatics`_     | | This course will provide biologists                         |
-| | July 2021     |                                    | | who are embarking upon metagenomics                         |
+| | 31st Oct -    | `Metagenomics Bioinformatics`_     | | This course will provide biologists                         |
+| | 4th Nov 2022  |                                    | | who are embarking upon metagenomics                         |
 |                 |                                    | | research projects training to use                           |
 |                 |                                    | | publicly available resources to                             |
 |                 |                                    | | manage, share, analyse and interpret                        |
