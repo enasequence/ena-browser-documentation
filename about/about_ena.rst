@@ -6,8 +6,8 @@ The European Nucleotide Archive (ENA) is an open, supported platform for the man
 archiving and dissemination of sequence data.
 
 **Database of record and platform for data management**: ENA comprises both the globally comprehensive data resource
-that preserves the world’s public-domain output of sequence data and a rich portfolio of tools and services to support
-the management of sequence data.
+that preserves the world’s public-domain output of sequence data (`Read more about ENA Content here <https://www.ebi.ac.uk/ena/browser/about/content>`_) 
+and a rich portfolio of tools and services to support the management of sequence data.
 
 **A data foundation**: as nucleotide sequencing becomes increasingly central to applied areas such as healthcare and
 environmental sciences, ENA has become a foundation upon which scientific understanding of biological systems may be
