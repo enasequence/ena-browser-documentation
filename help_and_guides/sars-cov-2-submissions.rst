@@ -150,13 +150,15 @@ If submitting single contig assemblies, or for any other support or issues aroun
 
 Submitting Linked Human and Viral Datasets
 ==========================================
-For linked human and viral data submissions please contact virus-dataflow@ebi.ac.uk. Viral data should be submitted to ENA, with the corresponding human data being submitted to the `European Genome Phenome Archive (EGA) <https://www.ebi.ac.uk/ega/home>`_. The viral and human samples registered during each submission will reference each other to support data discovery and interoperability. This requires registration of three types of samples:
+For linked human and viral data submissions please contact virus-dataflow@ebi.ac.uk. Viral data should be submitted to ENA, with the corresponding human data being submitted to the `European Genome Phenome Archive (EGA) <https://www.ebi.ac.uk/ega/home>`_. The viral and human samples registered during each submission will reference each other to support data discovery and interoperability. This will involve the three types of samples below, but only two require user registration:
 
-1. Sample representing the human donor, registered at EGA.
-2. Human sample, registered at EGA.
+1. Human sample, registered at EGA.
+2. Minimal metadata sample representing the human donor, automatically created at EGA upon registration of 1.
 3. Viral sample, registered at ENA.
 
-The sample representing the human donor (1) must be registered first as the human and viral samples (2 and 3) will reference this. Samples 2 and 3 do not need to be registered in order. To assist in linking data, the relevant biosample accessions should be provided when contacting virus-dataflow@ebi.ac.uk.
+Samples 1 and 3 can be registered in any order, and Sample 2 will be used to link across human and viral datasets. To assist in this, the relevant biosample accessions should be provided to each archive.\
+
+If you have any questions regarding linked datasets please contact virus-dataflow@ebi.ac.uk.
 
 Release of Data
 ===============
