@@ -14,6 +14,7 @@ Standards
 
 These sample checklists have been developed to meet the needs of different research communities. Different
 communities have different requirements on the minimum metadata expected to describe biological samples.
+For any questions regarding checklists, contact us `here  https://www.ebi.ac.uk/ena/browser/support`_.
 
 List of checklists
 ==================
