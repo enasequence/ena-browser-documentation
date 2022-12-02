@@ -33,6 +33,4 @@ Previous Data Coordination Projects Include:
 
 - Stem cell research through `EBiSC <https://ebisc.org/>`_ and `HiPSCi <http://www.hipsci.org>`_
 
-- `European Sequencing Facility access <https://www.easi-genomics.eu/home>`_
-
 `Contact us <cochrane@ebi.ac.uk>`_ to discuss Data Coordination collaboration.
