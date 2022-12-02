@@ -24,9 +24,7 @@ Our Current Data Coordination Projects Include:
 
 -  Improving taxonomy and service linking through `a universal taxonomic framework for Eukaryotic organisms <https://unieuk.org/2017/11/09/eukbank-we-need-you/>`_ as well as efforts to `link sequences to taxonomies and natural history collections <https://bicikl-project.eu/>`_
 
-- Offering data coordination support for projects generating biodiversity reference genomes including 
-`Darwin Tree of Life <https://www.darwintreeoflife.org/>`_,  `Aquatic Symbiosis Genomics <https://www.aquaticsymbiosisgenomics.org/>`_ 
-and `Biodiversity Genomics Europe <https://biodiversitygenomics.eu/>`_
+- Offering data coordination support for projects generating biodiversity reference genomes including `Darwin Tree of Life <https://www.darwintreeoflife.org/>`_,  `Aquatic Symbiosis Genomics <https://www.aquaticsymbiosisgenomics.org/>`_ and `Biodiversity Genomics Europe <https://biodiversitygenomics.eu/>`_
 
 Previous Data Coordination Projects Include:
 ============================================
