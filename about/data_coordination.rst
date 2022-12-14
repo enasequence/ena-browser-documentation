@@ -12,9 +12,9 @@ support.
 Our Current Data Coordination Projects Include:
 ===============================================
 
-- `European COVID-19 Data Platform <https://www.covid19dataportal.org/>`_
+- `European COVID-19 Data Platform <https://www.covid19dataportal.org/>`_ supported by various `partners and projects <https://www.covid19dataportal.org/partners?activeTab=COVID-19%20Data%20Platform%20partners>`_
 
-- `Pathogen epidemiology <https://www.ebi.ac.uk/ena/pathogens/home>`_
+- `Pathogen epidemiology <https://www.ebi.ac.uk/ena/pathogens/home>`_ supported by `BY-COVID <https://by-covid.org/>`_, `ReCoDID <https://recodid.eu>`_ and `VEO <https://www.veo-europe.eu/>`_ 
 
 - Marine science such as `Tara Oceans <https://www.ebi.ac.uk/about/news/press-releases/tara-oceans-data>`_ and `Ocean Sampling Day <https://www.ebi.ac.uk/ena/data/view/PRJEB5129>`_, `AtlantECO <https://www.atlanteco.eu/>`_ and `BlueCloud <https://blue-cloud.org/>`_
 
