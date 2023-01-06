@@ -355,3 +355,10 @@ name or description.
 
 In some cases, fields can be restricted by regular expression, a list of text
 choices, by valid taxonomy or by valid ontology terms.
+
+3rd Party Curations
+===================
+
+From this tab you can check for the 3rd Party Curations linked to these records. 
+
+Source of these curations is the ENA database.
