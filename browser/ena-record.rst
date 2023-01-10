@@ -359,6 +359,6 @@ choices, by valid taxonomy or by valid ontology terms.
 3rd Party Curations
 ===================
 
-From this tab you can check for the 3rd Party Curations linked to these records. 
+This tab presents the flow of the 3rd party curations data from the ENA ClearingHouse (CDCH) data store.
 
-Source of these curations is the ENA database.
+The CDCH data store aim to provide a seamless method of exchange for curated contextual data available in external resources and community curation efforts, with ELIXIR data resources.
