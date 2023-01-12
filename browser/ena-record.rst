@@ -355,3 +355,10 @@ name or description.
 
 In some cases, fields can be restricted by regular expression, a list of text
 choices, by valid taxonomy or by valid ontology terms.
+
+3rd Party Curations
+===================
+
+This tab presents the flow of 3rd party curations from the ELIXIR Contextual Data ClearingHouse (CDCH) data store.
+
+The CDCH data store aims to provide a seamless method of exchange for curated contextual data available in external resources and community curation efforts, with ELIXIR data resources.
