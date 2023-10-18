@@ -46,7 +46,7 @@ FTP in their corresponding folders (e.g. http://ftp.ebi.ac.uk/pub/databases/ena/
 http://ftp.ebi.ac.uk/pub/databases/ena/tsa/public/; http://ftp.ebi.ac.uk/pub/databases/ena/tls/public/).
 
 Deprecated: Release vs Update search results
-=============================
+============================================
 
 We no longer maintain separately indexed datasets for RELEASE and UPDATE data for Sequence and Coding & NonCoding RNA records.
 Where RELEASE referred to the last ENA release, and UPDATE referred to any records that had been added or modified since the
@@ -116,7 +116,7 @@ or FASTA
 
 We have added limits to the above examples to only return 5 records.
 
-If not provided, limit defaults to 100000. To retrieve ALL records matching a query, user limit=0.
+If not provided, limit defaults to ALL RECORDS matching the query so use with care.
 
 You can search using the sequence, coding or noncoding data type endpoints. In general when using the API search it is
 important to be as specific as possible with your query to save on downloading sequences that you do not require.
@@ -198,7 +198,8 @@ Records are in gzip files, further divided by taxonomic division, with upto 1,00
 
 Coding & Noncoding RNA Sequences
 ================================
-CDS and NCRNA subproducts from CON & STD (incl. EST, GSS etc) are treated the same was as Assembled/Annotated Sequences.
+CDS (Coding) and NCRNA (Non-coding RNA) subproducts from CON (scaffold) & STD (incl. STD, EST, GSS etc) Assembled/Annotated sequences
+are treated the same way as their parents.
 The latest snapshots are available at
 
 `ftp.ebi.ac.uk/pub/databases/ena/coding/snapshot_latest <http://ftp.ebi.ac.uk/pub/databases/ena/coding/snapshot_latest>`_
@@ -206,13 +207,26 @@ and
 
 `ftp.ebi.ac.uk/pub/databases/ena/non-coding/snapshot_latest <http://ftp.ebi.ac.uk/pub/databases/ena/non-coding/snapshot_latest>`_ respectively.
 
-But for subproducts from WGS/TSA/TLS sequences, the records are made available in a different manner.
-We group the coding records from a given WGS set in to one file. Then files are grouped set-name based on 3 character prefix
-into a tar file.
-e.g. ftp.ebi.ac.uk/pub/databases/ena/non-coding/snapshot_latest/wgs/aaa.tar contains Coding features from AAAA02, AAAB01 and so on.
+Note that for subproducts from WGS/TSA/TLS sequences, the records are made available in a different manner within the snapshot folder.
+Individual cds set files a contigset are made available separately.
+e.g. Consider the WGS contigset WYAA01, that includes the individual WGS contigs WYAA01000001-WYAA01000116.
 
-Individual set files are also made available separately on FTP.
-e.g. Consider the WGS set WYAA01, that includes the individual WGS records WYAA01000001-WYAA01000116.
+The coding subproducts from contigs WYAA01000001-WYAA01000116 are available together in
+`ftp.ebi.ac.uk/pub/databases/ena/coding/snapshot_latest/wgs/wya <http://ftp.ebi.ac.uk/pub/databases/ena/coding/snapshot_latest/wgs/wya>`_
+with the name WYAA01.cds.gz
+
+So, if you wanted all coding records in the snapshot from WGS contigsets, you would need to start at the
+`ftp.ebi.ac.uk/pub/databases/ena/coding/snapshot_latest/wgs <http://ftp.ebi.ac.uk/pub/databases/ena/coding/snapshot_latest/wgs>`_  level,
+delve into each subfolder and download the *.cds.gz files.
+
+Similarly, the noncoding RNA file is available in
+`ftp.ebi.ac.uk/pub/databases/ena/non-coding/snapshot_latest/wgs/wya <http://ftp.ebi.ac.uk/pub/databases/ena/non-coding/snapshot_latest/wgs/wya>`_
+with the name WYAA01.ncr.gz
+
+----------------------------------------------------------
+
+Individual cds set files are also made available separately on FTP.
+e.g. Again, consider the WGS set WYAA01.
 The WGS sequence set for this is available on FTP at
 `ftp.ebi.ac.uk/pub/databases/ena/wgs/public/wya <http://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/wya/>`_.
 
@@ -228,15 +242,19 @@ So, if you wanted all coding from WGS, you would need to start at the
 `ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public <http://ftp.ebi.ac.uk/pub/databases/ena/coding/wgs/public>`_  level,
 delve into each subfolder and download the *.cds.gz files.
 
-Find Deleted (suppressed/killed) Records
-----------------------------------------
-For Sequence, Coding & Non-coding, to find deleted record IDs since a given date, call the API as follows:
+Repeat the process for `ftp.ebi.ac.uk/pub/databases/ena/coding/tsa/public <http://ftp.ebi.ac.uk/pub/databases/ena/coding/tsa/public>`_
+and `ftp.ebi.ac.uk/pub/databases/ena/coding/tls/public <http://ftp.ebi.ac.uk/pub/databases/ena/coding/tls/public>`_
 
-`https://www.ebi.ac.uk/ena/browser/api/deleted/sequence/2020-07-01 <https://www.ebi.ac.uk/ena/browser/api/deleted/sequence/2020-07-01>`_
+Finding changed (new/updated/suppressed/killed) Records
+-------------------------------------------------------
+For Sequence, Coding & Non-coding, to find deleted record IDs you can use the API as follows:
 
-`https://www.ebi.ac.uk/ena/browser/api/deleted/coding/2020-07-01 <https://www.ebi.ac.uk/ena/browser/api/deleted/coding/2020-07-01>`_
+1. Get full list of currently public records as file. This specific request will return records in alphabetical order.
+curl -o sequence-20231029.tsv `https://www.ebi.ac.uk/ena/portal/api/search?result=sequence&fields=accession,last_updated <https://www.ebi.ac.uk/ena/portal/api/search?result=sequence&fields=accession,last_updated>`_
 
-`https://www.ebi.ac.uk/ena/browser/api/deleted/noncoding/2020-07-01 <https://www.ebi.ac.uk/ena/browser/api/deleted/noncoding/2020-07-01>`_
+2. Compare this list with your current set of sequence records
+
+We provide a handy utility that can do this work for you: https://github.com/enasequence/ena-snapshot-change-lister
 
 Find Changed Sets
 -----------------
@@ -284,7 +302,7 @@ date, for example data for the first 5 days of August 2019:
 
   curl 'https://www.ebi.ac.uk/ena/browser/api/fasta/search?result=sequence&query=last_updated%3E%3D2019-08-01%20AND%20last_updated%3C%3D2019-08-05&limit=5' -o fasta.txt
 
-We have added limits to the above examples to only return 5 records. Use limit=0 to retrieve ALL matching records. You can search using
+We have added limits to the above examples to only return 5 records. Remove the limit param or use limit=0 to retrieve ALL matching records. You can search using
 the sequence, coding or non-coding data type endpoints. In general when using the API search it is important to be as
 specific as possible with your query to save on downloading sequences that you do not require.
 

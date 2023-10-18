@@ -11,3 +11,6 @@ release.
 
 Search the full history of a sequence using its accession and 
 view the sequence versions in FASTA or EMBL flat file format.
+
+e.g.
+`SVA <https://www.ebi.ac.uk/ena/browser/sva/BN000065>`_

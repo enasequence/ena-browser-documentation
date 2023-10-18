@@ -54,11 +54,6 @@ What is in each data type?
 | Samples          | | All samples in ENA. Samples can be        | *sample*            |
 |                  | | searched by sample metadata.              |                     |
 +------------------+---------------------------------------------+---------------------+
-| | Environmental  | | All samples in ENA that the submitter has | *environmental*     |
-| | samples        | | flagged as 'evironmental' during sample   |                     | 
-| |                | | registration. Please note, this does not  |                     | 
-| |                | | include all environmental samples.        |                     |
-+------------------+---------------------------------------------+---------------------+
 | | Experiments    | | All metadata associated with sequencing   | *read_experiment*   |
 | | used for raw   | | event used to generate raw reads          |                     |
 | | reads          | | submitted to ENA.                         |                     |
@@ -221,11 +216,11 @@ FASTA records hold all sequences resulting from your search concatonated into on
 FASTA file. FASTA records are only available when searching against sequence 
 datatypes.
 
-TEXT records
+EMBL records
 ------------
 
-TEXT records hold all sequences resulting from your search and their annotation (if 
-available) concatonated into a single EMBL flat file. TEXT records are only available 
+EMBL flatfile records hold all sequences resulting from your search and their annotation (if
+available) concatenated into a single EMBL flat file. EMBL records are only available
 when searching against sequence datatypes.
 
 
@@ -266,12 +261,14 @@ You can download the data files resulting from your search in one of four ways:
     Download the latest version from
     `ENA Tools <http://ftp.ebi.ac.uk/pub/databases/ena/tools/ena-file-downloader.zip>`_.
 
+    or from github at `ena-ftp-downloader <https://github.com/enasequence/ena-ftp-downloader>`_.
+
 2. You can download a single file by clicking on its link in the FASTQ FTP, SRA FTP, or SUBMITTED FTP column.
 
-3. You can select one or more files using the check boxes, and either download these as a bundled ZIP file
-   or as individual files using the "Bundled ZIP" or "Individually" links above the table.
+3. You can select one or more files using the check boxes, and either download a downloader script which you can run separately
+   or as individual files using the "Get download script" or "Download selected files" links above the table.
    
-4. You can download ALL files resulting from your search as a bundled ZIP file by clicking the download icon in the column header.
+4. You can download a script that contains the download requests for ALL files resulting from your search by clicking the download icon in the column header.
 
 .. image:: images/download-all.png
 
