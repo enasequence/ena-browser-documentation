@@ -9,7 +9,7 @@ Details of upcoming meetings where you might find us are available below.
 +-------------+-----------------------+--------------------------------------------------------------------------------+
 | Date        | Event                 | Description                                                                    |
 +-------------+-----------------------+--------------------------------------------------------------------------------+
-| Winter 2022 | ENA Facilities Day    | | Facilities Day is an annual meeting of ENA staff with                        |
+| Winter 2024 | ENA Facilities Day    | | Facilities Day is an annual meeting of ENA staff with                        |
 |             |                       | | frequent users. We invite representatives of sequencing                      |
 |             |                       | | facilities, brokers, and other major service users to                        |
 |             |                       | | discuss developments at ENA, and how our services are used.                  |
@@ -29,21 +29,25 @@ you.
 +-----------------+------------------------------------+---------------------------------------------------------------+
 | Date            | Event                              | Description                                                   |
 +-----------------+------------------------------------+---------------------------------------------------------------+
-| | 31st Oct -    | | `Genome-resolved`_               | | This course will provide biologists                         |
-| | 4th Nov 2022  | | `metagenomics bioinformatics`_   | | who are embarking upon metagenomics                         |
+| | 23rd - 27th   | | `Metagenomics bioinformatics`_   | | This course will provide life scientists                    |
+| | Sep 2024      | | `using MGnify`_                  | | who are embarking upon metagenomics                         |
 |                 |                                    | | research projects training to use                           |
 |                 |                                    | | publicly available resources to                             |
 |                 |                                    | | manage, share, analyse and interpret                        |
-|                 |                                    | | metagenomics data, including both                           |
-|                 |                                    | | marker gene and whole gene shotgun                          |
-|                 |                                    | | (WGS) approaches                                            |
+|                 |                                    | | metagenomics data, focussing primarily                      |
+|                 |                                    | | on assembly-based approaches.                               |
 +-----------------+------------------------------------+---------------------------------------------------------------+
-
-
-.. _`Genome-resolved` : https://www.ebi.ac.uk/training/events/metagenomics-bioinformatics-2022/
-.. _`metagenomics bioinformatics` : https://www.ebi.ac.uk/training/events/metagenomics-bioinformatics-2022/
-.. _`Exploring Biological Sequences` :  https://www.ebi.ac.uk/training/events/2020/exploring-biological-sequences-3
-.. _`NGS Bioinformatics` : https://www.ebi.ac.uk/training/events/2020/next-generation-sequencing-bioinformatics-0
+| | 18th - 22nd   | | `Plant genomes:`_                | | This course will provide plant scientists                   |
+| | Nov 2024      | | `from data to discovery`_        | | training to use a selection of genomic tools                |
+|                 |                                    | | and open resources for exploring plant genomes              |
+|                 |                                    | | and answering biological questions.                         |
+|                 |                                    | | This course will cover a range of omics data including      |
+|                 |                                    | | genomic, proteomic, and imaging data.                       |
++-----------------+------------------------------------+---------------------------------------------------------------+
+.. _`Metagenomics bioinformatics` : https://www.ebi.ac.uk/training/events/metagenomics-bioinformatics-mgnify/
+.. _`using MGnify` : https://www.ebi.ac.uk/training/events/metagenomics-bioinformatics-mgnify/
+.. _`Plant genomes:` :  https://www.ebi.ac.uk/training/events/plant-genomes-data-discovery/
+.. _`from data to discovery` : https://www.ebi.ac.uk/training/events/plant-genomes-data-discovery/
 
 
 ..
