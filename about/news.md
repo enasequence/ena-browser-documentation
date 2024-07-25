@@ -4,6 +4,14 @@ News and Announcements
 
 This page is for news items relating to the European Nucleotide Archive and service announcements.
 
+
+:::{admonition} ENA Service Announcement - Webin downtime (24-07-2024)
+:class: warning
+
+Webin submissions via Webin-CLI, Webin Interactive and Webin REST are scheduled to go down due to planned maintenance from 10:00hrs on 01-AUG-2024. Maintenance should be complete by 17:00hrs, please get in touch if you notice submissions issues beyond this time.
+
+:::
+
 :::{admonition} ENA News - INSDC publishes guidance for prospective new members (20-05-2024) 
 :class: tip
 
@@ -14,13 +22,6 @@ In support of this effort, INSDC formalized the collaboration through the develo
 Founding Members of the INSDC will provide consultation to interested parties as prospective members will be required to demonstrate appropriate capacity, commitment, and activity in areas such as governance, technical infrastructure, data operations, and communications and engagement. Interested parties are encouraged to contact INSDC.
 
 The INSDC is a long-standing initiative, and its Founding Members are the Research Organization of Information and Systems, National Institute of Genetics (ROIS-NIG) in Japan, the European Molecular Biology Laboratory – European Bioinformatics Institute (EMBL-EBI), and the National Library of Medicine-National Center for Biotechnology Information (NLM-NCBI), a component of the National Institutes of Health in the United States.
-:::
-
-:::{admonition} ENA Service Announcement - Webin downtime (24-07-2024)
-:class: important
-
-Webin submissions via Webin-CLI, Webin Interactive and Webin REST are scheduled to go down due to planned maintenance from 10:00hrs on 01-AUG-2024. Maintenance should be complete by 17:00hrs, please get in touch if you notice submissions issues beyond this time.
-
 :::
 
 :::{admonition}  ENA News - Improving spatiotemporal annotations (01-12-2024)
