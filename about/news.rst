@@ -8,4 +8,4 @@ This page is for news items relating to the European Nucleotide Archive and serv
 :class: tip
 
 This is an example of an ENA Announcement.
-::: 
+::::
