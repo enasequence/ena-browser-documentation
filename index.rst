@@ -32,6 +32,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    browser/search
    browser/rulespace
    browser/support
+   browser/news
 
 .. toctree::
    :caption: Help and Guides
