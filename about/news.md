@@ -27,9 +27,9 @@ The INSDC is a long-standing initiative, and its Founding Members are the Resear
 :::{admonition}  ENA News - Improving spatiotemporal annotations (01-12-2024)
 :class: tip
 
-    The European Nucleotide Archive, along with its partners in the International Nucleotide Sequence Database Collaboration, is set to introduce mandatory spatio-temporal information for all new samples
-    The change aims to enrich the scientific value of the data, especially for scientists working in the areas of infectious disease, biodiversity and ecology
-    The team is seeking input from the community
+- The European Nucleotide Archive, along with its partners in the International Nucleotide Sequence Database Collaboration, is set to introduce mandatory spatio-temporal information for all new samples
+- The change aims to enrich the scientific value of the data, especially for scientists working in the areas of infectious disease, biodiversity and ecology
+- The team is seeking input from the community
 
 To enrich the scientific value of the data it archives, the ENA will introduce mandatory spatio-temporal metadata for new data submissions. The drive for this change has come from the user community, specifically from researchers working in the fields of infectious disease, ecology and biodiversity, for whom this information is particularly valuable because it allows them to correlate genotypes to specific environmental conditions (see also https://www.ebi.ac.uk/about/news/press-releases/ena-new-metadata).
 
@@ -37,8 +37,8 @@ This change will serve over time to increase the level to which datasets in ENA 
 
 Over the coming year, all new submissions to ENA will require the following information for each sample:
 
-    The country or region where the sample was collected, using standardised country names from a controlled list.
-    The collection date of the sample, recording at least the year of collection.
+- The country or region where the sample was collected, using standardised country names from a controlled list.
+- The collection date of the sample, recording at least the year of collection.
 
 This change will only apply to new submissions, and will not be imposed retrospectively. The goal is to ensure this for all new sequences by the end of 2022.
 
