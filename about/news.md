@@ -1,6 +1,6 @@
-=======
+
 News and Announcements
-=======
+======
 
 This page is for news items relating to the European Nucleotide Archive and service announcements.
 
