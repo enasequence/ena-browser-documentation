@@ -21,6 +21,8 @@ The INSDC is a long-standing initiative, and its Founding Members are the Resear
 
 Webin submissions via Webin-CLI, Webin Interactive and Webin REST are scheduled to go down due to planned maintenance from 10:00hrs on 01-AUG-2024. Maintenance should be complete by 17:00hrs, please get in touch if you notice submissions issues beyond this time.
 
+:::
+
 :::{admonition}  ENA News - Improving spatiotemporal annotations (01-12-2024)
 :class: tip
 
