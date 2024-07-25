@@ -20,6 +20,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    about/data-standards
    about/funding
    about/events
+   about/news
 
 .. toctree::
    :caption: The ENA Browser
@@ -32,7 +33,6 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    browser/search
    browser/rulespace
    browser/support
-   browser/news
 
 .. toctree::
    :caption: Help and Guides
