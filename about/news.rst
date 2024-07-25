@@ -9,3 +9,11 @@ This page is for news items relating to the European Nucleotide Archive and serv
 
 This is an example of an ENA Announcement.
 ::::
+
+:::{admonition} My custom title with *Markdown*!
+:class: tip
+
+This is a custom title for a tip admonition.
+:::
+
+
