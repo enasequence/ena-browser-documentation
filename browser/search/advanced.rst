@@ -133,6 +133,13 @@ If there are any known public datasets that do or do not fit the criteria
 you have specified that you wish to include or exclude from the results, 
 you can list the accessions in a comma separated list here (with no spaces).
 
+Third party annotation
+----------------------
+
+Third party curations are additional metadata that have been submitted by the
+user community to the ELIXIR Data Clearinghouse. See
+`here <https://ena-docs.readthedocs.io/en/latest/submit/annotation.html#third-party-annotation for more details>`_.
+
 Return Fields
 =============
 
@@ -159,7 +166,7 @@ Field sets
 Field sets are a pre-defined set of fields that can be returned together and 
 are available for some data types. For example, for the analysis datatype, 
 you can toggle the 'Submitted Files' field set which can be used to return 
-all relavent fields relating to the original set of submitted files (e.g. 
+all relevant fields relating to the original set of submitted files (e.g.
 this set includes the aspera, ftp and galaxy links for the submitted files, 
 the size of the files (in bytes) and the files' md5 checksums).
 
@@ -185,7 +192,7 @@ You can specify a data limit for the maximum number of records you would like
 to retrieve from your search.
 
 If you wish to fetch the full result set enter '0'. Leaving the limit field blank applies 
-the deafult limit of 100 000. For large
+the default limit of 100 000. For large
 result sets, to get all records please download the report (JSON/TSV) or copy and run 
 the curl command outside of the browser.
 
@@ -204,7 +211,7 @@ XML records
 XML records are available for all standard metadata objects held within ENA (all 
 results with the exception of sequence records).
 
-XML records hold **all** the metadata for each object concatonated into a single 
+XML records hold **all** the metadata for each object concatenated into a single
 bulk XML file. These XML metadata records are formatted in the standard ENA XML 
 format (the same XML format that is used for data submission and for data to be 
 displayed in the browser).
@@ -212,7 +219,7 @@ displayed in the browser).
 FASTA records
 -------------
 
-FASTA records hold all sequences resulting from your search concatonated into one 
+FASTA records hold all sequences resulting from your search concatenated into one
 FASTA file. FASTA records are only available when searching against sequence 
 datatypes.
 
@@ -256,7 +263,7 @@ You can download the data files resulting from your search in one of four ways:
     submit one or more comma separated accessions, or a file with accessions that you
     want to download data for. This tool allows downloading of read and analysis files,
     using FTP or Aspera. It has an easy to use interactive interface and can also create
-    a script which can be run programatically or integrated with pipelines.
+    a script which can be run programmatically or integrated with pipelines.
 
     Download the latest version from
     `ENA Tools <http://ftp.ebi.ac.uk/pub/databases/ena/tools/ena-file-downloader.zip>`_.
@@ -282,7 +289,7 @@ Tips:
   be because your browser is restricting multiple download pop-ups. Look for a browser warning or confirmation dialog
   to allow this.
 
-- If selesting many files and using the download "Individually" option, you may wish to change 
+- If selecting many files and using the download "Individually" option, you may wish to change
   the default download location of your browser. Look in your browser settings for this.
 
 - You can also download files using a terminal from ENA using `enaBrowserTools <https://github.com/enasequence/enaBrowserTools>`_.
