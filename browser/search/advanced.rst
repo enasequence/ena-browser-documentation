@@ -138,7 +138,7 @@ Third party annotation
 
 Third party curations are additional metadata that have been submitted by the
 user community to the ELIXIR Data Clearinghouse. See
-`here <https://ena-docs.readthedocs.io/en/latest/submit/annotation.html#third-party-annotation for more details>`_.
+`here <https://ena-docs.readthedocs.io/en/latest/submit/annotation.html#third-party-annotation>`_ for more details.
 
 Return Fields
 =============
