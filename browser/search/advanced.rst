@@ -138,7 +138,7 @@ Third party annotation
 
 Third party curations are additional metadata associated to INSDC records,
 which have been submitted by the user community to the
-`ELIXIR Data Clearinghouse https://ena-docs.readthedocs.io/en/latest/submit/annotation.html#third-party-annotation`_.
+`ELIXIR Data Clearinghouse <https://ena-docs.readthedocs.io/en/latest/submit/annotation.html#third-party-annotation>`_.
 The original records have not been altered.
 
 Return Fields
