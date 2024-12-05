@@ -31,7 +31,6 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    browser/sample-checklists
    browser/ena-record
    browser/search
-   browser/rulespace
    browser/support
 
 .. toctree::

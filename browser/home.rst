@@ -20,7 +20,6 @@ From the homepage you can access:
 
 - `Submission Guidelines and Links <submit.html>`_
 - `The ENA Search Services <search.html>`_
-- `Rulespace <rulespace.html>`_
 - `Our User Support Service <support.html>`_
 
 You can also see the latest news and tweets regarding the archive.

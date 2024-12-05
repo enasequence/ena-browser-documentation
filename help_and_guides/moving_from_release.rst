@@ -171,10 +171,6 @@ but we make a brief mention here:
 
 7. (Optional) If desired you can copy your query for command line use with the ENA APIs using the "Copy Curl Request" button.
 
-8. (Optional) You can save this query for future use, by saving it to your Rulespace
-   account using the 'Save To Rulespace' button, please refer to this `guide for
-   more information <https://www.ebi.ac.uk/ena/rulespace/api/doc>`_.
-
 Periodic Snapshots & Support API
 ================================
 For sequence, coding and noncoding RNA data, we produce a periodic snapshot which includes all public records at that
@@ -414,9 +410,6 @@ significant delay between the first and the second call, please be aware that th
 .. example of a query with a to and from date
 
 .. State that it is better to be very specific with the query for what is actually required for your release, if you only need a certain data type, data from a certain taxon or from a particular region then you should limit this in your query, instructions for constructing queries here.
-
-
-.. Comment that Rulespace can be used to save a complex query for repeated use
 
 .. Comment that we may establish partitions for users depending on requirements.
 
