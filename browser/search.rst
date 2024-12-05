@@ -7,7 +7,7 @@ using a simple text search or explored in more detail using one of the
 ENA search services.
 
 Customise your own search query and tailor your results to fit a specific 
-set of search criteria (which can be saved with `Rulespace <rulespace.html>`_):
+set of search criteria:
 
 .. toctree::
    :maxdepth: 1

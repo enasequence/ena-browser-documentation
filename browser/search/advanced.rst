@@ -14,10 +14,8 @@ query to specify what data you are looking for and select what fields you want t
 retrieve from your search. There are additional options to include/exclude specific  
 datasets as well as filter the number of results you wish to return.
 
-If you intend to repeat the same search at a later date, you can save this 
-as a Rule using `Rulespace <https://www.ebi.ac.uk/ena/browser/rulespace>`_. If you 
-want to access the same data programmatically, you can copy the produced curl request and run 
-this yourself against the `ENA Portal API <https://www.ebi.ac.uk/ena/portal/api/>`_.
+If you want to access the same data programmatically, you can copy the produced curl
+request and run this yourself against the `ENA Portal API <https://www.ebi.ac.uk/ena/portal/api/>`_.
 
 Data Types
 ==========
