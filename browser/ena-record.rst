@@ -362,3 +362,11 @@ choices, by valid taxonomy or by valid ontology terms.
 This tab presents the flow of 3rd party curations from the ELIXIR Contextual Data ClearingHouse (CDCH) data store.
 
 The CDCH data store aims to provide a seamless method of exchange for curated contextual data available in external resources and community curation efforts, with ELIXIR data resources.
+
+Chromosome Download Script
+===========
+
+The script automates the download of all chromosomes for the given assembly ID. If
+any chromosome is part of the WGS set, the script will download full WGS file from
+ENA FTP location and will extract only relevant sequences associated with the given assembly.
+
