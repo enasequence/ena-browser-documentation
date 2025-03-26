@@ -18,6 +18,7 @@ For submission guidelines and retrieval tutorials, please see the `ENA Training 
    about/data_coordination
    about/policies
    about/data-standards
+   about/news
    about/funding
    about/events
 
