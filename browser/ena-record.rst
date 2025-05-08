@@ -269,6 +269,26 @@ of the sequencing data registered with ENA.
 **Taxon**: Here you can see a summary of all ENA records registered with that particular
 taxon. This view also shows a summary of any records registered with descendant taxa.
 
+Tax Graph View
+==============
+
+View a graphical representation of the taxonomy hierarchy
+
+Full Hierarchy
+--------------
+
+Expand the graphical view to display all ancestors and descendants of the selected tax id.
+
+All Children
+------------
+
+Expand the graphical view to display all children of the selected tax id.
+
+Minimal View
+------------
+
+Display the immediate parent and a limited number of children for the selected tax id.
+
 Tax Tree
 ========
 
