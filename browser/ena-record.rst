@@ -272,17 +272,17 @@ taxon. This view also shows a summary of any records registered with descendant 
 Tax Graph View
 ==============
 
-Here you can view the graphical view of the tax hierarchy
+View a graphical representation of the taxonomy hierarchy
 
 Full Hierarchy
 --------------
 
-Expand the graphical view which shows all the ancestors and children of the selected tax id.
+Expand the graphical view to display all ancestors and descendants of the selected tax id.
 
 All Children
 ------------
 
-Expand the graphical view which shows all the children of the selected tax id.
+Expand the graphical view to display all children of the selected tax id.
 
 Minimal View
 ------------
