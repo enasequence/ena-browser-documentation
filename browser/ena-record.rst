@@ -287,7 +287,7 @@ Expand the graphical view to display all children of the selected tax id.
 Minimal View
 ------------
 
-Display the immediate parent and the limited number of children of the selected tax id.
+Display the immediate parent and a limited number of children for the selected tax id.
 
 Tax Tree
 ========
