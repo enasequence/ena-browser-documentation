@@ -1,6 +1,8 @@
 =======
-Funding (As of 2025)
+Funding
 =======
+
+*This funding information is current as of 2025.*
 
 The ENA has received funding from the European Union's Horizon 2020 and Horizon Europe research and innovation programme under grant agreement numbers AtlantECO [862923], AQUARIUS [101130915], BGE [101059492], BioOcean5D [101059915], Blue-Cloud 2026 [101094227], Contagio [101137283], eDNAqua-Plan [101112800], EVORA [101131959], MICROBE [10194353], and VEO [874735].
 
