@@ -18,7 +18,6 @@ Controlling when data become public
 
 Submitters decide when their data are released. At registration a study is given a release date and held confidential until then. Confidential data are not accessible by any route. Submitters can bring the date forward, or extend it provided they give at least two weeks' notice; once the date passes, the data are released automatically and can no longer be made private. See the `Data Availability Policy <https://ena-docs.readthedocs.io/en/latest/faq/release/data-availability-policy.html>`_ and `Data Release Policies <https://ena-docs.readthedocs.io/en/latest/faq/release.html>`_.
 
-
 Removing public data
 ====================
 ENA's policy is that data released into the public domain should remain public. After release, availability is managed by ENA, and in limited cases a record can be suppressed on request: for example if it is incorrect or contaminated, was released earlier than intended, was held under a release date ENA applied incorrectly, was submitted without the rightful owner's permission, or is the subject of a substantiated access and benefit-sharing (ABS) concern. To request suppression, contact the ENA helpdesk with the accessions and an explanation, plus a new release date if the suppression is temporary. See `Data Release Policies <https://ena-docs.readthedocs.io/en/latest/faq/release.html>`_.

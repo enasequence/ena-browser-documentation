@@ -16,11 +16,13 @@ Citing data in ENA
 
 When referencing data you have deposited, cite the top-level project accession together with a link to the record, for example:
 
-    "The data for this study have been deposited in the European Nucleotide Archive (ENA) at EMBL-EBI under accession number PRJEBxxxx (https://www.ebi.ac.uk/ena/browser/view/PRJEBxxxx )."
+.. epigraph::
+    
+    "The data for this study have been deposited in the European Nucleotide Archive (ENA) 
+    at EMBL-EBI under accession number PRJEBxxxx (https://www.ebi.ac.uk/ena/browser/view/PRJEBxxxx )."
 
 Where a single project accession would be ambiguous, for instance when several papers each reference a different component of one project, you can cite a more specific accession instead:
 
 - Assemblies (e.g. GCA_123456789.1)
 - BioSamples, in the context of their associated data (e.g. SAMEA123456)
 - Assembled or annotated sequences, including contigs, scaffolds and chromosomes from an assembly submission (e.g. A12345.1)
-
