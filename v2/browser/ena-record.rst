@@ -279,11 +279,6 @@ Full Hierarchy
 
 Expand the graphical view to display all ancestors and descendants of the selected tax id.
 
-All Children
-------------
-
-Expand the graphical view to display all children of the selected tax id.
-
 Minimal View
 ------------
 
