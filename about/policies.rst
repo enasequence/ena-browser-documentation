@@ -37,6 +37,17 @@ The INSDC is an outstanding example of success in building an immensely valuable
 voluntary cooperation across the international scientific community. This success has been achieved by following the
 guidelines and principles outlined above.
 
+Access and benefit-sharing (ABS)
+================================
+ENA's data are openly accessible, in line with internationally recognised open-access data standards and takes into account the FAIR and TRUST principles. This openness supports the multilateral mechanism for sharing the benefits of digital sequence information (DSI) agreed by the Parties to the UN Convention on Biological Diversity (CBD) in Decision 16/2, under which benefit-sharing is handled collectively rather than by restricting access to data. Data accessed through ENA may therefore be subject to benefit-sharing obligations, including monetary contributions to the `Cali Fund <https://www.cbd.int/califund/guides/guide%20for%20database.pdf>`_ by commercial users.
+
+When submitting data, you are asked to:
+
+- comply with all applicable national and international laws and regulations, including those governing access and benefit-sharing, in the jurisdictions where you operate;
+- provide, where known, the geographical location at which the genetic resource was collected (its in-situ origin), from which the sequence data were derived; and, where appropriate, further provenance metadata. This includes indicating whether traditional knowledge associated with the genetic resource was used, and its origin or source;
+- confirm that, to the best of your knowledge, the data are not subject to any restrictions that would prevent their open sharing.
+
+For more information and guidance, see `EMBL-EBI's explainer for ABS and DSI <https://www.ebi.ac.uk/abs-dsi/>`_, and `Raposo et al. (2026) <https://doi.org/10.1038/s41597-026-07725-y>`_.
 
 Data availability policy
 ========================
