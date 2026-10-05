@@ -39,7 +39,7 @@ guidelines and principles outlined above.
 
 Access and benefit-sharing (ABS)
 ================================
-ENA's data are openly accessible, in line with internationally recognised open-access data standards and takes into account the FAIR and TRUST principles. This openness supports the multilateral mechanism for sharing the benefits of digital sequence information (DSI) agreed by the Parties to the UN Convention on Biological Diversity (CBD) in Decision 16/2, under which benefit-sharing is handled collectively rather than by restricting access to data. Data accessed through ENA may therefore be subject to benefit-sharing obligations, including monetary contributions to the `Cali Fund <https://www.cbd.int/califund/guides/guide%20for%20database.pdf>`_ by commercial users.
+ENA's data is openly accessible, in line with internationally recognised open-access data standards and takes into account the FAIR and TRUST principles. This openness supports the multilateral mechanism for sharing the benefits of digital sequence information (DSI) agreed by the Parties to the UN Convention on Biological Diversity (CBD) in Decision 16/2, under which benefit-sharing is handled collectively rather than by restricting access to data. Data accessed through ENA may therefore be subject to benefit-sharing obligations, including monetary contributions to the `Cali Fund <https://www.cbd.int/califund/guides/guide%20for%20database.pdf>`_ by commercial users.
 
 When submitting data, you are asked to:
 
