@@ -5,7 +5,7 @@ Home Page
 Introduction
 ============
 
-The European Nucleotide Archive (ENA) is an open repository for nucleotide sequence data.
+The European Nucleotide Archive (ENA) is a repository for all open nucleotide sequence data.
 It brings together raw sequencing reads, sequence assemblies, functional annotation and associated metadata
 from studies across the life sciences. ENA is part of the International Nucleotide Sequence Database
 Collaboration (`INSDC <https://www.insdc.org/>`_),
