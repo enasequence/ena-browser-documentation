@@ -15,7 +15,7 @@ What each route can submit
 Check this before you choose, as some data types have only one route.
 
 +------------------------+-------------+-----------+---------------+
-|                        | Interactive | Webin-CLI | Programmatic  |
+| Data type              | Interactive | Webin-CLI | Programmatic  |
 +========================+=============+===========+===============+
 | Study                  |      Yes    |     No    |       Yes     |
 +------------------------+-------------+-----------+---------------+
