@@ -15,8 +15,8 @@ What each route can submit
 Check this before you choose, as some data types have only one route.
 
 +------------------------+-------------+-----------+---------------+
-|                        | Interactive | Webin-CLI | Programmatic  |
-+------------------------+-------------+-----------+---------------+
+| Data type              | Interactive | Webin-CLI | Programmatic  |
++========================+=============+===========+===============+
 | Study                  |      Yes    |     No    |       Yes     |
 +------------------------+-------------+-----------+---------------+
 | Sample                 |      Yes    |     No    |       Yes     |
@@ -35,6 +35,6 @@ Check this before you choose, as some data types have only one route.
 Submitting data to ENA
 ======================
 
-From the data submission page you can access all of our 
-submission services directly and access the submission guidelines 
+From the data submission page you can access all of our
+submission services directly and access the submission guidelines
 available `here <https://ena-docs.readthedocs.io/en/latest/submit/general-guide.html>`_.
