@@ -9,7 +9,7 @@ The ENA data model
 
 This content is organised into three tiers (raw reads, the sequence assemblies built from them, and functional annotation), with each record described by a set of linked objects (study, sample, experiment, run and analysis) that tie the data together.
 
-.. image:: images/ena-biosamples-1.2.0.png
+.. image:: images/ENA-data-model.png
    :align: center
 
 ENA's data model is aligned with the standards shared across the INSDC. INSDC partners follow a common set of `INSDC minimal specifications <https://www.insdc.org/insdc-minimal-specifications/>`_ that define how each type of record is structured, and they exchange newly submitted data daily. A record submitted to any one archive therefore becomes part of a shared collection held by all partners and can be retrieved from any of them.
