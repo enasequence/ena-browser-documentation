@@ -6,9 +6,9 @@ Step-by-step guidance for submitting, finding and working with ENA data lives in
 
 `Submitting data <https://ena-docs.readthedocs.io/en/latest/submit/general-guide.html>`_ — registering studies and samples, preparing files, and submitting reads, assemblies, targeted sequences and other analyses.
 
-`Finding and downloading data <https://ena-docs.readthedocs.io/en/latest/retrieval/general-guide.html>`_ — exploring projects, downloading files, advanced search and programmatic access.
-
 `Updating data <https://ena-docs.readthedocs.io/en/latest/update/metadata.html>`_ — editing metadata, assemblies and annotated sequences after submission.
+
+`Finding and downloading data <https://ena-docs.readthedocs.io/en/latest/retrieval/general-guide.html>`_ — exploring projects, downloading files, advanced search and programmatic access.
 
 `Tips and FAQs <https://ena-docs.readthedocs.io/en/latest/>`_ — release dates, metadata standards, taxonomy, common submission errors, data brokering, ORCID claiming and more.
 
