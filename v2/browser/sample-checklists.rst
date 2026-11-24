@@ -19,4 +19,4 @@ to others.
 List of checklists
 ==================
 
-Explore all checklists `here <https://www.ebi.ac.uk/ena/browser/checklists>`_.
+Explore all checklists `here <https://wwwdev.ebi.ac.uk/ena/browser/v2/checklists>`_.

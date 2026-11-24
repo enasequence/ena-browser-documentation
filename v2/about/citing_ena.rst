@@ -21,7 +21,7 @@ Cite the accession of the data you deposited, with a link to its record. In most
 .. epigraph::
     
     "The data for this study have been deposited in the European Nucleotide Archive (ENA) 
-    at EMBL-EBI under accession number PRJEBxxxx (``https://www.ebi.ac.uk/ena/browser/view/PRJEBxxxx``)."
+    at EMBL-EBI under accession number PRJEBxxxx (``https://wwwdev.ebi.ac.uk/ena/browser/v2/view/PRJEBxxxx``)."
 
 If one project accession would be ambiguous, for example when several papers each use a different part of the same project, cite a more specific accession instead:
 

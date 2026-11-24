@@ -69,17 +69,17 @@ Record types
 |                       | | was registered with                       |                           |
 +-----------------------+---------------------------------------------+---------------------------+
 
-.. _`PRJEB1787/ERP001736`: https://www.ebi.ac.uk/ena/browser/view/PRJEB1787
-.. _`SAMEA2620084/ERS488919`: https://www.ebi.ac.uk/ena/browser/view/SAMEA2620084
-.. _`ERR1701760/ERX1772048`: https://www.ebi.ac.uk/ena/browser/view/ERR1701760
-.. _`ERZ841272`: https://www.ebi.ac.uk/ena/browser/view/ERZ841272
-.. _`CABHOY010000000.1`: https://www.ebi.ac.uk/ena/browser/view/CABHOY010000000.1
-.. _`CABHOY010000000`: https://www.ebi.ac.uk/ena/browser/view/CABHOY010000000
-.. _`CABHOY01`: https://www.ebi.ac.uk/ena/browser/view/CABHOY01
-.. _`GCA_000001405.28`: https://www.ebi.ac.uk/ena/browser/view/GCA_000001405.28
-.. _`CM000667.2`: https://www.ebi.ac.uk/ena/browser/view/CM000667.2
-.. _`Taxon:9606`: https://www.ebi.ac.uk/ena/browser/view/Taxon:9606
-.. _`ERC000013`: https://www.ebi.ac.uk/ena/browser/view/ERC000013
+.. _`PRJEB1787/ERP001736`: https://wwwdev.ebi.ac.uk/ena/browser/v2/view/PRJEB1787
+.. _`SAMEA2620084/ERS488919`: https://wwwdev.ebi.ac.uk/ena/browser/v2/view/SAMEA2620084
+.. _`ERR1701760/ERX1772048`: https://wwwdev.ebi.ac.uk/ena/browser/v2/view/ERR1701760
+.. _`ERZ841272`: https://wwwdev.ebi.ac.uk/ena/browser/v2/view/ERZ841272
+.. _`CABHOY010000000.1`: https://wwwdev.ebi.ac.uk/ena/browser/v2/view/CABHOY010000000.1
+.. _`CABHOY010000000`: https://wwwdev.ebi.ac.uk/ena/browser/v2/view/CABHOY010000000
+.. _`CABHOY01`: https://wwwdev.ebi.ac.uk/ena/browser/v2/view/CABHOY01
+.. _`GCA_000001405.29`: https://wwwdev.ebi.ac.uk/ena/browser/v2/view/GCA_000001405.29
+.. _`CM000667.2`: https://wwwdev.ebi.ac.uk/ena/browser/v2/view/CM000667.2
+.. _`Taxon:9606`: https://wwwdev.ebi.ac.uk/ena/browser/v2/view/Taxon:9606
+.. _`ERC000013`: https://wwwdev.ebi.ac.uk/ena/browser/v2/view/ERC000013
 
 View and Download Links
 =======================
@@ -148,7 +148,7 @@ From this tab you can also see any links from the record out to external data re
 that have used or generated these records as part of their services. These mappings are compiled
 as part of ENA's cross-reference service, and so only show data from resources that are
 registered with us. You can see more details on such
-registered resources `here <https://www.ebi.ac.uk/ena/browser/xref>`_.
+registered resources `here <https://wwwdev.ebi.ac.uk/ena/browser/v2/xref>`_.
 
 *Note: This view only gives a view of the associated records submitted as part of the
 originally submitted research project and any registered cross-references. For a view
