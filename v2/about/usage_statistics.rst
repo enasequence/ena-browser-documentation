@@ -2,4 +2,5 @@
 Usage statistics
 ================
 
-We collect and display statistics related to data in the ENA. The latest version of these statistics are shown below.
+These charts show how the data in ENA have grown over time, for assembled and annotated sequences and for sequencing reads. They are updated regularly from the ENA statistics on our FTP site.
+
