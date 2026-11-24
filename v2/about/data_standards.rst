@@ -11,7 +11,7 @@ Where appropriate, ENA requires submitted data to follow agreed reporting standa
 
 - `Missing values <https://www.insdc.org/technical-specifications/missing-value-reporting/>`_. Rules for recording metadata that is missing or has restricted access.
 
-- `Third PArty data <https://wwwdev.ebi.ac.uk/ena/browser/v2/about/what-ena-contains>`_. Assemblies or annotations built from existing INSDC records, captured and presented using the INSDC-agreed standards.
+- `Third PArty data <https://www.insdc.org/submitting-standards/tpa-submission-guidelines/>`_. Assemblies or annotations built from existing INSDC records, captured and presented using the INSDC-agreed standards.
 
 Community-developed standards
 =================================
